@@ -1,0 +1,162 @@
+[
+  {
+    "id": "art-001",
+    "headline": "Global Markets Rally Amid Economic Optimism",
+    "summary": "Major stock indices reached new highs as investors responded positively to stronger-than-expected economic data from key economies.",
+    "author": "Jane Smith",
+    "publishedDate": "2025-11-19T09:00:00Z",
+    "category": "markets",
+    "imageUrl": "/images/markets-rally.jpg",
+    "imageAlt": "Stock market trading floor with traders celebrating positive market movements",
+    "articleUrl": "/articles/global-markets-rally",
+    "content": "Full article content would go here...",
+    "tags": ["markets", "economy", "stocks"],
+    "views": 15420,
+    "engagement": {
+      "views": 15420,
+      "shares": 342,
+      "comments": 89,
+      "readTime": 4.2
+    }
+  },
+  {
+    "id": "art-002",
+    "headline": "Tech Giants Face New Regulatory Challenges in EU",
+    "summary": "European Union regulators announced sweeping changes to digital market rules that could reshape how major technology companies operate.",
+    "author": "Michael Chen",
+    "publishedDate": "2025-11-19T07:30:00Z",
+    "category": "technology",
+    "imageUrl": "/images/eu-tech-regulation.jpg",
+    "imageAlt": "European Union flag with tech company logos",
+    "articleUrl": "/articles/eu-tech-regulation",
+    "content": "Full article content would go here...",
+    "tags": ["technology", "regulation", "EU"],
+    "views": 12890,
+    "engagement": {
+      "views": 12890,
+      "shares": 567,
+      "comments": 134,
+      "readTime": 6.1
+    }
+  },
+  {
+    "id": "art-003",
+    "headline": "Climate Summit Reaches Landmark Agreement",
+    "summary": "World leaders commit to ambitious new targets for carbon reduction following intense negotiations at the international climate summit.",
+    "author": "Sarah Johnson",
+    "publishedDate": "2025-11-18T18:00:00Z",
+    "category": "climate",
+    "imageUrl": "/images/climate-summit.jpg",
+    "imageAlt": "World leaders shaking hands at climate summit podium",
+    "articleUrl": "/articles/climate-summit-agreement",
+    "content": "Full article content would go here...",
+    "tags": ["climate", "environment", "policy"],
+    "views": 9234,
+    "engagement": {
+      "views": 9234,
+      "shares": 445,
+      "comments": 201,
+      "readTime": 5.8
+    }
+  },
+  {
+    "id": "art-004",
+    "headline": "Central Banks Signal Shift in Monetary Policy",
+    "summary": "Major central banks indicated a potential change in interest rate policies, affecting global financial markets and currency valuations.",
+    "author": "Robert Taylor",
+    "publishedDate": "2025-11-18T14:30:00Z",
+    "category": "economics",
+    "imageUrl": "/images/central-banks.jpg",
+    "imageAlt": "Federal Reserve building exterior with American flag",
+    "articleUrl": "/articles/central-bank-policy-shift",
+    "content": "Full article content would go here...",
+    "tags": ["economics", "monetary-policy", "interest-rates"],
+    "views": 18456,
+    "engagement": {
+      "views": 18456,
+      "shares": 234,
+      "comments": 67,
+      "readTime": 3.9
+    }
+  },
+  {
+    "id": "art-005",
+    "headline": "AI in Healthcare: Promise and Peril",
+    "summary": "As artificial intelligence transforms medical diagnostics and treatment, questions emerge about ethics, privacy, and the future of healthcare delivery.",
+    "author": "Dr. Emily Watson",
+    "publishedDate": "2025-11-18T10:00:00Z",
+    "category": "opinion",
+    "imageUrl": "/images/ai-healthcare.jpg",
+    "imageAlt": "Doctor using AI diagnostic software on tablet",
+    "articleUrl": "/articles/ai-healthcare-analysis",
+    "content": "Full article content would go here...",
+    "tags": ["AI", "healthcare", "technology", "ethics"],
+    "views": 7892,
+    "engagement": {
+      "views": 7892,
+      "shares": 189,
+      "comments": 156,
+      "readTime": 7.2
+    }
+  },
+  {
+    "id": "art-006",
+    "headline": "Emerging Markets Show Resilience Despite Global Headwinds",
+    "summary": "Developing economies demonstrate unexpected strength as traditional economic powerhouses face challenges, reshaping global investment strategies.",
+    "author": "Carlos Rodriguez",
+    "publishedDate": "2025-11-17T16:00:00Z",
+    "category": "markets",
+    "imageUrl": "/images/emerging-markets.jpg",
+    "imageAlt": "Skyline of emerging market financial district",
+    "articleUrl": "/articles/emerging-markets-resilience",
+    "content": "Full article content would go here...",
+    "tags": ["emerging-markets", "investing", "global-economy"],
+    "views": 5632,
+    "engagement": {
+      "views": 5632,
+      "shares": 123,
+      "comments": 45,
+      "readTime": 5.1
+    }
+  },
+  {
+    "id": "art-007",
+    "headline": "The Future of Work: Remote vs. Office Debate Intensifies",
+    "summary": "Major corporations diverge on workplace policies as studies reveal complex impacts of remote work on productivity, culture, and employee wellbeing.",
+    "author": "Amanda Lee",
+    "publishedDate": "2025-11-17T12:00:00Z",
+    "category": "business",
+    "imageUrl": "/images/future-of-work.jpg",
+    "imageAlt": "Split image showing home office and corporate office space",
+    "articleUrl": "/articles/future-of-work-debate",
+    "content": "Full article content would go here...",
+    "tags": ["workplace", "remote-work", "business-culture"],
+    "views": 11245,
+    "engagement": {
+      "views": 11245,
+      "shares": 678,
+      "comments": 312,
+      "readTime": 6.7
+    }
+  },
+  {
+    "id": "art-008",
+    "headline": "Cybersecurity Threats Evolve in Age of AI",
+    "summary": "Security experts warn that artificial intelligence is creating both new defensive capabilities and unprecedented attack vectors in the digital landscape.",
+    "author": "David Park",
+    "publishedDate": "2025-11-16T09:00:00Z",
+    "category": "technology",
+    "imageUrl": "/images/cybersecurity.jpg",
+    "imageAlt": "Abstract representation of digital security and network protection",
+    "articleUrl": "/articles/ai-cybersecurity-threats",
+    "content": "Full article content would go here...",
+    "tags": ["cybersecurity", "AI", "technology"],
+    "views": 8934,
+    "engagement": {
+      "views": 8934,
+      "shares": 445,
+      "comments": 98,
+      "readTime": 5.5
+    }
+  }
+]
