@@ -1,96 +1,245 @@
-# 🤖 AI Coding Workshop: Learn to Pair Program with Robots (Sort Of)
+# 🤖 AI Coding Workshop: Learn to Use AI Tools Effectively
 
-Welcome! You're about to spend a day learning how to work with AI coding assistants without losing your mind, your job, or your ability to think critically. This repository contains everything you need to become dangerously competent with AI tools.
+**Learn to work with AI coding assistants without losing your mind, your job, or your ability to think critically.**
 
-## Prerequisites
+This is a hands-on workshop with **6 real coding challenges** that teach you to use AI tools like Claude Code, GitHub Copilot, and Codex effectively and safely.
 
-**You should have:**
-- A laptop (phones won't cut it, sorry)
-- An AI coding tool installed (Claude Code, Codex, GitHub Copilot, etc.)
-- Git (you're a developer, you have this)
-- Node.js 18+ (we're not animals)
-- A healthy dose of skepticism (essential)
-- Coffee/tea (not required but highly recommended)
+---
 
-**You don't need:**
-- Expert-level skills in anything
-- Prior AI tool experience (that's what we're teaching!)
-- AWS expertise (we'll guide you through it)
-- Perfect understanding of everything (that's why you're here)
+## 🚀 Quick Start (5 Minutes)
 
-## Quick Start
+### 1. Clone This Repository
+```bash
+git clone https://github.com/jamiebrown201/AI-Coding-Workshop.git
+cd AI-Coding-Workshop
+```
 
-Run this magical command:
+### 2. Install Dependencies
+```bash
+npm install
+```
 
+### 3. Verify Everything Works
 ```bash
 ./scripts/verify-setup.sh
 ```
 
-If everything's green, you're golden. If not, see [GETTING_STARTED.md](GETTING_STARTED.md) for troubleshooting, or just ask someone nearby. We're friendly.
-
-## Workshop Structure
-
-This workshop is organized into six modules, each building on the previous:
-
-1. **[Foundations & First Steps](modules/01-foundations/)** - Get started with AI-assisted coding
-2. **[Understanding Codebases](modules/02-codebase-understanding/)** - Use AI to explore legacy systems
-3. **[Full-Stack Features](modules/03-full-stack/)** - Build complete features with AI help
-4. **[Code Review & Security](modules/04-code-review/)** - Maintain quality and catch vulnerabilities
-5. **[Team Practices](modules/05-team-practices/)** - Adopt AI tools responsibly
-6. **[Capstone Challenge](modules/06-capstone/)** - Put it all together
-
-## Working on Your Own?
-
-This workshop is designed for in-person sessions but works perfectly for self-paced learning. Check out [docs/self-paced-guide.md](docs/self-paced-guide.md) for guidance on working through the materials independently.
-
-## Key Documents
-
-- **[Getting Started Guide](GETTING_STARTED.md)** - Setup and installation
-- **[Security Checklist](docs/security-checklist.md)** - Your new best friend
-- **[Prompting Guide](docs/prompting-guide.md)** - How to talk to AI effectively
-- **[Anti-Patterns](docs/anti-patterns.md)** - What NOT to do (learn from others' mistakes)
-- **[Troubleshooting](docs/troubleshooting.md)** - For when things go sideways
-
-## Philosophy
-
-This workshop is built on a few core beliefs:
-
-- **AI tools are just tools** - They're not magic, and they're not replacing you
-- **Skepticism is healthy** - Question everything, including what AI suggests
-- **Context matters more than prompts** - Giving AI the *right* information beats clever wording
-- **Understanding > Speed** - Fast code you don't understand is a liability
-- **Security is non-negotiable** - AI makes mistakes; you catch them
-
-## What You'll Learn
-
-By the end of this workshop, you'll be able to:
-- ✅ Use AI tools effectively for specific tasks
-- ✅ Review AI-generated code critically
-- ✅ Avoid common security pitfalls
-- ✅ Work with AI within team standards
-- ✅ Know when to trust AI and when to question it
-- ✅ Measure the actual impact of AI tools on your work
-
-## What You Won't Learn
-
-This isn't about:
-- ❌ Blindly trusting AI to write your code
-- ❌ Replacing your thinking with prompts
-- ❌ Getting rich quick with AI (sorry)
-- ❌ Becoming an "AI expert" overnight
-
-## Contributing
-
-Found a bug? Have a suggestion? Open an issue or PR. This workshop is a living document.
-
-## License
-
-MIT License - use this however you want. Teach it, adapt it, make it better.
-
-## Support
-
-Stuck? Check the [troubleshooting guide](docs/troubleshooting.md) or open an issue.
+✅ If you see green checkmarks, you're ready to start!
+❌ If not, check [GETTING_STARTED.md](GETTING_STARTED.md) for troubleshooting.
 
 ---
 
-**Let's build something. Carefully.**
+## 📚 The 6 Challenges
+
+Each challenge is a real coding task. You'll use AI to help, but you're in control.
+
+### Challenge 1: Build an Accessible Component (30 min)
+**What you'll do:** Build a React article preview component using AI assistance
+**What you'll learn:** AI is great at boilerplate but misses accessibility
+**The catch:** AI will forget things like alt text and keyboard navigation
+
+👉 **[Start Challenge 1](modules/01-foundations/exercises/article-preview/README.md)**
+
+---
+
+### Challenge 2: Debug a Safari Bug (30 min)
+**What you'll do:** Fix a paywall that works in Chrome but not Safari
+**What you'll learn:** When AI helps vs when it confidently misleads
+**The catch:** AI will make confident guesses about browser bugs without real knowledge
+
+👉 **[Start Challenge 2](modules/01-foundations/exercises/bug-hunt/README.md)**
+
+---
+
+### Challenge 3: Understand Legacy Code (30 min)
+**What you'll do:** Map the architecture of a messy subscription system
+**What you'll learn:** Context quality matters more than prompt quality
+**The catch:** Feeding AI too much code makes it worse, not better
+
+👉 **[Start Challenge 3](modules/02-codebase-understanding/legacy-code/README.md)**
+
+---
+
+### Challenge 4: Plan a Safe Refactor (30 min)
+**What you'll do:** Plan migrating jQuery code to React without breaking production
+**What you'll learn:** AI loves "rewrite everything" (which is usually a bad idea)
+**The catch:** Big-bang rewrites introduce bugs; incremental is safer
+
+👉 **[Start Challenge 4](modules/02-codebase-understanding/README.md#activity-2b-refactoring-planning-30-min)**
+
+---
+
+### Challenge 5: Build a Real-Time Dashboard (75 min)
+**What you'll do:** Build a complete feature from scratch (frontend + backend + tests)
+**What you'll learn:** Where AI helps most (boilerplate) and least (architecture)
+**The catch:** AI can't make strategic decisions; you have to
+
+👉 **[Start Challenge 5](modules/03-full-stack/README.md)**
+
+---
+
+### Challenge 6: Hunt for Security Bugs (30 min)
+**What you'll do:** Review AI-generated code and find planted vulnerabilities
+**What you'll learn:** 45% of AI code has security issues
+**The catch:** AI-generated code looks right but is often dangerously wrong
+
+👉 **[Start Challenge 6](modules/04-code-review/vulnerable-prs/CommentSystem.js)**
+
+---
+
+### Challenge 7: Final Project (60 min)
+**What you'll do:** Build a trending topics feature with real-time data
+**What you'll learn:** Everything from the previous challenges under time pressure
+**The catch:** You have 60 minutes and must pass a security checklist
+
+👉 **[Start Final Challenge](modules/06-capstone/README.md)**
+
+---
+
+## 🎯 What You'll Learn
+
+By completing these challenges, you'll be able to:
+
+✅ **Generate code faster** - Without sacrificing quality
+✅ **Spot AI mistakes** - Especially security vulnerabilities
+✅ **Write better prompts** - Context quality > clever wording
+✅ **Review critically** - Trust but verify everything
+✅ **Work safely** - Security is non-negotiable
+✅ **Know the limits** - What AI can and can't do
+
+---
+
+## 🛠️ What You Need
+
+**Required:**
+- Node.js 18+
+- Git
+- An AI coding tool (Claude Code, GitHub Copilot, or Codex)
+- Basic JavaScript/React knowledge
+
+**Don't need:**
+- Expert coding skills (we'll guide you)
+- Prior AI tool experience (that's what you're learning!)
+- AWS knowledge (we use mock data)
+
+---
+
+## 📖 Two Ways to Learn
+
+### Option 1: Self-Paced (Recommended for Solo Learners)
+Work through challenges at your own speed. Each challenge has:
+- Clear instructions in its README
+- Starter code to begin with
+- Complete solutions to check against
+- Estimated time to complete
+
+**Start here:** [Self-Paced Guide](docs/self-paced-guide.md)
+
+### Option 2: In-Person Workshop (For Teams/Groups)
+Run as a facilitated full-day workshop with:
+- Group activities and discussions
+- Competitive elements and badges
+- Peer learning opportunities
+- Facilitator guidance
+
+**Start here:** [Facilitator Guide](WORKSHOP_FACILITATOR_GUIDE.md)
+
+---
+
+## 🔑 Key Principles You'll Learn
+
+### 1. Context Quality > Prompt Quality
+Giving AI the *right* 50 lines beats dumping 5000 lines. You'll learn this the hard way in Challenge 3.
+
+### 2. Understanding > Speed
+Fast code you don't understand is a liability. Every challenge requires you to explain what AI generated.
+
+### 3. Security is Non-Negotiable
+45% of AI-generated code has vulnerabilities. Challenge 6 will show you why code review is essential.
+
+### 4. AI Augments, Doesn't Replace
+AI handles boilerplate. You handle thinking. This distinction becomes clear by Challenge 5.
+
+### 5. Skepticism is Healthy
+Question everything AI suggests. Challenge 2 will teach you this when AI confidently suggests the wrong fix.
+
+---
+
+## 📁 Repository Structure
+
+```
+AI-Coding-Workshop/
+├── modules/
+│   ├── 01-foundations/          # Challenges 1-2: Basic AI usage
+│   ├── 02-codebase-understanding/ # Challenges 3-4: Legacy code
+│   ├── 03-full-stack/           # Challenge 5: Complete feature
+│   ├── 04-code-review/          # Challenge 6: Security review
+│   ├── 05-team-practices/       # Team adoption guidelines
+│   └── 06-capstone/             # Challenge 7: Final project
+├── docs/
+│   ├── security-checklist.md    # Run before committing AI code
+│   ├── prompting-guide.md       # Write better prompts
+│   └── anti-patterns.md         # Common mistakes to avoid
+├── data/
+│   └── articles/                # Mock data for exercises
+└── scripts/
+    ├── verify-setup.sh          # Check you're ready
+    └── security-scan.sh         # Scan for vulnerabilities
+```
+
+---
+
+## 🏃 Get Started Now
+
+### Beginner? Start Here:
+1. Read [GETTING_STARTED.md](GETTING_STARTED.md)
+2. Do [Challenge 1](modules/01-foundations/exercises/article-preview/README.md)
+3. Then [Challenge 2](modules/01-foundations/exercises/bug-hunt/README.md)
+
+### Experienced? Jump In:
+1. Run `./scripts/verify-setup.sh`
+2. Pick any challenge that interests you
+3. Work through at your own pace
+
+### Running a Workshop? Guide Here:
+1. Read [WORKSHOP_FACILITATOR_GUIDE.md](WORKSHOP_FACILITATOR_GUIDE.md)
+2. Review all challenge READMEs
+3. Prepare materials listed in guide
+
+---
+
+## ⚡ Quick Links
+
+**For Learners:**
+- 📝 [Getting Started](GETTING_STARTED.md)
+- 🎯 [Self-Paced Guide](docs/self-paced-guide.md)
+- 🔒 [Security Checklist](docs/security-checklist.md)
+- 💡 [Prompting Guide](docs/prompting-guide.md)
+
+**For Facilitators:**
+- 👥 [Facilitator Guide](WORKSHOP_FACILITATOR_GUIDE.md)
+- 📊 [Workshop Summary](WORKSHOP_SUMMARY.md)
+- ✅ [Complete Audit](COMPLETE_AUDIT.md)
+
+**Reference:**
+- 🚫 [Anti-Patterns](docs/anti-patterns.md)
+- 🔧 [Troubleshooting](docs/troubleshooting.md)
+
+---
+
+## 💬 Support
+
+**Stuck on setup?** Check [GETTING_STARTED.md](GETTING_STARTED.md)
+**Stuck on a challenge?** Each challenge README has hints
+**Found a bug?** Open an issue
+**Have suggestions?** PRs welcome!
+
+---
+
+## 📜 License
+
+MIT License - Use freely, adapt, share, and improve.
+
+---
+
+**Ready? Pick a challenge and start building. Carefully.** 🚀
