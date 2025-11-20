@@ -123,7 +123,9 @@ This will give you generic, surface-level analysis.
 
 **Step 1: Entry Point**
 ```
-Prompt: "Looking at this server.js file, what can you tell me about:
+Prompt: "I'm working on the Legacy Code Architecture Analysis in modules/02-codebase-understanding/legacy-code/
+
+Looking at this server.js file, what can you tell me about:
 1. The main routes being registered
 2. External services being integrated
 3. Middleware being used
@@ -134,7 +136,9 @@ Prompt: "Looking at this server.js file, what can you tell me about:
 
 **Step 2: Trace a Feature**
 ```
-Prompt: "I want to understand the 'create subscription' flow.
+Prompt: "I'm working on the Legacy Code Architecture Analysis in modules/02-codebase-understanding/legacy-code/
+
+I want to understand the 'create subscription' flow.
 Here's the route handler [paste route code].
 Here's the service [paste service code].
 Can you explain the flow from HTTP request to database?"
@@ -142,7 +146,9 @@ Can you explain the flow from HTTP request to database?"
 
 **Step 3: Understand Integrations**
 ```
-Prompt: "This service integrates with Stripe and PayPal.
+Prompt: "I'm working on the Legacy Code Architecture Analysis in modules/02-codebase-understanding/legacy-code/
+
+This service integrates with Stripe and PayPal.
 [Paste relevant service methods]
 What's the abstraction strategy here?
 What could go wrong?"

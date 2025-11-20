@@ -41,9 +41,9 @@ export function calculateEngagementScore(views, shares, comments) {
 
 ## Example Prompts
 
-- "Write Jest tests for the `calculateEngagementScore` function in `utils/analytics.js`."
-- "What are some edge cases for the `calculateEngagementScore` function? Write tests for them."
-- "How would the `calculateEngagementScore` function handle invalid inputs like strings or nulls? Write tests to verify this."
+- "I'm working on the AI-Powered Test Generation exercise in modules/04-code-review/ai-powered-tests/. Write Jest tests for the `calculateEngagementScore` function in `utils/analytics.js`."
+- "I'm working on the AI-Powered Test Generation exercise in modules/04-code-review/ai-powered-tests/. What are some edge cases for the `calculateEngagementScore` function? Write tests for them."
+- "I'm working on the AI-Powered Test Generation exercise in modules/04-code-review/ai-powered-tests/. How would the `calculateEngagementScore` function handle invalid inputs like strings or nulls? Write tests to verify this."
 
 ## Success Criteria
 

@@ -141,9 +141,13 @@ const sampleArticle = {
 > "Create a React component for article previews"
 
 **✅ Better prompt:**
-> "Create a React TypeScript component called ArticlePreview that displays article metadata (headline, summary, author, date) with an optional image. Must be keyboard accessible, have proper ARIA labels, and be responsive from 320px to 1920px. Use semantic HTML."
+> "I'm working on the Article Preview exercise in modules/01-foundations/exercises/article-preview/
+>
+> Create a React TypeScript component called ArticlePreview that displays article metadata (headline, summary, author, date) with an optional image. Must be keyboard accessible, have proper ARIA labels, and be responsive from 320px to 1920px. Use semantic HTML."
 
 **✅ Even better (with context):**
+> "I'm working on the Article Preview exercise in modules/01-foundations/exercises/article-preview/
+>
 > Here's the interface:
 > ```typescript
 > interface ArticlePreviewProps {
@@ -152,7 +156,7 @@ const sampleArticle = {
 > }
 > ```
 >
-> Create an accessible, responsive ArticlePreview component that meets WCAG 2.1 AA standards. Include proper focus states and alt text handling.
+> Create an accessible, responsive ArticlePreview component that meets WCAG 2.1 AA standards. Include proper focus states and alt text handling."
 
 ## Testing Your Component
 

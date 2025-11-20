@@ -119,7 +119,9 @@ npm test
 5. Use AI to suggest possible causes based on error messages
 
 **Example AI prompt:**
-> I have a React component that renders fine in Chrome but not Safari. The console shows [your error here]. What are common Safari-specific issues that could cause this?
+> "I'm working on the Safari Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+>
+> I have a React component that renders fine in Chrome but not Safari. The console shows [your error here]. What are common Safari-specific issues that could cause this?"
 
 ### Step 3: Fix (15 min)
 1. Make targeted changes based on your investigation
@@ -139,10 +141,14 @@ npm test
 > [pastes entire component]
 
 **✅ Good approach:**
-> "I have a paywall component that works in Chrome but not Safari. In Safari, I see this error in the console: [error message]. The component uses [specific features/libraries]. What are potential Safari compatibility issues?"
+> "I'm working on the Safari Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+>
+> I have a paywall component that works in Chrome but not Safari. In Safari, I see this error in the console: [error message]. The component uses [specific features/libraries]. What are potential Safari compatibility issues?"
 
 **✅ Even better:**
-> "The component renders in Safari (I can see it in the Elements inspector) but it's not visible on screen. CSS shows 'display: flex' is applied. This works in Chrome. What Safari flexbox bugs could cause invisible-but-present elements?"
+> "I'm working on the Safari Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+>
+> The component renders in Safari (I can see it in the Elements inspector) but it's not visible on screen. CSS shows 'display: flex' is applied. This works in Chrome. What Safari flexbox bugs could cause invisible-but-present elements?"
 
 ## Common Safari Gotchas
 
