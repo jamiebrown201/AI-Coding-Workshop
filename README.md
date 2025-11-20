@@ -197,7 +197,7 @@ AI handles boilerplate. You handle thinking. This distinction becomes clear by C
 
 ### 5. Context Quality > Prompt Quality
 
-Giving AI the _right_ 50 lines beats dumping 5000 lines. You'll learn this the hard way in Challenge 3.
+Giving AI the _right_ 50 lines beats dumping 5000 lines.
 
 ---
 
