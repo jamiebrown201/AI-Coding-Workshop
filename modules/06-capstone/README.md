@@ -35,9 +35,10 @@ By the end of this module, you'll be able to:
 
 ## Structure/Activities
 
-- **Checkpoint 1 (20 min): Backend Working**
-- **Checkpoint 2 (40 min): Full Integration**
-- **Checkpoint 3 (55 min): Polish & Security**
+- **Checkpoint 1 (15 min): Backend Working**
+- **Checkpoint 2 (30 min): Full Integration**
+- **Checkpoint 3 (50 min): Polish & Security**
+- **Checkpoint 4 (60 min): Demo Time!**
 
 ## Prerequisites
 
@@ -61,7 +62,8 @@ npm install
 
 - [ ] You have built a working, secure, and maintainable feature.
 - [ ] You can demo your feature and explain your technical decisions.
-- [ ] You have a clear understanding of what you would do differently next time.
+- [ ] You can identify what worked well with AI and what didn't work so well.
+- [ ] You know what you would add or improve if you had more time.
 
 ## Common Pitfalls
 
