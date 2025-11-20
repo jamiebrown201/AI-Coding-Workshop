@@ -2,7 +2,7 @@
 
 **For instructors running the AI Coding Workshop**
 
-## Pre-Workshop Preparation (2 Weeks Before)
+## Pre-Workshop Preparation
 
 ### Technical Setup
 - [ ] Test all exercises on your machine
@@ -28,15 +28,15 @@
 - [ ] Test screen mirroring for demos
 
 ### Communications
-- [ ] Send pre-workshop email (2 days before)
+- [ ] Send pre-workshop email
 - [ ] Include setup instructions and repo link
 - [ ] Pre-survey: "What's your biggest question about AI tools?"
 - [ ] Remind about bringing laptops
 - [ ] Share troubleshooting contact info
 
-## Day-Of Setup (Morning Of)
+## Day-Of Setup
 
-### 60 Minutes Before
+### Early Setup
 - [ ] Arrive early and test AV equipment
 - [ ] Set up "Hopes & Fears" boards
 - [ ] Arrange materials on tables
@@ -44,7 +44,7 @@
 - [ ] Write schedule on whiteboard
 - [ ] Set up music (optional, for breaks)
 
-### 30 Minutes Before
+### As People Arrive
 - [ ] Greet early arrivals
 - [ ] Help with setup issues
 - [ ] Make people feel welcome
@@ -53,20 +53,15 @@
 
 ## Module-by-Module Facilitation Guide
 
-### Opening (40 min)
+### Opening
 
-#### Welcome & Setup (10 min)
+#### Welcome & Setup
 **Your energy sets the tone. Be welcoming and enthusiastic.**
 
 **Script:**
 > "Welcome everyone! This is the AI Coding Workshop. Today is about learning to work WITH AI tools, not being replaced BY them. We're going to build real code, make real mistakes, and learn from both."
 
-**Ground rules (elicit from group):**
-- Ask: "What ground rules would make this a good learning experience?"
-- Capture on whiteboard
-- Add any missing: mistakes are data, challenge claims, skepticism welcome
-
-#### Icebreaker & Introductions (10 min)
+#### Icebreaker & Introductions
 **Keep it casual and moving quickly.**
 
 **Format:**
@@ -77,11 +72,11 @@ Go around the room. Each person shares:
 
 **Facilitation tips:**
 - Start with yourself to set the tone
-- Keep it light and quick (30-45 seconds per person)
+- Keep it light and moving quickly
 - The answers are usually more fun than expected
 - If someone's stuck, prompt: "Practical or fun?" or "Survival or entertainment?"
 
-#### Hopes & Fears (10 min)
+#### Hopes & Fears
 **This is crucial for surfacing concerns early.**
 
 **Instructions:**
@@ -92,7 +87,7 @@ Go around the room. Each person shares:
 > One hope you have for AI tools. One concern or fear."
 
 **Facilitation tips:**
-- Give people 2-3 minutes to think and write
+- Give people time to think and write
 - Read the room - if people seem comfortable sharing, go around verbally
 - If people prefer anonymity, use the sticky notes on boards
 - Can mix both approaches
@@ -101,28 +96,28 @@ Go around the room. Each person shares:
 
 **Leave boards visible all day (if using them)!**
 
-#### Objectives (5 min)
+#### Objectives
 **Be clear and realistic about what they'll learn.**
 
-### Module 1: Foundations (90 min)
+### Module 1: Foundations
 
-#### Energizer: Wild Code Challenge (5 min)
+#### Energizer: Wild Code Challenge
 **Get creative energy flowing.**
 
 **Instructions:**
-> "You have 2 minutes. Create the most interesting thing you can with your AI tool. Totally open-ended. Surprise us!"
+> "Create the most interesting thing you can with your AI tool. Totally open-ended. Surprise us!"
 
 **Show 3-4 examples, keep it light and fun.**
 
-#### Exercise 1A: Article Preview (35 min)
+#### Exercise 1A: Article Preview
 
-**Setup (5 min):**
+**Setup:**
 - Demo the setup commands
 - Show them the requirements file
 - Point out the fixtures
 - Emphasize: "You must understand every line you commit"
 
-**During exercise (20 min):**
+**During exercise:**
 - Circulate constantly
 - Don't give answers, ask questions:
   - "What does this prop do?"
@@ -136,7 +131,7 @@ Go around the room. Each person shares:
 - AI missing focus states
 - Developers copying without understanding
 
-**Group processing (10 min):**
+**Group processing:**
 - Think-Pair-Share format
 - Ask: "What surprised you? What went wrong?"
 - Gallery walk (quick)
@@ -146,43 +141,43 @@ Go around the room. Each person shares:
 - Skip gallery walk
 - Focus on key takeaways only
 
-#### Processing Break (5 min)
+#### Processing Break
 **Give them reflection time. Brains need it.**
 
 Quick write prompt: "One thing I learned, one question I have"
 
-#### Exercise 1B: Safari Bug (35 min)
+#### Exercise 1B: Safari Bug
 
-**Setup as mystery (5 min):**
+**Setup as mystery:**
 - Frame as real bug report
 - Intentionally vague (mimics reality)
 - Gamification: "First to solve gets badge!"
 
-**During exercise (20 min):**
+**During exercise:**
 - Circulate with hints (don't give answer!)
-- If really stuck after 15 min: "Have you checked flexbox support in Safari?"
+- If really stuck: "Have you checked flexbox support in Safari?"
 - Watch for AI confidently suggesting wrong solutions
 
-**Debrief (10 min):**
-- Winner explains process (3 min)
+**Debrief:**
+- Winner explains process
 - Others share alternative approaches
 - **Critical question:** "When did AI help? When did it mislead?"
 - Show of hands: "Who asked AI first before looking at the code?"
 
 **Key lesson:** Browser dev tools > AI guesses
 
-### Break (15 min)
+### Break
 
-#### Quick Energizer: Debug or Feature (3 min)
+#### Quick Energizer: Debug or Feature
 **Keep energy up before break.**
 
 Show code snippets, group votes: bug or feature?
 
-**Then actual break (12 min).**
+**Then actual break.**
 
-### Module 2: Codebase Understanding (75 min)
+### Module 2: Codebase Understanding
 
-#### Opening: Context Quality Lesson (5 min)
+#### Opening: Context Quality Lesson
 **This might be the most important lesson of the day.**
 
 **Script:**
@@ -194,15 +189,15 @@ Show code snippets, group votes: bug or feature?
 
 **Use analogy:** Explaining to a new teammate
 
-#### Activity 2A: Architecture Analysis (30 min)
+#### Activity 2A: Architecture Analysis
 
-**Setup (5 min):**
+**Setup:**
 - Frame as archaeology
 - No judgment on code quality
 - Focus on understanding
 - Use AI strategically
 
-**During exploration (15 min):**
+**During exploration:**
 - Groups work on diagrams
 - Encourage visual thinking
 - Ask probing questions:
@@ -215,55 +210,55 @@ Show code snippets, group votes: bug or feature?
 - AI making wrong assumptions about business logic
 - Developers not verifying AI explanations
 
-**Gallery walk (10 min):**
+**Gallery walk:**
 - Post diagrams
 - Silent walk with sticky notes
 - Brief discussion of patterns
 
 **Key lesson:** Start at entry point, follow the path, expand deliberately
 
-#### Processing (5 min)
+#### Processing
 Pair discussion on what AI helped with vs. what it got wrong
 
-#### Activity 2B: Refactoring Planning (30 min)
+#### Activity 2B: Refactoring Planning
 
-**Setup (5 min):**
+**Setup:**
 - jQuery → React migration scenario
 - Emphasize safe, incremental approach
 - **Will AI suggest "rewrite everything"?** (Spoiler: yes)
 
-**Planning (20 min):**
+**Planning:**
 - Groups create migration plans
 - Must include: phases, testing, risks, rollback
 - Gamification: Self-score on safety/feasibility
 
-**Share (5 min):**
+**Share:**
 - Round-robin: Each group's #1 risk
 - **Facilitator point:** "How many plans did AI suggest big-bang rewrites?"
 
 **Key lesson:** Incremental > big-bang, AI loves rewrites (bad!)
 
-### Lunch (60 min)
+### Lunch
 
-**Optional:** Lunch & Learn Lightning Talks (volunteers share 3-min tips)
+**Optional:** Lunch & Learn Lightning Talks (volunteers share quick tips)
 
-### Post-Lunch Energizer: Coding Pictionary (10 min)
+### Post-Lunch Energizer: Coding Pictionary
 **Get blood flowing after lunch.**
 
 Teams draw and guess coding concepts. Keep it fast and fun.
 
-### Module 3: Full-Stack Features (90 min)
+### Module 3: Full-Stack Features
 
-#### Challenge Introduction (5 min)
+#### Challenge Introduction
 
 **Script:**
-> "You have 75 minutes to build a complete feature. Real-time analytics dashboard. Frontend, backend, tests, docs.
+> "Build a complete feature. Real-time analytics dashboard. Frontend, backend, tests, docs.
 >
 > Working means: it runs, it's secure, someone else can maintain it."
 
 **Emphasize:** Plan first!
 
-#### Team Formation & Planning (10 min)
+#### Team Formation & Planning
 - Self-organize into pairs/trios
 - Must write plan before coding
 - Quick facilitator review of plans
@@ -274,51 +269,51 @@ Teams draw and guess coding concepts. Keep it fast and fun.
 - Unclear architecture
 - "We'll figure it out as we go"
 
-#### Build Session (50 min)
+#### Build Session
 
-**Checkpoint 1 (20 min):**
+**Checkpoint 1:**
 - Quick standup: "Show me your backend"
 - Peer feedback
 - Facilitator tips on common struggles
 
-**Checkpoint 2 (40 min):**
+**Checkpoint 2:**
 - Another standup: "Frontend progress"
 - Intro competition: "Best error handling wins badge"
 
-**Final push (10 min):**
+**Final push:**
 - Finalize for demo
 - Test everything works
 
 **Facilitator role:**
 - Circulate constantly
-- Time warnings at 30 min, 15 min, 5 min remaining
+- Give time warnings as needed
 - Keep energy high
 - Help unstuck people, but don't solve for them
 
-#### Demo Showcase (20 min)
+#### Demo Showcase
 
 **Format:**
-- 3 minutes per team
+- Quick demos from each team
 - Others provide feedback: "I like, I wish, What if"
 - Awards: Best Error Handling, Cleanest Code, Best Docs, etc.
 
 **Make awards fun and meaningful!**
 
-#### Debrief (5 min)
+#### Debrief
 - "What was harder than expected?"
 - "What did AI do well?"
 - "What required human judgment?"
 
 **Key takeaway:** Architecture is human work
 
-### Break (15 min)
+### Break
 
-#### Energizer: Tech Trivia (5 min before break)
+#### Energizer: Tech Trivia
 Quick-fire questions about today's learning
 
-### Module 4: Code Review & Security (60 min)
+### Module 4: Code Review & Security
 
-#### Opening: Security Fails (5 min)
+#### Opening: Security Fails
 
 **Set serious tone (but not scary).**
 
@@ -327,19 +322,19 @@ Quick-fire questions about today's learning
 >
 > This matters. Let's learn to catch these before production."
 
-#### Activity 4A: Security Review (25 min)
+#### Activity 4A: Security Review
 
-**Setup as bug bounty (5 min):**
+**Setup as bug bounty:**
 - Point system explained
 - At least 5 vulnerabilities planted
 - Can use AI to help scan, but must verify
 
-**Review session (15 min):**
+**Review session:**
 - Work individually or pairs
 - Track findings
 - Score each issue
 
-**Results (5 min):**
+**Results:**
 - Reveal all vulnerabilities
 - Score teams
 - Award "Bug Bounty Hunter" badge
@@ -347,31 +342,31 @@ Quick-fire questions about today's learning
 
 **Important lesson:** AI scanning is ONE tool, not the only tool
 
-#### Activity 4B: Refactoring (25 min)
+#### Activity 4B: Refactoring
 
-**Setup (5 min):**
+**Setup:**
 - Safe refactoring emphasized
 - Tests must pass
 - Incremental changes
 
-**Refactoring work (15 min):**
+**Refactoring work:**
 - Modernize jQuery → React
 - All tests stay green
 - Commit frequently
 
-**Share (5 min):**
+**Share:**
 - Different approaches
 - Trade-offs discussed
 - "Who got tricked by AI suggesting to delete critical code?"
 
-#### Security Deep Dive (5 min)
+#### Security Deep Dive
 - Reinforce 45% statistic
 - Walk through checklist
 - "Use this. Every time."
 
-### Module 5: Team Practices (75 min)
+### Module 5: Team Practices
 
-#### Opening Discussion (10 min)
+#### Opening Discussion
 
 **Real talk format.**
 
@@ -379,30 +374,30 @@ Quick-fire questions about today's learning
 
 Capture on whiteboard, acknowledge seriously.
 
-#### Activity 5A: Guidelines (30 min)
+#### Activity 5A: Guidelines
 
-**Setup (5 min):**
+**Setup:**
 - 4 groups, 4 focus areas
 - Create SPECIFIC, ACTIONABLE guidelines
 - Not aspirational fluff
 
-**Guideline development (20 min):**
+**Guideline development:**
 - Groups work on their area
 - Test against scenarios
 - Make it usable
 
-**Share (5 min):**
-- 2 min per group
+**Share:**
+- Quick share from each group
 - Synthesize into unified document
 
 **Deliverable:** Real document teams can use
 
-#### Activity 5B: Responsible Use (25 min)
+#### Activity 5B: Responsible Use
 
 **Fishbowl discussion format:**
 - Inner circle discusses
 - Outer circle can tap in
-- Rotate topics every 7-8 minutes
+- Rotate topics as needed
 
 **Topics:**
 1. Junior developer learning
@@ -415,7 +410,7 @@ Capture on whiteboard, acknowledge seriously.
 - Bring it back to practical concerns
 - Level-specific prompts provided in module notes
 
-#### Synthesis (10 min)
+#### Synthesis
 
 **Individual reflection:**
 - "One practice I'll try next week"
@@ -427,25 +422,25 @@ Capture on whiteboard, acknowledge seriously.
 - Exchange contact info
 - Check in next week
 
-### Final Energizer: Code Roast (5 min)
+### Final Energizer: Code Roast
 Share funniest AI-generated code from the day. End on a laugh.
 
-### Module 6: Capstone (60 min)
+### Module 6: Capstone
 
-#### Opening: Reality Check (5 min)
+#### Opening: Reality Check
 
 **Script:**
 > "Before the final challenge, let's be real. AI tools are impressive but limited. They hallucinate, miss context, can't make strategic decisions.
 >
 > This capstone simulates real work: time pressure, competing concerns, trade-offs. You won't finish everything perfectly. That's realistic."
 
-#### Challenge Start (60 min)
+#### Challenge Start
 
-**Checkpoints at 15, 30, 50, 60 minutes:**
-- 15 min: Backend should be working
-- 30 min: Full integration complete
-- 50 min: Polish & security review
-- 60 min: Demo time!
+**Checkpoints:**
+- Backend should be working
+- Full integration complete
+- Polish & security review
+- Demo time!
 
 **Facilitator role:**
 - Circulate constantly
@@ -458,13 +453,13 @@ Share funniest AI-generated code from the day. End on a laugh.
 - Provided in module README
 - Emphasize: never skip security
 
-#### Demos (3 min each)
+#### Demos
 
 **Format:**
-- Show it working (90 sec)
-- Explain one decision (30 sec)
-- What worked/didn't work with AI (30 sec)
-- What you'd improve with more time (30 sec)
+- Show it working
+- Explain one decision
+- What worked/didn't work with AI
+- What you'd improve with more time
 
 **Prize Categories (Everyone votes):**
 - 🏆 **Silliest Idea** - Most absurd/ridiculous feature
@@ -476,9 +471,9 @@ Share funniest AI-generated code from the day. End on a laugh.
 
 **Make it celebratory! Winners get bragging rights.**
 
-### Closing (15 min)
+### Closing
 
-#### Return to "Hopes & Fears" (5 min)
+#### Return to "Hopes & Fears"
 
 **Script:**
 > "Remember these from this morning? Let's revisit."
@@ -487,7 +482,7 @@ Share funniest AI-generated code from the day. End on a laugh.
 - Read a few concerns: "Did we address these?"
 - Group reflection
 
-#### Final Takeaways (5 min)
+#### Final Takeaways
 
 **Ask group:** "What are your 3 biggest takeaways?"
 
@@ -498,7 +493,7 @@ Share funniest AI-generated code from the day. End on a laugh.
 - Understanding > Speed
 - Responsible adoption requires guidelines
 
-#### Action Planning (5 min)
+#### Action Planning
 
 **What happens Monday?**
 - Try one new practice
@@ -557,7 +552,7 @@ Share funniest AI-generated code from the day. End on a laugh.
 - [ ] Clean up space
 - [ ] Note what worked/didn't work for next time
 
-### Follow-Up (Within 1 Week)
+### Follow-Up
 - [ ] Send thank-you email
 - [ ] Share resources and materials
 - [ ] Provide access to solutions
@@ -582,21 +577,6 @@ Running a full-day workshop is exhausting. Take care of yourself:
 - Reflect after: what went well, what would you change?
 
 ## Quick Reference
-
-### Time Allocations
-- Opening: 40 min
-- Module 1: 90 min
-- Break: 15 min
-- Module 2: 75 min
-- Lunch: 60 min
-- Module 3: 90 min
-- Break: 15 min
-- Module 4: 60 min
-- Module 5: 75 min
-- Module 6: 60 min
-- Closing: 15 min
-
-**Total: ~6.5 hours + breaks**
 
 ### Key Messages
 1. Context quality > Prompt quality
