@@ -92,25 +92,7 @@ git clone https://github.com/jamiebrown201/AI-Coding-Workshop.git
 cd AI-Coding-Workshop
 ```
 
-### Step 3: Create Your Working Branch
-
-**Important:** Work on your own branch so you can commit code without affecting main.
-
-```bash
-# Create and switch to your personal branch
-git checkout -b workshop/yourname
-
-# For example:
-# git checkout -b workshop/jamie
-```
-
-This lets you:
-- Commit your work freely
-- Share code with others by pushing your branch
-- Keep main branch clean
-- See what others are building
-
-### Step 4: Install Dependencies
+### Step 3: Install Dependencies
 
 ```bash
 npm install
@@ -120,7 +102,7 @@ Go get coffee. Stretch. Check your email. Do NOT watch the terminal anxiously.
 
 **Note:** Some exercises in the `modules` directory have their own dependencies and `package.json` files. The `README.md` file for each exercise will guide you if you need to run `npm install` in a specific exercise directory.
 
-### Step 5: Run Setup Verification
+### Step 4: Run Setup Verification
 
 ```bash
 npm run verify
@@ -231,34 +213,34 @@ node scripts/verify-setup.js
 
 ## Git Workflow During the Workshop
 
-### Committing Your Work
+### Branch Naming Convention
 
-As you complete exercises, commit your code to your branch:
+**Important:** Use this format for all your work:
 
-```bash
-# Check what you've changed
-git status
-
-# Add files you want to commit
-git add modules/01-foundations/exercises/article-preview/
-
-# Commit with a descriptive message
-git commit -m "Complete Article Preview exercise"
+```
+workshop/your-name/exercise-name
 ```
 
-### Sharing Your Code
+Examples:
+- `workshop/jamie/article-preview`
+- `workshop/jamie/safari-bug`
+- `workshop/alex/legacy-code`
 
-Push your branch to share with others:
+### Creating Branches for Each Exercise
+
+Each exercise README will tell you when to create a branch. The pattern is:
 
 ```bash
-# First time pushing your branch
-git push -u origin workshop/yourname
+# Create branch for the exercise
+git checkout -b workshop/your-name/exercise-name
 
-# Subsequent pushes
-git push
+# Work on the exercise
+git add .
+git commit -m "Your commit message"
+
+# Push when ready to share
+git push -u origin workshop/your-name/exercise-name
 ```
-
-Now others can see your code at: `https://github.com/jamiebrown201/AI-Coding-Workshop/tree/workshop/yourname`
 
 ### Seeing Others' Work
 
@@ -268,17 +250,18 @@ git fetch --all
 git branch -r
 
 # Check out someone else's branch to see their code
-git checkout workshop/othername
+git checkout workshop/othername/article-preview
 
-# Go back to your branch
-git checkout workshop/yourname
+# Go back to main to start a new exercise
+git checkout main
 ```
 
 ### Important Notes
 
-- ⚠️ **Never push to main** - Always work on your branch
+- ⚠️ **Never push to main** - Always use the `workshop/your-name/exercise-name` format
+- ✅ **Create a new branch per exercise** - Keeps work organized
 - ✅ **Commit often** - Save your progress as you go
-- ✅ **Push regularly** - Share your work so others can learn from it
+- ✅ **Push when ready** - Share your work so others can learn from it
 - ✅ **Check out others' branches** - See different approaches to the same challenges
 
 ## What to Bring to the Workshop

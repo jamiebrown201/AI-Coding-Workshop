@@ -172,7 +172,15 @@ npm run dev
 
 ## Commit Your Work
 
+Create a branch for this exercise and push your work:
+
 ```bash
+# Create branch for this exercise
+git checkout -b workshop/your-name/article-preview
+
+# For example:
+# git checkout -b workshop/jamie/article-preview
+
 git add .
 git commit -m "feat: article preview component (with AI assistance)
 
@@ -184,7 +192,8 @@ git commit -m "feat: article preview component (with AI assistance)
 AI-assisted: boilerplate and styling
 Human-verified: accessibility, edge cases, semantics"
 
-git push origin your-name/article-preview
+# Push to your exercise branch
+git push -u origin workshop/your-name/article-preview
 ```
 
 ## Reflection Questions
