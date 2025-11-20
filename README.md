@@ -4,6 +4,8 @@
 
 This is a hands-on workshop with **7 real coding challenges** that teach you to use AI tools like Claude Code, GitHub Copilot, and Codex effectively and safely.
 
+**📖 [Full Setup Guide (GETTING_STARTED.md)](GETTING_STARTED.md)** - Detailed instructions for all setup steps
+
 ---
 
 ## 🚀 Quick Start (5 Minutes)
@@ -17,8 +19,6 @@ Popular options with setup guides:
 - **GitHub Copilot** - [Setup instructions](GETTING_STARTED.md#option-2-github-copilot)
 - **OpenAI Codex** - [Setup instructions](GETTING_STARTED.md#option-3-openai-codex)
 - **Or any other AI coding assistant** - The principles apply to all tools
-
-👉 **[Full setup guide](GETTING_STARTED.md)**
 
 ### 2. Clone This Repository
 ```bash
