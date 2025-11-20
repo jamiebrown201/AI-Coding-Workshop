@@ -1,0 +1,47 @@
+[
+  {
+    "id": "pay_sub_user_1000",
+    "subscriptionId": "sub_user_1000",
+    "provider": "apple",
+    "amount": 12,
+    "currency": "GBP",
+    "status": "succeeded",
+    "processedAt": "2025-11-20T13:34:05.351Z"
+  },
+  {
+    "id": "pay_sub_user_1001",
+    "subscriptionId": "sub_user_1001",
+    "provider": "paypal",
+    "amount": 45,
+    "currency": "GBP",
+    "status": "succeeded",
+    "processedAt": "2025-11-20T13:34:05.351Z"
+  },
+  {
+    "id": "pay_sub_user_1002",
+    "subscriptionId": "sub_user_1002",
+    "provider": "apple",
+    "amount": 12,
+    "currency": "GBP",
+    "status": "succeeded",
+    "processedAt": "2025-11-20T13:34:05.351Z"
+  },
+  {
+    "id": "pay_sub_user_1003",
+    "subscriptionId": "sub_user_1003",
+    "provider": "stripe",
+    "amount": 12,
+    "currency": "GBP",
+    "status": "succeeded",
+    "processedAt": "2025-11-20T13:34:05.351Z"
+  },
+  {
+    "id": "pay_sub_user_1004",
+    "subscriptionId": "sub_user_1004",
+    "provider": "paypal",
+    "amount": 45,
+    "currency": "GBP",
+    "status": "succeeded",
+    "processedAt": "2025-11-20T13:34:05.351Z"
+  }
+]

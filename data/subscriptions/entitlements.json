@@ -1,0 +1,19 @@
+{
+  "basic": [
+    "article_preview",
+    "mobile_app"
+  ],
+  "digital": [
+    "article_preview",
+    "mobile_app",
+    "markets_dashboard",
+    "podcasts"
+  ],
+  "premium": [
+    "article_preview",
+    "mobile_app",
+    "markets_dashboard",
+    "podcasts",
+    "alpha_research"
+  ]
+}

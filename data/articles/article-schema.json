@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Article",
+  "type": "object",
+  "required": ["id", "headline", "summary", "author", "publishedDate", "category", "articleUrl"],
+  "properties": {
+    "id": { "type": "string" },
+    "headline": { "type": "string" },
+    "summary": { "type": "string" },
+    "author": { "type": "string" },
+    "publishedDate": { "type": "string", "format": "date-time" },
+    "category": { "type": "string" },
+    "imageUrl": { "type": "string", "format": "uri" },
+    "imageAlt": { "type": "string" },
+    "articleUrl": { "type": "string", "format": "uri" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "engagement": {
+      "type": "object",
+      "properties": {
+        "views": { "type": "number" },
+        "shares": { "type": "number" },
+        "comments": { "type": "number" },
+        "readTime": { "type": "number" }
+      }
+    }
+  }
+}

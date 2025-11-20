@@ -20,12 +20,14 @@
 - ✅ self-paced-guide.md (Independent learning path)
 
 ### Scripts
-- ✅ verify-setup.sh (Pre-workshop verification, executable)
+- ✅ verify-setup.js / verify-setup.sh (Pre-workshop verification, cross-platform)
+- ✅ generate-fixtures.js (Synthetic data refresh)
+- ✅ dev-server.js (Boots sample services)
 - ✅ security-scan.sh (Automated security checking, executable)
 
 ### Data & Fixtures
 - ✅ data/README.md (Data dictionary and usage guide)
-- ✅ data/articles/sample-articles.json (8 complete articles with metadata)
+- ✅ data/articles/articles.json (Complete article fixtures with metadata)
 
 ### Module 1: Foundations (COMPLETE)
 **Location:** `modules/01-foundations/`
@@ -277,7 +279,7 @@ These are "nice-to-haves" that don't block running the workshop:
 
 ### For Self-Paced:
 1. ✅ Read docs/self-paced-guide.md
-2. ✅ Run ./scripts/verify-setup.sh
+2. ✅ Run `npm run verify` (or ./scripts/verify-setup.sh)
 3. ✅ Start Module 1
 4. ✅ Work through at your pace
 

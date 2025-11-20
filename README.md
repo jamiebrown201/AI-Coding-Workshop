@@ -2,7 +2,7 @@
 
 **Learn to work with AI coding assistants without losing your mind, your job, or your ability to think critically.**
 
-This is a hands-on workshop with **6 real coding challenges** that teach you to use AI tools like Claude Code, GitHub Copilot, and Codex effectively and safely.
+This is a hands-on workshop with **7 real coding challenges** that teach you to use AI tools like Claude Code, GitHub Copilot, and Codex effectively and safely.
 
 ---
 
@@ -21,15 +21,23 @@ npm install
 
 ### 3. Verify Everything Works
 ```bash
-./scripts/verify-setup.sh
+npm run verify
+# or ./scripts/verify-setup.sh if you prefer the shell version
 ```
 
 ✅ If you see green checkmarks, you're ready to start!
 ❌ If not, check [GETTING_STARTED.md](GETTING_STARTED.md) for troubleshooting.
 
+### 4. Optional: Start the Sample Services
+```bash
+npm run dev
+```
+
+This launches the legacy subscription API, dashboard backend, and dashboard frontend so you can demo the reference solutions quickly.
+
 ---
 
-## 📚 The 6 Challenges
+## 📚 The 7 Challenges
 
 Each challenge is a real coding task. You'll use AI to help, but you're in control.
 
@@ -65,7 +73,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 **What you'll learn:** AI loves "rewrite everything" (which is usually a bad idea)
 **The catch:** Big-bang rewrites introduce bugs; incremental is safer
 
-👉 **[Start Challenge 4](modules/02-codebase-understanding/README.md#activity-2b-refactoring-planning-30-min)**
+👉 **[Start Challenge 4](modules/04-code-review/refactoring-challenge/README.md)**
 
 ---
 
@@ -83,16 +91,16 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 **What you'll learn:** 45% of AI code has security issues
 **The catch:** AI-generated code looks right but is often dangerously wrong
 
-👉 **[Start Challenge 6](modules/04-code-review/vulnerable-prs/CommentSystem.js)**
+👉 **[Start Challenge 6](modules/04-code-review/vulnerable-prs/README.md)**
 
 ---
 
-### Challenge 7: Final Project (60 min)
+### Capstone Challenge (60 min)
 **What you'll do:** Build a trending topics feature with real-time data
 **What you'll learn:** Everything from the previous challenges under time pressure
 **The catch:** You have 60 minutes and must pass a security checklist
 
-👉 **[Start Final Challenge](modules/06-capstone/README.md)**
+👉 **[Start Capstone Challenge](modules/06-capstone/README.md)**
 
 ---
 
@@ -130,7 +138,7 @@ By completing these challenges, you'll be able to:
 Work through challenges at your own speed. Each challenge has:
 - Clear instructions in its README
 - Starter code to begin with
-- Complete solutions to check against
+- Complete solutions in a `solutions` directory to check against
 - Estimated time to complete
 
 **Start here:** [Self-Paced Guide](docs/self-paced-guide.md)
@@ -175,17 +183,27 @@ AI-Coding-Workshop/
 │   ├── 03-full-stack/           # Challenge 5: Complete feature
 │   ├── 04-code-review/          # Challenge 6: Security review
 │   ├── 05-team-practices/       # Team adoption guidelines
-│   └── 06-capstone/             # Challenge 7: Final project
+│   └── 06-capstone/             # Capstone Challenge
 ├── docs/
 │   ├── security-checklist.md    # Run before committing AI code
 │   ├── prompting-guide.md       # Write better prompts
 │   └── anti-patterns.md         # Common mistakes to avoid
 ├── data/
-│   └── articles/                # Mock data for exercises
+│   ├── articles/                # Article fixtures + schema
+│   ├── analytics/               # Engagement + time-series data
+│   ├── comments/                # Moderation samples
+│   ├── subscriptions/           # Tier & entitlement data
+│   ├── trending/                # Capstone datasets
+│   └── users/                   # Fake user profiles
 └── scripts/
-    ├── verify-setup.sh          # Check you're ready
+    ├── verify-setup.js          # Cross-platform environment check
+    ├── verify-setup.sh          # Shell version of the same check
+    ├── generate-fixtures.js     # Refreshes all synthetic data
+    ├── dev-server.js            # Boots sample APIs + dashboard
     └── security-scan.sh         # Scan for vulnerabilities
 ```
+
+Need a fresh dataset? Run `npm run generate-fixtures` to recreate everything under `data/` and the legacy fixtures.
 
 ---
 
@@ -197,7 +215,7 @@ AI-Coding-Workshop/
 3. Then [Challenge 2](modules/01-foundations/exercises/bug-hunt/README.md)
 
 ### Experienced? Jump In:
-1. Run `./scripts/verify-setup.sh`
+1. Run `npm run verify`
 2. Pick any challenge that interests you
 3. Work through at your own pace
 
@@ -217,29 +235,4 @@ AI-Coding-Workshop/
 - 💡 [Prompting Guide](docs/prompting-guide.md)
 
 **For Facilitators:**
-- 👥 [Facilitator Guide](WORKSHOP_FACILITATOR_GUIDE.md)
-- 📊 [Workshop Summary](WORKSHOP_SUMMARY.md)
-- ✅ [Complete Audit](COMPLETE_AUDIT.md)
-
-**Reference:**
-- 🚫 [Anti-Patterns](docs/anti-patterns.md)
-- 🔧 [Troubleshooting](docs/troubleshooting.md)
-
----
-
-## 💬 Support
-
-**Stuck on setup?** Check [GETTING_STARTED.md](GETTING_STARTED.md)
-**Stuck on a challenge?** Each challenge README has hints
-**Found a bug?** Open an issue
-**Have suggestions?** PRs welcome!
-
----
-
-## 📜 License
-
-MIT License - Use freely, adapt, share, and improve.
-
----
-
-**Ready? Pick a challenge and start building. Carefully.** 🚀
+- 👥 [Facilitator Guide](WORKSHOP_FACILITATOR_G

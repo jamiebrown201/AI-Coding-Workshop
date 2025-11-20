@@ -8,7 +8,6 @@
  */
 
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const { connectDatabase } = require('./config/database');
 const { initializePaymentProviders } = require('./config/payments');
@@ -29,8 +28,8 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Request logging
 app.use((req, res, next) => {

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comment-1",
+    "articleId": "ft-2024001",
+    "userId": "user_1000",
+    "text": "Great insight, thanks for breaking it down.",
+    "createdAt": "2025-11-20T13:34:05.351Z",
+    "flagged": false
+  },
+  {
+    "id": "comment-2",
+    "articleId": "ft-2024002",
+    "userId": "user_1001",
+    "text": "I have questions about this data.\n<script>alert(1)</script>",
+    "createdAt": "2025-11-20T13:33:05.351Z",
+    "flagged": true
+  },
+  {
+    "id": "comment-3",
+    "articleId": "ft-2024003",
+    "userId": "user_1002",
+    "text": "Great insight, thanks for breaking it down.",
+    "createdAt": "2025-11-20T13:32:05.351Z",
+    "flagged": false
+  }
+]

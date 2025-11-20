@@ -34,13 +34,17 @@ ai-assistant-workshop/
 ├── data/                              # Mock data and fixtures
 │   ├── articles/                     # Sample FT articles
 │   ├── users/                        # Fake user data
-│   ├── analytics/                    # Sample metrics
+│   ├── analytics/                    # Sample metrics and time-series
+│   ├── comments/                     # Moderation fixtures
+│   ├── subscriptions/                # Tier + entitlement data
+│   ├── trending/                     # Capstone datasets
 │   └── README.md                     # Data dictionary
 │
 └── scripts/                           # Utility scripts
-    ├── verify-setup.sh               # Pre-workshop verification
-    ├── security-scan.sh              # Security checking
-    └── generate-fixtures.js          # Create test data
+    ├── verify-setup.js / .sh         # Pre-workshop verification
+    ├── generate-fixtures.js          # Create / refresh test data
+    ├── dev-server.js                 # Boots sample services
+    └── security-scan.sh              # Security checking
 ```
 
 ## Module Overview
@@ -406,7 +410,7 @@ This workshop is designed to evolve:
 ### As a Participant
 1. Read [README.md](README.md)
 2. Follow [GETTING_STARTED.md](GETTING_STARTED.md)
-3. Run `./scripts/verify-setup.sh`
+3. Run `npm run verify` (or ./scripts/verify-setup.sh)
 4. Start with [Module 1](modules/01-foundations/README.md)
 5. Work through at your own pace
 

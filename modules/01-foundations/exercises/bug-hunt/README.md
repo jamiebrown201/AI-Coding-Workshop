@@ -77,19 +77,13 @@ Your task: Investigate, diagnose, and fix it.
 - [ ] Event handling differences
 - [ ] Webkit-specific bugs
 
-## Testing Your Fix
+### Testing Your Fix
 
 ### In Safari (if you have a Mac)
 ```bash
 npm run dev
 # Open http://localhost:3000 in Safari
 # Test the paywall appears after viewing 3 articles
-```
-
-### Don't have Safari?
-```bash
-npm run test:safari
-# Runs automated tests simulating Safari behavior
 ```
 
 ### Comprehensive testing
@@ -216,7 +210,7 @@ After fixing the bug:
 After completing this exercise:
 1. Check the solution in `solutions/` (after you've tried!)
 2. Review your debugging process
-3. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/)
+3. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/README.md)
 
 ---
 

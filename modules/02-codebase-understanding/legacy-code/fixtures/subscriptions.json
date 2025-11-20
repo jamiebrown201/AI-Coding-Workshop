@@ -1,0 +1,52 @@
+[
+  {
+    "id": "sub_user_1000",
+    "userId": "user_1000",
+    "plan": "basic",
+    "status": "active",
+    "startedAt": "2025-10-21T13:34:05.351Z",
+    "expiresAt": "2026-01-19T13:34:05.351Z",
+    "paymentProvider": "apple",
+    "lastPaymentStatus": "succeeded"
+  },
+  {
+    "id": "sub_user_1001",
+    "userId": "user_1001",
+    "plan": "premium",
+    "status": "active",
+    "startedAt": "2025-09-21T13:34:05.351Z",
+    "expiresAt": "2025-12-20T13:34:05.351Z",
+    "paymentProvider": "paypal",
+    "lastPaymentStatus": "succeeded"
+  },
+  {
+    "id": "sub_user_1002",
+    "userId": "user_1002",
+    "plan": "basic",
+    "status": "active",
+    "startedAt": "2025-08-22T13:34:05.351Z",
+    "expiresAt": "2025-11-20T13:34:05.351Z",
+    "paymentProvider": "apple",
+    "lastPaymentStatus": "succeeded"
+  },
+  {
+    "id": "sub_user_1003",
+    "userId": "user_1003",
+    "plan": "basic",
+    "status": "active",
+    "startedAt": "2025-07-23T13:34:05.351Z",
+    "expiresAt": "2025-10-21T13:34:05.351Z",
+    "paymentProvider": "stripe",
+    "lastPaymentStatus": "succeeded"
+  },
+  {
+    "id": "sub_user_1004",
+    "userId": "user_1004",
+    "plan": "premium",
+    "status": "active",
+    "startedAt": "2025-06-23T13:34:05.351Z",
+    "expiresAt": "2025-09-21T13:34:05.351Z",
+    "paymentProvider": "paypal",
+    "lastPaymentStatus": "succeeded"
+  }
+]

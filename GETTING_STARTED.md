@@ -1,6 +1,6 @@
 # Getting Started with the AI Coding Workshop
 
-## Pre-Workshop Setup (Do This 2 Days Before!)
+## Pre-Workshop Setup
 
 **Estimated time: 15-20 minutes**
 
@@ -67,6 +67,8 @@ npm install
 
 **This takes 3-5 minutes.** Go get coffee. Stretch. Check your email. Do NOT watch the terminal anxiously.
 
+**Note:** Some exercises in the `modules` directory have their own dependencies and `package.json` files. The `README.md` file for each exercise will guide you if you need to run `npm install` in a specific exercise directory.
+
 ### Step 4: Verify Your AI Tool Works
 
 **In Claude Code:**
@@ -84,18 +86,38 @@ Follow Codex's verification steps.
 ### Step 5: Run Setup Verification
 
 ```bash
-./scripts/verify-setup.sh
+npm run verify
+# or ./scripts/verify-setup.sh if you prefer the shell script
 ```
 
 **Expected output:**
 ```
 ✅ Node.js version: 18.x or higher
 ✅ Git configured with user details
-✅ AI coding tool detected: Claude Code
+✅ AI coding tool detected
 ✅ All dependencies installed successfully
-✅ Test suite runs (may take a minute)
 🎉 You're ready to rock!
 ```
+
+### Optional: Refresh the Fake Data
+
+Want brand-new fixtures for the exercises? Run:
+
+```bash
+npm run generate-fixtures
+```
+
+This script repopulates everything under `data/` and the legacy system fixtures without touching your own work.
+
+### Optional: Start the Sample Services
+
+Need the legacy subscription API and engagement dashboard running for demos?
+
+```bash
+npm run dev
+```
+
+This command launches the legacy API plus the dashboard backend/front-end trio with prefixed logs.
 
 ## Troubleshooting
 
@@ -175,7 +197,7 @@ chmod +x scripts/verify-setup.sh
 3. **Use PowerShell** (some scripts might need adaptation)
 
 **For PowerShell users:**
-Instead of `./scripts/verify-setup.sh`, run:
+Use `npm run verify` or run the Node script directly:
 ```powershell
 node scripts/verify-setup.js
 ```

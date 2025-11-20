@@ -79,13 +79,15 @@ All folders, READMEs, and organizational structure in place.
 ### ✅ Supporting Materials
 
 **Data & Fixtures:**
-- ✅ data/articles/sample-articles.json (8 complete articles with metadata)
+- ✅ data/articles/articles.json (Complete article fixtures with metadata)
 - ✅ Structured data for testing and exercises
 
 **Scripts:**
-- ✅ scripts/verify-setup.sh (Pre-workshop verification)
+- ✅ scripts/verify-setup.js / verify-setup.sh (Pre-workshop verification)
+- ✅ scripts/generate-fixtures.js (Synthetic data refresh)
+- ✅ scripts/dev-server.js (Starts demo services)
 - ✅ scripts/security-scan.sh (Automated security checking)
-- ✅ Both scripts are executable and tested
+- ✅ All scripts are executable and tested
 
 ## What You Can Do Now
 
@@ -112,7 +114,7 @@ All folders, READMEs, and organizational structure in place.
 ### **Participant:**
 ```bash
 cd ai-assistant-workshop
-./scripts/verify-setup.sh
+npm run verify
 # Then start with modules/01-foundations/README.md
 ```
 
@@ -239,7 +241,7 @@ These are starter templates that participants/facilitators complete:
 
 ### Immediate (Before First Use)
 1. ✅ Read WORKSHOP_FACILITATOR_GUIDE.md OR docs/self-paced-guide.md
-2. ✅ Run ./scripts/verify-setup.sh
+2. ✅ Run `npm run verify` (or ./scripts/verify-setup.sh)
 3. ✅ Work through Module 1 yourself
 4. ✅ Customize any examples for your context
 

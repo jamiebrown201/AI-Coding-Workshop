@@ -295,3 +295,7 @@ Move on to [Activity 2B: Refactoring Planning](../refactoring-challenge/README.m
 ---
 
 **Remember: The goal isn't to judge the code. It's to understand it.**
+
+## Solutions
+
+Check `solutions/` for a reference implementation.

@@ -6,7 +6,7 @@
 
 ### Technical Setup
 - [ ] Test all exercises on your machine
-- [ ] Verify scripts work (verify-setup.sh, security-scan.sh)
+- [ ] Verify scripts work (`npm run verify` / verify-setup.sh, security-scan.sh)
 - [ ] Ensure fixture data is complete
 - [ ] Test in multiple browsers (especially Safari for Module 1)
 - [ ] Prepare backup solutions if exercises fail

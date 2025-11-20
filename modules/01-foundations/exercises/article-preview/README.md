@@ -69,7 +69,6 @@ npm install
 - [ ] No console errors or warnings
 - [ ] Passes linting (`npm run lint`)
 - [ ] Passes tests (`npm test`)
-- [ ] Passes accessibility check (`npm run a11y-check`)
 
 ## Sample Data
 
@@ -90,7 +89,7 @@ const sampleArticle = {
   summary: "Major stock indices reached new highs as investors responded positively to stronger-than-expected economic data.",
   author: "Jane Smith",
   publishedDate: new Date("2025-11-19"),
-  imageUrl: "/images/markets-rally.jpg",
+  imageUrl: "https://via.placeholder.com/600x400",
   imageAlt: "Stock market trading floor with traders celebrating",
   articleUrl: "/articles/global-markets-rally"
 };
@@ -110,7 +109,6 @@ const sampleArticle = {
 
 - [ ] Passes `npm run lint`
 - [ ] Passes `npm test`
-- [ ] Passes `npm run a11y-check`
 - [ ] You can explain what every line does
 - [ ] No console errors in browser (warnings negotiable)
 - [ ] Works in Chrome, Firefox, Safari
@@ -162,7 +160,6 @@ const sampleArticle = {
 # Run all checks
 npm run lint
 npm test
-npm run a11y-check
 
 # Start dev server to see it in action
 npm run dev

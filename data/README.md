@@ -24,10 +24,10 @@ data/
 
 Each module references specific data files:
 
-**Module 1:** `articles/sample-articles.json`
-**Module 2:** `subscriptions/`, `users/`
-**Module 3:** `analytics/real-time-metrics.json`
-**Module 4:** `comments/vulnerable-data.json`
+**Module 1:** `articles/sample-articles.json`, `articles/articles.json`
+**Module 2:** `subscriptions/subscription-summary.json`, `users/users.json`
+**Module 3:** `analytics/page-views.json`, `analytics/time-series.json`, `analytics/trending-topics.json`
+**Module 4:** `comments/comments.json`, `comments/moderation-flags.json`
 **Module 6:** `trending/engagement-data.json`
 
 ### Loading Data in Code

@@ -1,0 +1,20 @@
+{
+  "articles": [
+    { "id": "art-100", "title": "Inflation pressures ease", "views": 2450, "category": "news" },
+    { "id": "art-101", "title": "AI regulation watch", "views": 1800, "category": "analysis" },
+    { "id": "art-102", "title": "Markets midday briefing", "views": 1560, "category": "markets" },
+    { "id": "art-103", "title": "Weekend opinion roundup", "views": 980, "category": "opinion" }
+  ],
+  "topics": [
+    { "name": "AI policy", "mentions": 320 },
+    { "name": "UK politics", "mentions": 280 },
+    { "name": "Tech layoffs", "mentions": 210 },
+    { "name": "Energy transition", "mentions": 160 }
+  ],
+  "geo": [
+    { "region": "EMEA", "percentage": 0.42 },
+    { "region": "Americas", "percentage": 0.31 },
+    { "region": "APAC", "percentage": 0.19 },
+    { "region": "Other", "percentage": 0.08 }
+  ]
+}

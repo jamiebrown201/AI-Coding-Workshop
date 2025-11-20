@@ -1,0 +1,31 @@
+[
+  {
+    "tier": "basic",
+    "monthlyPrice": 12,
+    "features": [
+      "limited articles",
+      "daily newsletter"
+    ],
+    "activeSubscribers": 25000
+  },
+  {
+    "tier": "digital",
+    "monthlyPrice": 27,
+    "features": [
+      "unlimited articles",
+      "podcasts",
+      "markets data"
+    ],
+    "activeSubscribers": 19000
+  },
+  {
+    "tier": "premium",
+    "monthlyPrice": 45,
+    "features": [
+      "unlimited articles",
+      "workspace tools",
+      "exclusive events"
+    ],
+    "activeSubscribers": 13000
+  }
+]

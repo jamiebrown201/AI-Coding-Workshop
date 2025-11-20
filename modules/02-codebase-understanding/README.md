@@ -2,6 +2,8 @@
 
 **Duration:** 75 minutes
 
+After getting your feet wet with basic AI interactions, this module takes you into the trenches of real-world development: deciphering unfamiliar codebases. You'll learn how AI can be an invaluable assistant in understanding legacy systems, mapping architectures, and planning safe refactoring strategies. Get ready to put on your archaeologist hat and dig into some "historical decisions."
+
 ## Learning Objectives
 
 By the end of this module, you'll be able to:
@@ -13,23 +15,7 @@ By the end of this module, you'll be able to:
 - ✓ Plan safe refactoring strategies
 - ✓ Understand the importance of context quality over quantity
 
-## The Most Important Lesson
-
-### Context Quality > Prompt Quality
-
-> **More context ≠ Better results**
-
-This might be the most important thing you learn today:
-
-AI often gets **worse** when given too much context. The model can't distinguish signal from noise. Your job isn't to give AI everything—it's to give AI the **right** things.
-
-Think about how you'd explain a codebase to a new teammate. You wouldn't show them every file on day one. You'd start with: "Here's the entry point. This is what happens when a request comes in. Let me show you the key pieces."
-
-**Same with AI.** Start with the entry point (index.js or main router), then expand as needed.
-
-**Context engineering > prompt engineering**. Getting good at providing the right context is more valuable than writing clever prompts.
-
-## Structure
+## Introduction/Scenario
 
 This module has two hands-on exercises:
 
@@ -46,6 +32,11 @@ Plan a safe migration strategy for modernizing legacy code.
 **Location:** `refactoring-challenge/`
 
 **What you're planning:** Migrating a jQuery-based search feature to React without breaking production.
+
+## Structure/Activities
+
+- **Activity 2A: Architecture Analysis (30 min)**
+- **Activity 2B: Refactoring Planning (30 min)**
 
 ## Prerequisites
 
@@ -64,6 +55,12 @@ Start with **Activity 2A** (Architecture Analysis), then move to **Activity 2B**
 
 ## Key Concepts
 
+### Context Quality > Prompt Quality
+
+> **More context ≠ Better results**
+
+AI often gets **worse** when given too much context. The model can't distinguish signal from noise. Your job isn't to give AI everything—it's to give AI the **right** things.
+
 ### What AI Does Well for Codebase Understanding
 - Explaining individual functions and modules
 - Identifying patterns and conventions
@@ -78,31 +75,6 @@ Start with **Activity 2A** (Architecture Analysis), then move to **Activity 2B**
 - **Edge cases** - That "ugly" code might be critical
 - **Context** - AI doesn't know which parts matter most
 
-### Effective Exploration Strategy
-
-**❌ Don't do this:**
-```
-"Explain this entire codebase"
-[dumps 50 files into AI]
-```
-
-**✅ Do this instead:**
-1. **Start at the entry point**
-   - `index.js`, `server.js`, `app.js`
-   - Understand the request lifecycle
-
-2. **Follow the path**
-   - Pick one feature (e.g., "user subscription")
-   - Trace it from endpoint → service → database
-
-3. **Expand deliberately**
-   - Ask about specific modules as you encounter them
-   - Build mental model incrementally
-
-4. **Document as you go**
-   - Don't trust your memory
-   - Create diagrams that help others
-
 ## Success Criteria
 
 You'll know you've succeeded when:
@@ -116,46 +88,24 @@ You'll know you've succeeded when:
 
 **"Just feed AI the whole repo"**
 - Too much context makes AI output worse, not better
-- The model can't tell what's important
-- You'll get generic, surface-level analysis
 
 **"AI said this is how it works"**
 - AI makes educated guesses based on patterns
-- Your specific business logic is unique
-- Always verify against actual behavior
 
 **"This code is bad, let's rewrite it"**
 - That "ugly" code might handle critical edge cases
-- Rewrites often introduce new bugs
-- Understand before you refactor
 
 **"I'll skip the documentation"**
 - Future you will curse past you
-- Your teammates need this too
-- AI can draft docs, but you need to make them accurate
-
-## Working Styles
-
-### Solo Exploration
-- Take notes as you explore
-- Draw diagrams on paper or digitally
-- Test your understanding by explaining it aloud
-- Ask AI to challenge your assumptions
-
-### Pair/Group Exploration
-- One person navigates, others observe and question
-- Rotate roles every 10 minutes
-- Compare mental models
-- Collaborative diagramming
 
 ## Resources
 
-- [Exploration Strategies](docs/exploration-strategies.md)
-- [Context Management Guide](docs/context-management.md)
-- [Backend Systems Guide](docs/backend-systems-guide.md)
-- [Refactoring Strategies](docs/refactoring-strategies.md)
-- [Safe Migrations](docs/safe-migrations.md)
-- [Testing Legacy Code](docs/testing-legacy-code.md)
+- [Exploration Strategies](../../docs/exploration-strategies.md)
+- [Context Management Guide](../../docs/context-management.md)
+- [Backend Systems Guide](../../docs/backend-systems-guide.md)
+- [Refactoring Strategies](../../docs/refactoring-strategies.md)
+- [Safe Migrations](../../docs/safe-migrations.md)
+- [Testing Legacy Code](../../docs/testing-legacy-code.md)
 
 ## Next Steps
 
@@ -163,7 +113,7 @@ After completing this module:
 1. Review your architecture diagrams
 2. Compare your understanding with the reference docs
 3. Reflect on how context quality affected AI's usefulness
-4. Move on to [Module 3: Full-Stack Features](../03-full-stack/)
+4. Move on to [Module 3: Full-Stack Features](../03-full-stack/README.md)
 
 ---
 

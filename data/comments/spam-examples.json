@@ -1,0 +1,12 @@
+[
+  {
+    "text": "Earn $$$ fast at spam-site.biz",
+    "classification": "spam",
+    "pattern": "external link"
+  },
+  {
+    "text": "Download this malware attachment",
+    "classification": "malware",
+    "pattern": "attachment"
+  }
+]

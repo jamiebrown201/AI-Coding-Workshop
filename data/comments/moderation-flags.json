@@ -1,0 +1,8 @@
+[
+  {
+    "id": "flag-1",
+    "commentId": "comment-2",
+    "reason": "Suspicious markup detected",
+    "status": "review_pending"
+  }
+]

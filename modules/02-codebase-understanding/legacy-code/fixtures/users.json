@@ -1,0 +1,42 @@
+[
+  {
+    "id": "user_1000",
+    "email": "theo.baker@example.com",
+    "name": "Theo Baker",
+    "subscriptionTier": "basic",
+    "region": "EU",
+    "createdAt": "2020-01-12T00:00:00.000Z"
+  },
+  {
+    "id": "user_1001",
+    "email": "theo.singh@example.com",
+    "name": "Theo Singh",
+    "subscriptionTier": "premium",
+    "region": "UK",
+    "createdAt": "2020-02-12T00:00:00.000Z"
+  },
+  {
+    "id": "user_1002",
+    "email": "mina.clarke@example.com",
+    "name": "Mina Clarke",
+    "subscriptionTier": "basic",
+    "region": "APAC",
+    "createdAt": "2020-03-12T00:00:00.000Z"
+  },
+  {
+    "id": "user_1003",
+    "email": "mina.clarke@example.com",
+    "name": "Mina Clarke",
+    "subscriptionTier": "basic",
+    "region": "UK",
+    "createdAt": "2020-04-11T23:00:00.000Z"
+  },
+  {
+    "id": "user_1004",
+    "email": "mina.velasquez@example.com",
+    "name": "Mina Velasquez",
+    "subscriptionTier": "premium",
+    "region": "UK",
+    "createdAt": "2020-05-11T23:00:00.000Z"
+  }
+]

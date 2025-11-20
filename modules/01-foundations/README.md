@@ -2,6 +2,8 @@
 
 **Duration:** 90 minutes
 
+Welcome to the start of your AI coding assistant journey! In this module, we'll dive into the absolute basics of working with AI tools. You'll get hands-on experience generating code, identifying common AI pitfalls (especially around accessibility), and learning how to effectively debug with AI. This is where you'll build the critical foundational skills for interacting with AI confidently and critically.
+
 ## Learning Objectives
 
 By the end of this module, you'll be able to:
@@ -13,7 +15,7 @@ By the end of this module, you'll be able to:
 - ✓ Use AI tools for debugging assistance
 - ✓ Know when AI helps vs. when it confidently misleads
 
-## Structure
+## Introduction/Scenario
 
 This module has two hands-on exercises:
 
@@ -30,6 +32,28 @@ Debug a browser-specific issue with AI assistance.
 **Location:** `exercises/bug-hunt/`
 
 **What you're fixing:** A paywall that mysteriously doesn't work in Safari (but works everywhere else, naturally).
+
+## Structure/Activities
+
+- **Exercise 1A: Article Preview Component (35 min)**
+- **Exercise 1B: Safari Bug Hunt (35 min)**
+
+## Prerequisites
+
+- Node.js 18+ installed
+- AI coding tool set up
+- Repository cloned
+- Dependencies installed (`npm install`)
+
+## Getting Started
+
+```bash
+cd modules/01-foundations
+```
+
+Start with **Exercise 1A** (Article Preview), then move to **Exercise 1B** (Bug Hunt).
+
+Each exercise directory has its own README with detailed instructions.
 
 ## Key Concepts
 
@@ -56,23 +80,6 @@ Think about explaining code to a new teammate. You wouldn't show them every file
 - Browser-specific quirks
 - Business logic nuances
 - Security vulnerabilities
-
-## Prerequisites
-
-- Node.js 18+ installed
-- AI coding tool set up
-- Repository cloned
-- Dependencies installed (`npm install`)
-
-## Getting Started
-
-```bash
-cd modules/01-foundations
-```
-
-Start with **Exercise 1A** (Article Preview), then move to **Exercise 1B** (Bug Hunt).
-
-Each exercise directory has its own README with detailed instructions.
 
 ## Success Criteria
 
@@ -103,17 +110,17 @@ You'll know you've succeeded when:
 
 ## Resources
 
-- [Accessibility Checklist](docs/accessibility-checklist.md)
-- [Effective Prompting Guide](docs/effective-prompting.md)
-- [Debugging with AI](docs/debugging-with-ai.md)
-- [Browser-Specific Issues](docs/browser-specific-issues.md)
+- [Accessibility Checklist](../../docs/accessibility-checklist.md)
+- [Effective Prompting Guide](../../docs/effective-prompting.md)
+- [Debugging with AI](../../docs/debugging-with-ai.md)
+- [Browser-Specific Issues](../../docs/browser-specific-issues.md)
 
 ## Next Steps
 
 After completing this module:
 1. Review your commit history - can you explain each change?
 2. Compare your code with the solutions (no cheating before trying!)
-3. Move on to [Module 2: Understanding Codebases](../02-codebase-understanding/)
+3. Move on to [Module 2: Understanding Codebases](../02-codebase-understanding/README.md)
 
 ---
 

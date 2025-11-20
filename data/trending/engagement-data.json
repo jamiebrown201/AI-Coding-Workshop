@@ -1,0 +1,28 @@
+{
+  "topics": [
+    {
+      "topic": "AI governance",
+      "score": 0.78,
+      "momentum": "rising"
+    },
+    {
+      "topic": "Energy security",
+      "score": 0.69,
+      "momentum": "steady"
+    }
+  ],
+  "articles": [
+    {
+      "articleId": "ft-2024001",
+      "engagementScore": 83
+    },
+    {
+      "articleId": "ft-2024002",
+      "engagementScore": 70
+    },
+    {
+      "articleId": "ft-2024003",
+      "engagementScore": 90
+    }
+  ]
+}

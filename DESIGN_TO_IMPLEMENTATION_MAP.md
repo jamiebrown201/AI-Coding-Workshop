@@ -254,7 +254,7 @@ data/
 
 **What Exists:**
 ✅ `data/README.md` - Complete data dictionary with schemas
-✅ `data/articles/sample-articles.json` - 8 complete articles with full metadata
+✅ `data/articles/articles.json` (plus sample-articles subset) - Complete metadata set for exercises
 ✅ Data schemas documented (Article, User, Analytics, Comment interfaces)
 ✅ Privacy & security guidance
 ✅ Usage examples for Node.js and browser
@@ -270,15 +270,17 @@ data/
 ## 🔧 Scripts
 
 **Your Design Specified:**
-- `verify-setup.sh` - Pre-workshop verification
-- `security-scan.sh` - Automated security checking
-- `generate-fixtures.sh` - Fresh test data
+- `verify-setup` - Pre-workshop verification
+- `security-scan` - Automated security checking
+- `generate-fixtures` - Fresh test data
+- `dev-server` - Convenience launcher for sample services
 
 **What Exists:**
-✅ `scripts/verify-setup.sh` - Complete, executable, checks Node/Git/AI tools
+✅ `scripts/verify-setup.js` (with matching `.sh`) - Complete, executable, checks Node/Git/AI tools
 ✅ `scripts/security-scan.sh` - Complete, executable, scans for vulnerabilities
-✅ Scripts have proper permissions (chmod +x)
-✅ Both provide colored output and clear feedback
+✅ `scripts/generate-fixtures.js` - Regenerates all synthetic data sets
+✅ `scripts/dev-server.js` - Boots legacy API + dashboard starter concurrently
+✅ Scripts have proper permissions (chmod +x) and provide clear feedback
 
 ---
 
@@ -416,9 +418,16 @@ ai-assistant-workshop/  # ← Same structure
 │   └── troubleshooting.md       ✅
 ├── data/
 │   ├── articles/                ✅
+│   ├── users/                   ✅
+│   ├── analytics/               ✅
+│   ├── comments/                ✅
+│   ├── subscriptions/           ✅
+│   ├── trending/                ✅
 │   └── README.md                ✅
 ├── scripts/
-│   ├── verify-setup.sh          ✅
+│   ├── verify-setup.js / .sh    ✅
+│   ├── generate-fixtures.js     ✅
+│   ├── dev-server.js            ✅
 │   └── security-scan.sh         ✅
 └── package.json                 ✅
 ```

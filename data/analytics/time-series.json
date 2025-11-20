@@ -1,0 +1,34 @@
+{
+  "series": [
+    {
+      "timestamp": "2025-11-20T13:34:05.351Z",
+      "activeReaders": 1933,
+      "conversionRate": 0.02
+    },
+    {
+      "timestamp": "2025-11-20T13:29:05.351Z",
+      "activeReaders": 1461,
+      "conversionRate": 0.027
+    },
+    {
+      "timestamp": "2025-11-20T13:24:05.351Z",
+      "activeReaders": 1477,
+      "conversionRate": 0.039
+    },
+    {
+      "timestamp": "2025-11-20T13:19:05.351Z",
+      "activeReaders": 1511,
+      "conversionRate": 0.026
+    },
+    {
+      "timestamp": "2025-11-20T13:14:05.351Z",
+      "activeReaders": 1405,
+      "conversionRate": 0.036
+    },
+    {
+      "timestamp": "2025-11-20T13:09:05.351Z",
+      "activeReaders": 1727,
+      "conversionRate": 0.029
+    }
+  ]
+}
