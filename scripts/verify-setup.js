@@ -104,26 +104,9 @@ check('Data fixtures present', () => {
   return 'synthetic data ready';
 });
 
-(function detectAiTools() {
-  const tools = [
-    { name: 'Claude Code', command: 'claude-code' },
-    { name: 'GitHub Copilot CLI', command: 'copilot' },
-    { name: 'Codex', command: 'codex' },
-    { name: 'Cursor', command: path.join(process.env.HOME || '', '.cursor') }
-  ];
-  const detected = tools.find((tool) => {
-    if (tool.command.startsWith('/')) {
-      return fs.existsSync(tool.command);
-    }
-    return commandExists(tool.command);
-  });
-
-  if (detected) {
-    logSuccess(`AI tool detected: ${detected.name}`);
-  } else {
-    logWarning('No AI tool auto-detected. If you have one installed, you are fine.');
-  }
-})();
+// Note: We skip AI tool detection since tools vary widely (VS Code extensions,
+// Cursor, web-based tools, etc.) and can't be reliably detected.
+// Users should verify their AI tool works manually per GETTING_STARTED.md
 
 console.log('');
 if (allGood) {

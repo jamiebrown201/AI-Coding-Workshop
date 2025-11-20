@@ -71,29 +71,8 @@ else
     ALL_GOOD=false
 fi
 
-# Try to detect AI coding tools (best effort)
-echo -n "Checking for AI coding tools... "
-AI_TOOL_FOUND=false
-
-if command -v claude-code &> /dev/null; then
-    echo -e "${GREEN}✅ Claude Code detected${NC}"
-    AI_TOOL_FOUND=true
-elif command -v copilot &> /dev/null; then
-    echo -e "${GREEN}✅ GitHub Copilot detected${NC}"
-    AI_TOOL_FOUND=true
-elif command -v codex &> /dev/null; then
-    echo -e "${GREEN}✅ Codex detected${NC}"
-    AI_TOOL_FOUND=true
-elif [ -d "$HOME/.cursor" ]; then
-    echo -e "${GREEN}✅ Cursor detected${NC}"
-    AI_TOOL_FOUND=true
-elif code --list-extensions 2>/dev/null | grep -q "GitHub.copilot"; then
-    echo -e "${GREEN}✅ GitHub Copilot (VS Code) detected${NC}"
-    AI_TOOL_FOUND=true
-else
-    echo -e "${YELLOW}⚠️  No AI tool auto-detected (this is OK if you have one installed)${NC}"
-    echo "   We can't always detect AI tools - if you have one, you're good!"
-fi
+# Note: We skip AI tool detection since tools vary (VS Code extensions, Cursor, etc.)
+# and can't be reliably detected. Users should verify their tool works manually.
 
 # Check if we're in the right directory
 echo -n "Checking workshop directory structure... "
