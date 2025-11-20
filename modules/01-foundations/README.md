@@ -74,12 +74,13 @@ copilot
 
 ### How AI Sees Your Files
 
-The AI tool can access:
-- Files you explicitly reference in your prompts
-- Files in your current directory (CLI tools)
-- Files open in your editor (VS Code extensions)
+The AI tool can:
+- Search your codebase when you ask it to
+- Read files you explicitly reference in your prompts
+- Access files in your current directory (CLI tools)
+- See files open in your editor (VS Code extensions)
 
-**Key point:** AI doesn't automatically know all your files. Give it context.
+**Key point:** AI can search, but it's faster and more accurate when you point it to the right files.
 
 ### Example Prompt
 
