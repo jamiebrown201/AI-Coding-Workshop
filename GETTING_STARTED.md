@@ -97,11 +97,29 @@ The principles in this workshop apply to all tools
 ### Step 2: Clone the Repository
 
 ```bash
-git clone https://github.com/ft-labs/ai-workshop-2025.git
-cd ai-workshop-2025
+git clone https://github.com/jamiebrown201/AI-Coding-Workshop.git
+cd AI-Coding-Workshop
 ```
 
-### Step 3: Install Dependencies
+### Step 3: Create Your Working Branch
+
+**Important:** Work on your own branch so you can commit code without affecting main.
+
+```bash
+# Create and switch to your personal branch
+git checkout -b your-name-workshop
+
+# For example:
+# git checkout -b jamie-workshop
+```
+
+This lets you:
+- Commit your work freely
+- Share code with others by pushing your branch
+- Keep main branch clean
+- See what others are building
+
+### Step 4: Install Dependencies
 
 ```bash
 npm install
@@ -110,20 +128,6 @@ npm install
 **This takes 3-5 minutes.** Go get coffee. Stretch. Check your email. Do NOT watch the terminal anxiously.
 
 **Note:** Some exercises in the `modules` directory have their own dependencies and `package.json` files. The `README.md` file for each exercise will guide you if you need to run `npm install` in a specific exercise directory.
-
-### Step 4: Verify Your AI Tool Works
-
-**In Claude Code:**
-```bash
-# Open a file and try a simple prompt
-# Example: "Create a function that adds two numbers"
-```
-
-**In GitHub Copilot:**
-Open any `.js` file in VS Code and start typing a comment. Copilot should suggest code.
-
-**In Codex:**
-Follow Codex's verification steps.
 
 ### Step 5: Run Setup Verification
 
@@ -233,6 +237,58 @@ Use `npm run verify` or run the Node script directly:
 ```powershell
 node scripts/verify-setup.js
 ```
+
+## Git Workflow During the Workshop
+
+### Committing Your Work
+
+As you complete exercises, commit your code to your branch:
+
+```bash
+# Check what you've changed
+git status
+
+# Add files you want to commit
+git add modules/01-foundations/exercises/article-preview/
+
+# Commit with a descriptive message
+git commit -m "Complete Article Preview exercise"
+```
+
+### Sharing Your Code
+
+Push your branch to share with others:
+
+```bash
+# First time pushing your branch
+git push -u origin your-name-workshop
+
+# Subsequent pushes
+git push
+```
+
+Now others can see your code at: `https://github.com/jamiebrown201/AI-Coding-Workshop/tree/your-name-workshop`
+
+### Seeing Others' Work
+
+```bash
+# List all branches (including others' branches)
+git fetch --all
+git branch -r
+
+# Check out someone else's branch to see their code
+git checkout other-person-workshop
+
+# Go back to your branch
+git checkout your-name-workshop
+```
+
+### Important Notes
+
+- ⚠️ **Never push to main** - Always work on your branch
+- ✅ **Commit often** - Save your progress as you go
+- ✅ **Push regularly** - Share your work so others can learn from it
+- ✅ **Check out others' branches** - See different approaches to the same challenges
 
 ## What to Bring to the Workshop
 
