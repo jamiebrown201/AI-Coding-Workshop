@@ -2,8 +2,6 @@
 
 ## Pre-Workshop Setup
 
-**Estimated time: 15-20 minutes**
-
 ### Step 1: Install Prerequisites
 
 #### Node.js (Required)
@@ -118,7 +116,7 @@ This lets you:
 npm install
 ```
 
-**This takes 3-5 minutes.** Go get coffee. Stretch. Check your email. Do NOT watch the terminal anxiously.
+Go get coffee. Stretch. Check your email. Do NOT watch the terminal anxiously.
 
 **Note:** Some exercises in the `modules` directory have their own dependencies and `package.json` files. The `README.md` file for each exercise will guide you if you need to run `npm install` in a specific exercise directory.
 
@@ -299,7 +297,7 @@ git checkout your-name-workshop
 ## If You're Still Stuck
 
 **Don't panic.** We'll have:
-- First 15 minutes reserved for setup troubleshooting
+- Setup troubleshooting support at the start
 - Facilitators available to help
 - Pair programming option if your setup fails
 - Backup cloud environments (limited availability)

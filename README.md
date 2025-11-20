@@ -8,7 +8,7 @@ This is a hands-on workshop with **7 real coding challenges** that teach you to 
 
 ---
 
-## 🚀 Quick Start (5 Minutes)
+## 🚀 Quick Start
 
 ### 1. Set Up Your AI Coding Tool
 
@@ -45,7 +45,7 @@ npm run verify
 
 Each challenge is a real coding task. You'll use AI to help, but you're in control.
 
-### Challenge 1: Build an Accessible Component (30 min)
+### Challenge 1: Build an Accessible Component
 **What you'll do:** Build a React article preview component using AI assistance
 **What you'll learn:** AI is great at boilerplate but misses accessibility
 **The catch:** AI will forget things like alt text and keyboard navigation
@@ -54,7 +54,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 
 ---
 
-### Challenge 2: Debug a Safari Bug (30 min)
+### Challenge 2: Debug a Safari Bug
 **What you'll do:** Fix a paywall that works in Chrome but not Safari
 **What you'll learn:** When AI helps vs when it confidently misleads
 **The catch:** AI will make confident guesses about browser bugs without real knowledge
@@ -63,7 +63,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 
 ---
 
-### Challenge 3: Understand Legacy Code (30 min)
+### Challenge 3: Understand Legacy Code
 **What you'll do:** Map the architecture of a messy subscription system
 **What you'll learn:** Context quality matters more than prompt quality
 **The catch:** Feeding AI too much code makes it worse, not better
@@ -72,7 +72,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 
 ---
 
-### Challenge 4: Plan a Safe Refactor (30 min)
+### Challenge 4: Plan a Safe Refactor
 **What you'll do:** Plan migrating jQuery code to React without breaking production
 **What you'll learn:** AI loves "rewrite everything" (which is usually a bad idea)
 **The catch:** Big-bang rewrites introduce bugs; incremental is safer
@@ -81,7 +81,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 
 ---
 
-### Challenge 5: Build a Real-Time Dashboard (75 min)
+### Challenge 5: Build a Real-Time Dashboard
 **What you'll do:** Build a complete feature from scratch (frontend + backend + tests)
 **What you'll learn:** Where AI helps most (boilerplate) and least (architecture)
 **The catch:** AI can't make strategic decisions; you have to
@@ -90,7 +90,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 
 ---
 
-### Challenge 6: Hunt for Security Bugs (30 min)
+### Challenge 6: Hunt for Security Bugs
 **What you'll do:** Review AI-generated code and find planted vulnerabilities
 **What you'll learn:** 45% of AI code has security issues
 **The catch:** AI-generated code looks right but is often dangerously wrong
@@ -99,10 +99,10 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 
 ---
 
-### Capstone Challenge (60 min)
+### Capstone Challenge
 **What you'll do:** Build a trending topics feature with real-time data
 **What you'll learn:** Everything from the previous challenges under time pressure
-**The catch:** You have 60 minutes and must pass a security checklist
+**The catch:** Must pass a security checklist
 
 👉 **[Start Capstone Challenge](modules/06-capstone/README.md)**
 
