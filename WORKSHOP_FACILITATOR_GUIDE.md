@@ -128,6 +128,10 @@ Go around the room. Each person shares:
 
 #### Exercise 1A: Article Preview
 
+**Working format: Solo work**
+
+This exercise works best individually so everyone experiences AI assistance firsthand.
+
 **Setup:**
 
 - Demo the setup commands
@@ -177,6 +181,10 @@ Quick write prompt: "One thing I learned, one question I have"
 
 #### Exercise 1B: Safari Bug
 
+**Working format: Solo work**
+
+Keep this solo as well - debugging is a personal learning experience.
+
 **Setup as mystery:**
 
 - Frame as real bug report
@@ -216,6 +224,12 @@ Show code snippets, group votes: bug or feature?
 ### Module 2: Codebase Understanding
 
 #### Activity 2A: Architecture Analysis
+
+**Working format: Pairs (Round 1)**
+
+Form pairs for this activity. Mix remote and in-person participants where possible.
+
+**For remote participants:** Use screen sharing and collaborative tools (Miro, Figma, or shared docs for diagrams).
 
 **Setup:**
 
@@ -259,6 +273,10 @@ Show code snippets, group votes: bug or feature?
 Pair discussion on what AI helped with vs. what it got wrong
 
 #### Activity 2B: Refactoring Planning
+
+**Working format: Solo or same pairs**
+
+Can keep same pairs or go solo - both work.
 
 **Setup:**
 
@@ -308,6 +326,12 @@ Teams draw and guess coding concepts. Keep it fast and fun.
 **Emphasize:** Plan first!
 
 #### Team Formation & Planning
+
+**Working format: New pairs or trios (Round 2)**
+
+Switch up the pairs from Module 2. Create new combinations.
+
+**For hybrid sessions:** Try to pair at least one remote person with one in-person if possible, or create all-remote pairs.
 
 - Self-organize into pairs/trios
 - Must write plan before coding
@@ -388,6 +412,10 @@ Quick-fire questions about today's learning
 
 #### Activity 4A: Security Review
 
+**Working format: Solo work**
+
+Individual vulnerability hunting works best - everyone needs to practice this skill.
+
 **Setup as bug bounty:**
 
 - Point system explained
@@ -396,7 +424,7 @@ Quick-fire questions about today's learning
 
 **Review session:**
 
-- Work individually or pairs
+- Work individually
 - Track findings
 - Score each issue
 
@@ -416,6 +444,10 @@ Quick-fire questions about today's learning
 **Important lesson:** AI scanning is ONE tool, not the only tool
 
 #### Activity 4B: Refactoring
+
+**Working format: Solo work**
+
+Keep this solo as well - refactoring is another core skill to practice individually.
 
 **Setup:**
 
@@ -463,6 +495,12 @@ Capture on whiteboard, acknowledge seriously.
 
 #### Activity 5A: Guidelines
 
+**Working format: Small groups (Round 3)**
+
+Form groups of 3-4. Mix things up again - different people from previous pairings.
+
+**For hybrid:** Create breakout rooms for remote participants, or have mixed remote/in-person groups using video chat.
+
 **Setup:**
 
 - 4 groups, 4 focus areas
@@ -489,6 +527,12 @@ Capture on whiteboard, acknowledge seriously.
 **Deliverable:** Real document teams can use
 
 #### Activity 5B: Responsible Use
+
+**Working format: Full group discussion**
+
+Everyone together for this one - fishbowl format or open discussion.
+
+**For hybrid:** Use video conferencing features to ensure remote folks can jump in easily.
 
 **Fishbowl discussion format:**
 
@@ -554,6 +598,10 @@ Share funniest AI-generated code from the day. End on a laugh.
 > This capstone simulates real work: time pressure, competing concerns, trade-offs. You won't finish everything perfectly. That's realistic."
 
 #### Challenge Start
+
+**Working format: Solo work**
+
+Final challenge is individual - everyone builds their own creative feature.
 
 **Checkpoints:**
 
