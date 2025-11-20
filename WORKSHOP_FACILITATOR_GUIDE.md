@@ -73,13 +73,13 @@
 Go around the room. Each person shares:
 - Name
 - What you work on
-- One quick thing about yourself (hobby, fun fact, whatever)
+- One thing you'd want on a desert island (can't be phone/laptop)
 
 **Facilitation tips:**
 - Start with yourself to set the tone
 - Keep it light and quick (30-45 seconds per person)
-- No pressure to be clever or funny
-- If someone's stuck, offer prompts: "What did you do last weekend?" or "Coffee or tea?"
+- The answers are usually more fun than expected
+- If someone's stuck, prompt: "Practical or fun?" or "Survival or entertainment?"
 
 #### Hopes & Fears (10 min)
 **This is crucial for surfacing concerns early.**
