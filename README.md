@@ -18,6 +18,8 @@ Popular options with setup guides:
 - **OpenAI Codex** - [Setup instructions](GETTING_STARTED.md#option-3-openai-codex)
 - **Or any other AI coding assistant** - The principles apply to all tools
 
+👉 **[Full setup guide](GETTING_STARTED.md)**
+
 ### 2. Clone This Repository
 ```bash
 git clone https://github.com/jamiebrown201/AI-Coding-Workshop.git
