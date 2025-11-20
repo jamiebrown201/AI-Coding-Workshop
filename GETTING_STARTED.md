@@ -52,14 +52,15 @@ git config --global user.email "your.email@ft.com"
 
 #### AI Coding Tool (Choose One or More)
 
-**Option 1: Claude Code (Recommended for this workshop)**
+##### Option 1: Claude Code (Recommended for this workshop)
+
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
 Or download from: [https://claude.ai/code](https://claude.ai/code)
 
-**Option 2: GitHub Copilot**
+##### Option 2: GitHub Copilot
 
 *Prerequisites:* Node.js v22+ and an active GitHub Copilot subscription (Individual, Business, or Enterprise)
 
@@ -91,7 +92,7 @@ Open VS Code Settings, search for "GitHub Copilot", and customize inline suggest
 
 ---
 
-**Option 3: OpenAI Codex**
+##### Option 3: OpenAI Codex
 
 **CLI Installation:**
 ```bash
