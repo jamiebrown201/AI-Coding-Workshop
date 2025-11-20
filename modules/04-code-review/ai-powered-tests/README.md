@@ -1,8 +1,5 @@
 # Activity 4C: AI-Powered Test Generation
 
-**Time:** 25 minutes
-**Difficulty:** Intermediate
-
 ## The Challenge: Write Tests with AI
 
 A critical and time-consuming part of software development is writing tests. AI can be a powerful assistant in this process, but it's not as simple as asking it to "write tests for this code."

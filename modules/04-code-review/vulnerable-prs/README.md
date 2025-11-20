@@ -1,8 +1,5 @@
 # Activity 4A: Security Review Challenge
 
-**Time:** 25 minutes
-**Difficulty:** Intermediate
-
 ## 🐛 The Case of the Insecure Comment System
 
 **Current status:** 🚨 Security team is about to have a very bad day.

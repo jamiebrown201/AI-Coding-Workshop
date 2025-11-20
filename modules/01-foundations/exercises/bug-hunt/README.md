@@ -1,8 +1,5 @@
 # Exercise 1B: Safari Bug Hunt
 
-**Time:** 35 minutes
-**Difficulty:** Intermediate
-
 ## 🐛 The Case of the Disappearing Paywall
 
 **Current status:** 🔥 Marketing is panicking
@@ -36,7 +33,7 @@ Use AI to help investigate, but remember: **AI often makes confident guesses abo
 
 ```bash
 cd modules/01-foundations/exercises/bug-hunt
-git checkout -b your-name/safari-bug-fix
+git checkout -b workshop/your-name/safari-bug-fix
 npm install
 npm run dev  # Should start local server at http://localhost:3000
 ```
@@ -181,7 +178,7 @@ AI assistance: [where it helped/didn't help]
 
 Closes #[issue-number]"
 
-git push origin your-name/safari-bug-fix
+git push origin workshop/your-name/safari-bug-fix
 ```
 
 ## Reflection Questions

@@ -1,8 +1,5 @@
 # Activity 2B: Refactoring Planning
 
-**Time:** 30 minutes
-**Difficulty:** Intermediate
-
 ## The Challenge: Modernize Legacy Code
 
 **Technical Context / Scenario:**

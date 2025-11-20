@@ -1,8 +1,5 @@
 # Exercise 1A: Article Preview Component
 
-**Time:** 35 minutes
-**Difficulty:** Beginner to Intermediate
-
 ## Product Context / User Story
 
 ```
@@ -29,7 +26,7 @@ Use your AI coding tool to help, but **you must be able to explain every line of
 
 ```bash
 cd modules/01-foundations/exercises/article-preview
-git checkout -b your-name/article-preview
+git checkout -b workshop/your-name/article-preview
 npm install
 ```
 

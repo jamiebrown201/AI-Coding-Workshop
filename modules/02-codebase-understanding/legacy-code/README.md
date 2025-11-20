@@ -1,8 +1,5 @@
 # Activity 2A: Architecture Analysis
 
-**Time:** 30 minutes
-**Difficulty:** Intermediate
-
 ## The Archaeological Dig
 
 Welcome to the subscription management system. It's been around for 5 years, changed hands between three teams, and includes some... "historical decisions."
