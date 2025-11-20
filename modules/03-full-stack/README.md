@@ -40,16 +40,22 @@ Requirements:
 - **Phase 4: Integration & Polish**
 - **Phase 5: Demo Prep**
 
-## Prerequisites
-
-- Completed Modules 1 and 2
-- Your AI tool ready to go
-
 ## Getting Started
 
 ```bash
 cd modules/03-full-stack/dashboard-starter
 npm install
+```
+
+### Starting This Module
+
+Tell your AI agent which module you're working on:
+
+```
+I'm working on Module 3: Full-Stack Features
+The starter code is in modules/03-full-stack/dashboard-starter/
+
+I need to build a real-time analytics dashboard with frontend and backend.
 ```
 
 ## Key Concepts

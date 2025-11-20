@@ -36,13 +36,6 @@ Plan a safe migration strategy for modernizing legacy code.
 - **Activity 2A: Architecture Analysis**
 - **Activity 2B: Refactoring Planning**
 
-## Prerequisites
-
-- Completed Module 1
-- Understanding of Node.js/Express basics
-- Familiarity with React (for refactoring exercise)
-- Your AI tool ready to go
-
 ## Getting Started
 
 ```bash
@@ -50,6 +43,17 @@ cd modules/02-codebase-understanding
 ```
 
 Start with **Activity 2A** (Architecture Analysis), then move to **Activity 2B** (Refactoring Planning).
+
+### Starting This Module
+
+Tell your AI agent which module you're working on:
+
+```
+I'm working on Module 2: Codebase Understanding
+The module is in modules/02-codebase-understanding/
+
+I need to analyze the legacy subscription system in the legacy-code/ directory.
+```
 
 ## Key Concepts
 

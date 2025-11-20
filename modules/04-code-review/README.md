@@ -38,12 +38,6 @@ Safely modernize legacy code without breaking it.
 - **Activity 4B: Refactoring Challenge**
 - **Activity 4C: AI-Powered Test Generation**
 
-## Prerequisites
-
-- Completed Modules 1-3
-- Understanding of common security vulnerabilities
-- Read the [Security Checklist](../../docs/security-checklist.md) (seriously, read it)
-
 ## Getting Started
 
 ```bash
@@ -51,6 +45,19 @@ cd modules/04-code-review
 ```
 
 Start with **Activity 4A** (Security Review), then move to **Activity 4B** (Refactoring).
+
+### Starting This Module
+
+Tell your AI agent which module you're working on:
+
+```
+I'm working on Module 4: Code Review & Security
+The module is in modules/04-code-review/
+
+I need to review AI-generated code for security vulnerabilities in the vulnerable-prs/ directory.
+```
+
+**Important:** Read the [Security Checklist](../../docs/security-checklist.md) before starting.
 
 ## Key Concepts
 

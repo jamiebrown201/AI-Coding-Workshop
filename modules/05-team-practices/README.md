@@ -23,16 +23,21 @@ By the end of this module, you'll be able to:
 - **Activity 5C: Measuring Impact (Optional)**
 - **Synthesis & Action Planning**
 
-## Prerequisites
-
-- Completed Modules 1-4
-- Experienced the benefits AND limitations of AI tools
-- Ready to think critically about adoption
-
 ## Getting Started
 
 ```bash
 cd modules/05-team-practices
+```
+
+### Starting This Module
+
+Tell your AI agent which module you're working on:
+
+```
+I'm working on Module 5: Team Practices & Responsible Use
+The module is in modules/05-team-practices/
+
+I need to create team guidelines for AI tool usage.
 ```
 
 ## Key Concepts

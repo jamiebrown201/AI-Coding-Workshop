@@ -36,13 +36,6 @@ Debug a browser-specific issue with AI assistance.
 - **Exercise 1A: Article Preview Component**
 - **Exercise 1B: Safari Bug Hunt**
 
-## Prerequisites
-
-- Node.js 18+ installed
-- AI coding tool set up
-- Repository cloned
-- Dependencies installed (`npm install`)
-
 ## Getting Started
 
 ```bash

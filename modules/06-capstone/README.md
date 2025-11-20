@@ -52,16 +52,22 @@ At the end of the workshop, we'll award prizes in the following categories:
 - **Checkpoint 3: Polish & Security**
 - **Checkpoint 4: Demo Time!**
 
-## Prerequisites
-
-- Completed Modules 1-5
-- Your AI tool ready to go
-
 ## Getting Started
 
 ```bash
 cd modules/06-capstone
 npm install
+```
+
+### Starting This Module
+
+Tell your AI agent which module you're working on:
+
+```
+I'm working on Module 6: Capstone Challenge
+The module is in modules/06-capstone/
+
+I'm building a "Wild & Wonderful" AI-powered feature. [Describe your idea]
 ```
 
 ## Key Concepts
