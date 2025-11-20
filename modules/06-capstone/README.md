@@ -7,6 +7,7 @@ This is it! The Capstone Challenge is your opportunity to synthesize everything 
 ## Learning Objectives
 
 By the end of this module, you'll be able to:
+
 - ✓ Apply all the skills and concepts from the previous modules in a single challenge.
 - ✓ Build a complete full-stack feature under time pressure.
 - ✓ Make trade-offs between functionality, security, and quality.
@@ -44,7 +45,7 @@ At the end of the workshop, we'll award prizes in the following categories:
 - 🔥 **Actually Useful** - The feature someone would genuinely want to use in production
 - 😱 **Best Use of AI** - Demonstrated the most effective AI-assisted development workflow
 
-**Everyone demos. Everyone votes. Winners get bragging rights.**
+**Everyone demos. Everyone votes.**
 
 ## Structure/Activities
 
@@ -100,6 +101,7 @@ npm install
 ## Next Steps
 
 After the workshop:
+
 1. Review your code against the reference solution
 2. Complete anything you didn't finish
 3. Apply these practices in your daily work
@@ -110,6 +112,7 @@ After the workshop:
 ## Reflection Questions
 
 After completing the capstone:
+
 1. **What went well?**
 2. **What was harder than expected?**
 3. **How did AI help?**
