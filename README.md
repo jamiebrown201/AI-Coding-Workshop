@@ -8,15 +8,17 @@ This is a hands-on workshop with **7 real coding challenges** that teach you to 
 
 ## 🚀 Quick Start (5 Minutes)
 
-### 1. Install an AI Coding Tool (REQUIRED)
+### 1. Set Up Your AI Coding Tool
 
-**You MUST have one of these AI tools installed to participate:**
+**You'll need an AI coding assistant** - either a code editor extension (like GitHub Copilot) or CLI tool (like Codex).
 
+Popular options with setup guides:
 - **Claude Code** - [Setup instructions](GETTING_STARTED.md#ai-coding-tool-choose-one-or-more)
 - **GitHub Copilot** - [Setup instructions](GETTING_STARTED.md#option-2-github-copilot)
 - **OpenAI Codex** - [Setup instructions](GETTING_STARTED.md#option-3-openai-codex)
+- **Or any other AI coding assistant** - The principles apply to all tools
 
-👉 **[Full AI tool setup guide](GETTING_STARTED.md#ai-coding-tool-choose-one-or-more)**
+👉 **[Full setup guide](GETTING_STARTED.md#ai-coding-tool-choose-one-or-more)**
 
 ### 2. Clone This Repository
 ```bash
