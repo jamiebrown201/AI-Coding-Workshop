@@ -4,7 +4,7 @@
     "articleId": "ft-2024001",
     "userId": "user_1000",
     "text": "Great insight, thanks for breaking it down.",
-    "createdAt": "2025-11-20T13:34:05.351Z",
+    "createdAt": "2025-11-20T19:41:37.487Z",
     "flagged": false
   },
   {
@@ -12,7 +12,7 @@
     "articleId": "ft-2024002",
     "userId": "user_1001",
     "text": "I have questions about this data.\n<script>alert(1)</script>",
-    "createdAt": "2025-11-20T13:33:05.351Z",
+    "createdAt": "2025-11-20T19:40:37.487Z",
     "flagged": true
   },
   {
@@ -20,7 +20,7 @@
     "articleId": "ft-2024003",
     "userId": "user_1002",
     "text": "Great insight, thanks for breaking it down.",
-    "createdAt": "2025-11-20T13:32:05.351Z",
+    "createdAt": "2025-11-20T19:39:37.487Z",
     "flagged": false
   }
 ]

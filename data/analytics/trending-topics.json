@@ -1,27 +1,27 @@
 [
   {
     "topic": "EU desk",
-    "mentions": 493,
-    "sentiment": 0.64
+    "mentions": 196,
+    "sentiment": 0.76
+  },
+  {
+    "topic": "EU desk",
+    "mentions": 511,
+    "sentiment": 0.8
   },
   {
     "topic": "UK desk",
-    "mentions": 341,
-    "sentiment": 0.78
+    "mentions": 509,
+    "sentiment": 0.71
   },
   {
     "topic": "APAC desk",
-    "mentions": 517,
-    "sentiment": 0.81
+    "mentions": 289,
+    "sentiment": 0.8
   },
   {
-    "topic": "UK desk",
-    "mentions": 438,
-    "sentiment": 0.57
-  },
-  {
-    "topic": "UK desk",
-    "mentions": 241,
-    "sentiment": 0.56
+    "topic": "US desk",
+    "mentions": 483,
+    "sentiment": 0.62
   }
 ]

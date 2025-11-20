@@ -14,15 +14,15 @@
   "articles": [
     {
       "articleId": "ft-2024001",
-      "engagementScore": 83
+      "engagementScore": 61
     },
     {
       "articleId": "ft-2024002",
-      "engagementScore": 70
+      "engagementScore": 56
     },
     {
       "articleId": "ft-2024003",
-      "engagementScore": 90
+      "engagementScore": 46
     }
   ]
 }
