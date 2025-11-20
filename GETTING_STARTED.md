@@ -98,10 +98,10 @@ cd AI-Coding-Workshop
 
 ```bash
 # Create and switch to your personal branch
-git checkout -b your-name-workshop
+git checkout -b workshop/yourname
 
 # For example:
-# git checkout -b jamie-workshop
+# git checkout -b workshop/jamie
 ```
 
 This lets you:
@@ -252,13 +252,13 @@ Push your branch to share with others:
 
 ```bash
 # First time pushing your branch
-git push -u origin your-name-workshop
+git push -u origin workshop/yourname
 
 # Subsequent pushes
 git push
 ```
 
-Now others can see your code at: `https://github.com/jamiebrown201/AI-Coding-Workshop/tree/your-name-workshop`
+Now others can see your code at: `https://github.com/jamiebrown201/AI-Coding-Workshop/tree/workshop/yourname`
 
 ### Seeing Others' Work
 
@@ -268,10 +268,10 @@ git fetch --all
 git branch -r
 
 # Check out someone else's branch to see their code
-git checkout other-person-workshop
+git checkout workshop/othername
 
 # Go back to your branch
-git checkout your-name-workshop
+git checkout workshop/yourname
 ```
 
 ### Important Notes

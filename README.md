@@ -28,13 +28,24 @@ git clone https://github.com/jamiebrown201/AI-Coding-Workshop.git
 cd AI-Coding-Workshop
 ```
 
-### 3. Install Dependencies
+### 3. Create Your Working Branch
+
+**Important:** Create your own branch so you can commit and share your work.
+
+```bash
+git checkout -b workshop/yourname
+
+# For example:
+# git checkout -b workshop/jamie
+```
+
+### 4. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Verify Everything Works
+### 5. Verify Everything Works
 
 ```bash
 npm run verify
