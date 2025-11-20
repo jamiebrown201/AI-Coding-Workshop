@@ -44,10 +44,68 @@ npm install -g @anthropic-ai/claude-code
 Or download from: [https://claude.ai/code](https://claude.ai/code)
 
 **Option 2: GitHub Copilot**
-Install via VS Code extensions marketplace
 
-**Option 3: Codex (OpenAI)**
-Follow OpenAI's installation instructions
+*Prerequisites:* Node.js v22+ and an active GitHub Copilot subscription (Individual, Business, or Enterprise)
+
+**CLI Installation:**
+```bash
+# Install Copilot CLI globally
+npm install -g @github/copilot
+
+# Start Copilot CLI
+copilot
+```
+
+**Authentication:**
+On first use, enter `/login` at the Copilot prompt, then follow the browser-based sign-in with your GitHub credentials.
+
+**VS Code Extension:**
+1. Open VS Code Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`)
+2. Search for "GitHub Copilot" (official extension)
+3. Click Install and sign in with your GitHub account when prompted
+4. Authorize Copilot if a browser window appears
+
+**Usage:**
+- In VS Code: Copilot suggests code as you type. Accept suggestions with `Tab`
+- In CLI: Use natural language prompts ("fix this bug", "explain this code")
+- Access Copilot Chat in VS Code sidebar for conversational assistance
+
+**Optional Configuration:**
+Open VS Code Settings, search for "GitHub Copilot", and customize inline suggestions or disable for specific languages/workspaces.
+
+---
+
+**Option 3: OpenAI Codex**
+
+**CLI Installation:**
+```bash
+# Via npm (recommended)
+npm install -g @openai/codex
+
+# Or via Homebrew (macOS/Linux)
+brew install codex
+```
+
+**First Run:**
+```bash
+# Start Codex CLI
+codex
+```
+
+On first launch, sign in using your ChatGPT Plus, Pro, Team, Edu, or Enterprise account.
+
+**VS Code Extension:**
+1. Open VS Code Extensions view
+2. Search for "Codex" (official OpenAI extension)
+3. Click Install and authenticate with your OpenAI account
+4. Open the Codex panel to generate, debug, and refactor code
+
+**Tips:**
+- Open relevant files to give Codex context
+- Ask for concise changes; review diffs before applying
+- Switch between chat and agent modes as needed
+
+---
 
 **Option 4: Any other AI coding assistant**
 The principles in this workshop apply to all tools
