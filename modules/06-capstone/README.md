@@ -20,12 +20,47 @@ By the end of this module, you'll be able to:
 
 ## Inspiration Ideas
 
-- A "Haiku Generator" that turns any text into a haiku.
-- A "Sentiment Analyzer" that tells you the mood of a block of text.
-- A "Code Explainer" that explains a snippet of code in plain English.
-- A "Recipe Generator" that creates a recipe based on a list of ingredients.
-- A "Stupid Joke Generator" that tells you a new (and probably terrible) joke every time you click a button.
-- A "CSS Art Generator" that creates a piece of CSS art based on a prompt.
+### 🎨 Creative & Weird
+- **"Passive Aggressive Commit Message Generator"** - Enter what you actually did, get a commit message that's *technically* accurate but dripping with sarcasm
+- **"My Code as a Metal Song"** - Paste code, get song lyrics about your functions screaming at each other in a mosh pit
+- **"CSS Battle Royale"** - Two users enter CSS, one design wins (voting system)
+- **"Code Roast Bot"** - Upload your code, get absolutely destroyed by an AI comedian
+- **"Startup Idea Roulette"** - Combines 3 random buzzwords into the most ridiculous SaaS pitch you've ever heard
+- **"Git Blame Poetry Slam"** - Turns your git blame history into dramatic spoken word poetry
+- **"My Bug as a Horror Movie"** - Describe your bug, get a movie poster for "Attack of the Null Pointer Exception"
+
+### 🤖 Actually Useful (But Still Fun)
+- **"Explain Like I'm A Golden Retriever"** - Technical docs rewritten at various comprehension levels (puppy, teenager, senior dev, etc.)
+- **"PR Review Translator"** - Converts passive-aggressive code review comments into constructive feedback (or vice versa)
+- **"Meeting Could've Been An Email Detector"** - Paste meeting notes, AI determines if it was actually necessary
+- **"Jargon Bullshit Meter"** - Analyzes text and scores how much corporate buzzword nonsense it contains
+- **"Stack Overflow Simulator"** - Ask a coding question, get responses ranging from helpful to "marked as duplicate" to "why are you even programming"
+- **"README Generator for People Who Hate Writing READMEs"** - Auto-generates from your code with varying levels of snark
+
+### 🎮 Interactive & Gamified
+- **"CSS Speedrun"** - Race to recreate a design using only CSS. Leaderboard included.
+- **"TypeScript Type Tetris"** - Falling blocks of type definitions you have to match correctly
+- **"Regex Golf"** - Shortest regex wins. Compete against friends (and lose friendships)
+- **"Code Golf Caddy"** - Suggests increasingly unreadable ways to shorten your code
+- **"Bug Bounty Bingo"** - Upload code, get a bingo card of potential bugs. Find them all!
+- **"Refactor or Die"** - Timed challenge: refactor legacy code before the timer runs out
+
+### 🔥 Absolutely Unhinged
+- **"Blockchain, But Make It Stupid"** - Everything is on the blockchain. Your grocery list. Your todo list. Everything. It's completely unnecessary.
+- **"AI That Argues With You"** - Chatbot that takes the opposite position on everything. "Tabs are better." "WRONG."
+- **"Code Review Roulette"** - Random GitHub repo, random file, you have 60 seconds to find something wrong
+- **"My Documentation as a Conspiracy Theory Board"** - Generates red-string-and-crazy-eyes diagrams from your API docs
+- **"Rubber Duck as a Service"** - Chat with a virtual rubber duck that occasionally interjects with "have you tried turning it off and on again?"
+- **"Git Commit Oracle"** - Predicts the future based on your commit message quality. "Your next PR will be rejected" vibes.
+- **"The Most Overengineered Todo App"** - Microservices, event sourcing, CQRS, DDD, the works. For a todo list.
+
+### 💀 Deliberately Terrible
+- **"Worst Possible Implementation Generator"** - Give it a problem, it solves it in the most inefficient, memory-leaking, security-hole-riddled way possible
+- **"Anti-Pattern as a Service"** - Suggests the worst possible way to solve your problem with complete confidence
+- **"Tech Debt Accumulator"** - Tracks how much technical debt you're creating in real-time. High scores encouraged.
+- **"Interview Question From Hell"** - Generates increasingly absurd whiteboard problems. "Reverse a binary tree while blindfolded."
+
+**Pick something that makes you laugh. Or cry. Or both.**
 
 ## Structure/Activities
 
