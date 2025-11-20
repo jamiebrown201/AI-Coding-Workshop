@@ -8,27 +8,36 @@ This is a hands-on workshop with **7 real coding challenges** that teach you to 
 
 ## 🚀 Quick Start (5 Minutes)
 
-### 1. Clone This Repository
+### 1. Install an AI Coding Tool (REQUIRED)
+
+**You MUST have one of these AI tools installed to participate:**
+
+- **Claude Code** - [Setup instructions](GETTING_STARTED.md#ai-coding-tool-choose-one-or-more)
+- **GitHub Copilot** - [Setup instructions](GETTING_STARTED.md#option-2-github-copilot)
+- **OpenAI Codex** - [Setup instructions](GETTING_STARTED.md#option-3-openai-codex)
+
+👉 **[Full AI tool setup guide](GETTING_STARTED.md#ai-coding-tool-choose-one-or-more)**
+
+### 2. Clone This Repository
 ```bash
 git clone https://github.com/jamiebrown201/AI-Coding-Workshop.git
 cd AI-Coding-Workshop
 ```
 
-### 2. Install Dependencies
+### 3. Install Dependencies
 ```bash
 npm install
 ```
 
-### 3. Verify Everything Works
+### 4. Verify Everything Works
 ```bash
 npm run verify
-# or ./scripts/verify-setup.sh if you prefer the shell version
 ```
 
 ✅ If you see green checkmarks, you're ready to start!
 ❌ If not, check [GETTING_STARTED.md](GETTING_STARTED.md) for troubleshooting.
 
-### 4. Optional: Start the Sample Services
+### 5. Optional: Start the Sample Services
 ```bash
 npm run dev
 ```

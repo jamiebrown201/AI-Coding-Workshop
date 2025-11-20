@@ -4,6 +4,20 @@
 
 **Estimated time: 15-20 minutes**
 
+---
+
+## ⚠️ MOST IMPORTANT: Install an AI Coding Tool FIRST
+
+**You cannot do this workshop without an AI coding tool.** Install one of these BEFORE anything else:
+
+- [Claude Code](#option-1-claude-code-recommended-for-this-workshop)
+- [GitHub Copilot](#option-2-github-copilot)
+- [OpenAI Codex](#option-3-openai-codex)
+
+See the [AI Coding Tool section](#ai-coding-tool-choose-one-or-more) below for detailed setup instructions.
+
+---
+
 ### Step 1: Install Prerequisites
 
 #### Node.js (Required)
