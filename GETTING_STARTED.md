@@ -4,22 +4,6 @@
 
 **Estimated time: 15-20 minutes**
 
----
-
-## ⚠️ IMPORTANT: Set Up Your AI Coding Tool First
-
-**You'll need an AI coding assistant** - either installed in your code editor (like GitHub Copilot in VS Code) or as a CLI tool (like Codex).
-
-Popular options:
-- [Claude Code](#option-1-claude-code-recommended-for-this-workshop)
-- [GitHub Copilot](#option-2-github-copilot)
-- [OpenAI Codex](#option-3-openai-codex)
-- Or any other AI coding assistant - the workshop principles apply to all tools
-
-See the [AI Coding Tool section](#ai-coding-tool-choose-one-or-more) below for detailed setup instructions.
-
----
-
 ### Step 1: Install Prerequisites
 
 #### Node.js (Required)
