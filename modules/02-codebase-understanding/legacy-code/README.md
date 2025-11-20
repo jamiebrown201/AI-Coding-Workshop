@@ -275,6 +275,11 @@ After 20 minutes of exploration:
 5. **How would you explain this system to a new teammate?**
 6. **What would you want to refactor first (and why)?**
 
+## Group Discussion
+
+- Compare your architecture diagrams. What did different groups choose to highlight or omit? What does this say about the nature of "understanding" a codebase?
+- Does using an AI to explain a codebase prevent you from developing the critical skill of reading and interpreting code yourself?
+
 ## Common "Historical Decisions" You Might Find
 
 - Inconsistent error handling

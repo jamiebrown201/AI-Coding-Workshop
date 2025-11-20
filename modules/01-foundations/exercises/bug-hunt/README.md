@@ -188,6 +188,11 @@ After fixing the bug:
 4. **How could this bug have been prevented?**
 5. **What did you learn about Safari's quirks?**
 
+## Group Discussion
+
+- Compare the different "confidently wrong" suggestions the AI gave each of you. What patterns do you notice?
+- When is it better to spend time trying to get a good answer from an AI, versus going directly to the official documentation (e.g., MDN, WebKit Bug Tracker)?
+
 ## Gamification Element
 
 **First person/team to:**

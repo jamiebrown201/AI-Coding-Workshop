@@ -1,8 +1,8 @@
-# Module 6: Capstone Challenge
+# Module 6: Capstone Challenge - The "Wild & Wonderful" AI-Powered Feature
 
 **Duration:** 60 minutes
 
-This is it! The Capstone Challenge is your opportunity to synthesize everything you've learned throughout the workshop. Under time pressure, you'll build a complete, production-ready feature, applying your skills in AI-assisted development, security, testing, and documentation. This final challenge is designed to simulate real-world constraints and trade-offs, solidifying your understanding of how to effectively and responsibly leverage AI coding tools from start to finish.
+This is it! The Capstone Challenge is your opportunity to synthesize everything you've learned and build something creative, fun, or interesting. Under time pressure, you'll build a complete, production-ready feature, applying your skills in AI-assisted development, security, testing, and documentation.
 
 ## Learning Objectives
 
@@ -14,14 +14,18 @@ By the end of this module, you'll be able to:
 
 ## Introduction/Scenario
 
-**The Final Challenge:** You've learned the fundamentals, explored codebases, built features, reviewed for security, and discussed team practices. Now it's time to put it all together.
+**The Final Challenge:** You've learned the fundamentals, explored codebases, built features, reviewed for security, and discussed team practices. Now it's time to have some fun and build something creative.
 
-**Product Context:**
-```
-As an FT editorial team member
-I want to see trending topics based on reader engagement
-So that I can make informed decisions about content promotion
-```
+**Your Mission:** Build a "Wild & Wonderful" AI-powered feature. It can be silly, it can be interesting, it can be anything you want. The only rule is that it has to be a complete, working feature.
+
+## Inspiration Ideas
+
+- A "Haiku Generator" that turns any text into a haiku.
+- A "Sentiment Analyzer" that tells you the mood of a block of text.
+- A "Code Explainer" that explains a snippet of code in plain English.
+- A "Recipe Generator" that creates a recipe based on a list of ingredients.
+- A "Stupid Joke Generator" that tells you a new (and probably terrible) joke every time you click a button.
+- A "CSS Art Generator" that creates a piece of CSS art based on a prompt.
 
 ## Structure/Activities
 
@@ -60,6 +64,14 @@ npm install
 - **"AI will handle complexity"**
 - **"Tests at the end"**
 
+## Evaluation Criteria
+
+- **Functionality (30%):** Does it work as expected?
+- **Security (25%):** Did you run the security checklist and address any issues?
+- **Testing (20%):** Does the feature have a reasonable level of test coverage?
+- **Documentation (15%):** Is the feature well-documented?
+- **Creativity & Fun (10%):** How creative, fun, or interesting is the feature?
+
 ## Resources
 
 - [Security Checklist](../../docs/security-checklist.md)
@@ -74,6 +86,22 @@ After the workshop:
 5. Draft team guidelines
 6. Measure your actual productivity gains
 
----
+## Reflection Questions
+
+After completing the capstone:
+1. **What went well?**
+2. **What was harder than expected?**
+3. **How did AI help?**
+4. **Where did AI struggle?**
+5. **What would you do differently?**
+6. **Are you ready to use AI tools in production?**
+7. **What will you change about how you work?**
+
+## Group Discussion
+
+- This challenge had a tight time limit. How did the time pressure affect your decision-making process when it came to using the AI and verifying its output?
+- After completing this entire workshop, what is your biggest remaining concern about the widespread use of AI coding assistants in the software industry?
+
+## Key Takeaways
 
 **Good luck! You've got this. 🚀**

@@ -71,7 +71,12 @@ cd modules/02-codebase-understanding/refactoring-challenge
 - Facilitator synthesizes common themes
 - Discussion: "Did AI suggest a big-bang rewrite? Why is that risky?"
 
-**Key Takeaways:**
+## Group Discussion
+
+- What was the most significant disagreement within your group when creating the refactoring plan? How did you resolve it?
+- If an AI suggests a "big bang" rewrite, and you know it's risky, how do you get the most value out of that suggestion without following it blindly?
+
+## Key Takeaways:
 - ✅ AI can suggest refactoring approaches
 - ❌ AI loves "rewrite everything" (usually a bad idea)
 - ✅ Incremental migration > big-bang rewrite

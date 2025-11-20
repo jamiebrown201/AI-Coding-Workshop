@@ -193,6 +193,11 @@ After completing the exercise, consider:
 4. **Would you trust this code in production without review?**
 5. **What would you do differently next time?**
 
+## Group Discussion
+
+- Discuss the trade-offs between speed and quality. How much time did you save, but how much time did you spend fixing or verifying the AI's output?
+- In a real project, would it have been faster to write this component from scratch or to use the AI and then fix its mistakes?
+
 ## Reference Solution
 
 Check `solutions/ArticlePreview.tsx` after you've attempted the exercise yourself.

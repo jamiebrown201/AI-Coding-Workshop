@@ -63,6 +63,11 @@ After the exercise, discuss with your group:
 3.  **How would you change your regular code review process after this exercise?**
 4.  **What is the single most important change the original developer could have made to avoid these issues?**
 
+## Group Discussion
+
+- If you used an automated security scanner (or an AI), what did it catch and what did it miss? Why do you think it missed certain vulnerabilities?
+- Who is ultimately responsible for a security vulnerability introduced by an AI coding assistant? The developer who used it? The company that makes the tool? The team that didn't catch it in review?
+
 ## Next Steps
 
 After completing this exercise, move on to **Activity 4B: Refactoring Challenge**.

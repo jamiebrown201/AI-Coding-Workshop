@@ -38,6 +38,7 @@ Safely modernize legacy code without breaking it.
 
 - **Activity 4A: Security Review Challenge (25 min)**
 - **Activity 4B: Refactoring Challenge (25 min)**
+- **Activity 4C: AI-Powered Test Generation (25 min)**
 
 ## Prerequisites
 
