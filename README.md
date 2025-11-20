@@ -156,20 +156,20 @@ Run as a facilitated full-day workshop with:
 
 ## 🔑 Key Principles You'll Learn
 
-### 1. Context Quality > Prompt Quality
-Giving AI the *right* 50 lines beats dumping 5000 lines. You'll learn this the hard way in Challenge 3.
-
-### 2. Understanding > Speed
+### 1. Understanding > Speed
 Fast code you don't understand is a liability. Every challenge requires you to explain what AI generated.
 
-### 3. Security is Non-Negotiable
+### 2. Security is Non-Negotiable
 45% of AI-generated code has vulnerabilities. Challenge 6 will show you why code review is essential.
+
+### 3. Skepticism is Healthy
+Question everything AI suggests. Challenge 2 will teach you this when AI confidently suggests the wrong fix.
 
 ### 4. AI Augments, Doesn't Replace
 AI handles boilerplate. You handle thinking. This distinction becomes clear by Challenge 5.
 
-### 5. Skepticism is Healthy
-Question everything AI suggests. Challenge 2 will teach you this when AI confidently suggests the wrong fix.
+### 5. Context Quality > Prompt Quality
+Giving AI the *right* 50 lines beats dumping 5000 lines. You'll learn this the hard way in Challenge 3.
 
 ---
 

@@ -436,13 +436,17 @@ Share funniest AI-generated code from the day. End on a laugh.
 >
 > This capstone simulates real work: time pressure, competing concerns, trade-offs. You won't finish everything perfectly. That's realistic."
 
-#### Challenge Start (50 min)
+#### Challenge Start (60 min)
 
-**Checkpoints at 20, 40, 50 minutes.**
+**Checkpoints at 15, 30, 50, 60 minutes:**
+- 15 min: Backend should be working
+- 30 min: Full integration complete
+- 50 min: Polish & security review
+- 60 min: Demo time!
 
 **Facilitator role:**
 - Circulate constantly
-- Time warnings
+- Time warnings at each checkpoint
 - Help with blocking issues
 - Keep energy high
 - Don't solve for them
@@ -455,12 +459,19 @@ Share funniest AI-generated code from the day. End on a laugh.
 
 **Format:**
 - Show it working (90 sec)
-- Explain one decision (60 sec)
-- What you'd improve (30 sec)
+- Explain one decision (30 sec)
+- What worked/didn't work with AI (30 sec)
+- What you'd improve with more time (30 sec)
 
-**Awards:**
-- Best Overall, Most Secure, Best Tests, Best UX, etc.
-- Make it celebratory!
+**Prize Categories (Everyone votes):**
+- 🏆 **Silliest Idea** - Most absurd/ridiculous feature
+- ✨ **Slickest Execution** - Most polished implementation
+- 🤯 **Most Overengineered** - Unnecessary tech for simple problems
+- 🎨 **Most Creative** - Most original concept
+- 🔥 **Actually Useful** - Would genuinely use in production
+- 😱 **Best Use of AI** - Most effective AI workflow
+
+**Make it celebratory! Winners get bragging rights.**
 
 ### Closing (15 min)
 
