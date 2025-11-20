@@ -39,13 +39,6 @@ npm run verify
 ✅ If you see green checkmarks, you're ready to start!
 ❌ If not, check [GETTING_STARTED.md](GETTING_STARTED.md) for troubleshooting.
 
-### 5. Optional: Start the Sample Services
-```bash
-npm run dev
-```
-
-This launches the legacy subscription API, dashboard backend, and dashboard frontend so you can demo the reference solutions quickly.
-
 ---
 
 ## 📚 The 7 Challenges

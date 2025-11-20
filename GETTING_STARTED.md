@@ -183,16 +183,6 @@ npm run generate-fixtures
 
 This script repopulates everything under `data/` and the legacy system fixtures without touching your own work.
 
-### Optional: Start the Sample Services
-
-Need the legacy subscription API and engagement dashboard running for demos?
-
-```bash
-npm run dev
-```
-
-This command launches the legacy API plus the dashboard backend/front-end trio with prefixed logs.
-
 ## Troubleshooting
 
 ### ❌ "Node.js version too old"
