@@ -1,217 +1,185 @@
-# Exercise 1B: Safari Bug Hunt
+# Exercise 1B: Bug Hunt
 
-## 🐛 The Case of the Disappearing Paywall
+## 🐛 The Case of the Broken Article List
 
-**Current status:** 🔥 Marketing is panicking
+**Current status:** 🔥 Users can't read articles
 
 ## Product Context / Bug Report
 
 ```
-As a FT reader on Safari mobile
-I want the paywall to display correctly
-So that I understand subscription options when I hit my article limit
+As a FT reader
+I want to see the list of articles load correctly
+So that I can browse and read content
 
-Bug Report from User Testing:
-"On my iPhone using Safari, the paywall just... doesn't show up?
-I can read everything for free. Which is nice for me, but probably
-bad for your business model. 😬"
+Bug Report from QA:
+"The article list page isn't working. When you visit the page,
+articles should load and display, but instead nothing appears.
+The page just shows 'No articles found' even though we know
+there are articles in the data file. The loading spinner shows
+briefly, then disappears and shows the empty state."
 
-Priority: HIGH (revenue impacting)
-Browser: Safari 17.x on iOS
-Reproducible: Yes
-Works in: Chrome, Firefox, Edge
-Fails in: Safari (desktop and mobile)
+Priority: HIGH (users can't access content)
+Reproducible: Yes, every time
+Expected: Article list displays 10 articles from fixtures/articles.json
+Actual: "No articles found" message shows instead
 ```
 
 ## Your Mission
 
 Find the bug, fix it, don't break anything else.
 
-Use AI to help investigate, but remember: **AI often makes confident guesses about browser-specific issues without real knowledge.**
+Use AI to help investigate, but remember: **AI might confidently suggest the wrong thing. Use your debugging skills to verify.**
 
 ## Setup
 
 ```bash
 cd modules/01-foundations/exercises/bug-hunt
-git checkout -b workshop/your-name/safari-bug-fix
+git checkout -b workshop/your-name/article-list-bug
 npm install
 npm run dev  # Should start local server at http://localhost:3000
 ```
 
 ## The Scenario
 
-The paywall component exists. It works perfectly in Chrome, Firefox, and Edge. But in Safari? Invisible. Gone. Disappeared into the ether.
+You've been given a simple article list page that should:
+1. Fetch articles from `fixtures/articles.json`
+2. Display them in a list
+3. Show loading state while fetching
+4. Show empty state if no articles found
 
-Your task: Investigate, diagnose, and fix it.
+The code looks fine at first glance, but something's broken.
 
-## Hints (No, really, read these)
+## Hints (Read These First!)
 
-- This works fine in Chrome desktop (of course it does)
-- Something about Safari's JavaScript engine? Or CSS? Or dark magic?
-- The paywall component *exists* - it's just shy in Safari
-- Yes, you can use AI to help investigate
-- No, AI won't immediately know what's wrong (it's not that good)
-- Browser dev tools are your best friend
+- Open the browser dev tools Console tab - what do you see?
+- Check the Network tab - is the fetch request happening?
+- Look at the component code - is there a logic error?
+- The bug is subtle but common in React/async code
+- AI might suggest adding more code, but the fix is simpler than that
 
 ## Things You Have At Your Disposal
 
-- Browser dev tools (Safari, Chrome, Firefox)
+- Browser dev tools (Console, Network, Elements tabs)
 - AI debugging assistance
-- This README (you're reading it, good job)
-- Your own experience debugging things that work everywhere except Safari
-- Stack Overflow (let's be honest, you were going there anyway)
-- The entire codebase in this exercise directory
-
-## What To Check
-
-**Common Safari-specific issues:**
-- [ ] JavaScript features Safari doesn't support
-- [ ] CSS properties Safari handles differently
-- [ ] ES6+ syntax Safari's engine chokes on
-- [ ] Date/time handling differences
-- [ ] LocalStorage/SessionStorage quirks
-- [ ] Flexbox/Grid edge cases
-- [ ] Event handling differences
-- [ ] Webkit-specific bugs
-
-### Testing Your Fix
-
-### In Safari (if you have a Mac)
-```bash
-npm run dev
-# Open http://localhost:3000 in Safari
-# Test the paywall appears after viewing 3 articles
-```
-
-### Comprehensive testing
-```bash
-npm test
-# All tests should pass, including Safari-specific ones
-```
-
-## Success Criteria
-
-- [ ] Paywall appears in Safari after user hits article limit
-- [ ] Paywall looks correct (no layout issues)
-- [ ] Paywall is functional (buttons work, interactions work)
-- [ ] Still works in Chrome, Firefox, Edge
-- [ ] No console errors in any browser
-- [ ] Tests pass (`npm test`)
-- [ ] You understand WHY it was broken
-- [ ] You can explain the fix to someone else
+- The codebase in this directory
+- `fixtures/articles.json` with sample data
+- Your debugging skills
 
 ## Debugging Strategy
 
-### Step 1: Reproduce (5 min)
-1. Open the app in Chrome - verify paywall works
-2. Open the app in Safari (or run Safari tests)
-3. Confirm the bug exists
-4. Document what you observe
+### Step 1: Reproduce & Observe
+1. Run `npm run dev`
+2. Open http://localhost:3000 in your browser
+3. Open DevTools Console tab
+4. What do you see? Any errors? Any logs?
+5. Check the Network tab - is `articles.json` being fetched?
 
-### Step 2: Investigate (10 min)
-1. Open Safari dev tools (Develop menu → Show Web Inspector)
-2. Check the Console tab for errors
-3. Check the Elements tab - is the paywall HTML there?
-4. Check the Network tab - are assets loading?
-5. Use AI to suggest possible causes based on error messages
+### Step 2: Investigate the Code
+1. Look at `src/ArticleList.tsx` - how does it fetch data?
+2. Look at `src/App.tsx` - how is ArticleList used?
+3. Check `fixtures/articles.json` - is the data there?
+4. Use AI to help understand what might be wrong
 
-**Example AI prompt:**
-> "I'm working on the Safari Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+### Step 3: Form a Hypothesis
+Based on console errors or logs, what do you think is broken?
+- Is it a fetch error?
+- Is it a parsing error?
+- Is it a state management issue?
+- Is it a conditional rendering issue?
+
+### Step 4: Fix & Test
+1. Make ONE change at a time
+2. Test after each change
+3. Check both the browser and console
+4. Verify the fix actually works
+
+### Step 5: Verify & Clean Up
+1. Run `npm test` to ensure tests pass
+2. Remove any debug console.logs you added
+3. Make sure the fix doesn't break anything else
+
+## Example AI Prompts
+
+**❌ Vague:**
+> "Fix my broken React component"
+
+**✅ Better:**
+> "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 >
-> I have a React component that renders fine in Chrome but not Safari. The console shows [your error here]. What are common Safari-specific issues that could cause this?"
+> I have a React component that fetches articles from a JSON file. The fetch seems to work (I see it in Network tab) but the articles don't display. The component shows 'No articles found' instead. What are common issues with async data fetching in React?"
 
-### Step 3: Fix (15 min)
-1. Make targeted changes based on your investigation
-2. Test in Safari after each change
-3. Verify Chrome still works
-4. Run the full test suite
-
-### Step 4: Document (5 min)
-1. Write a clear commit message explaining the fix
-2. Document why the bug occurred
-3. Note any Safari-specific gotchas for the team
-
-## Example AI Debugging Conversation
-
-**❌ Bad approach:**
-> "Fix this code to work in Safari"
-> [pastes entire component]
-
-**✅ Good approach:**
-> "I'm working on the Safari Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+**✅ Even better (with specifics):**
+> "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 >
-> I have a paywall component that works in Chrome but not Safari. In Safari, I see this error in the console: [error message]. The component uses [specific features/libraries]. What are potential Safari compatibility issues?"
+> In ArticleList.tsx, I'm using useState and useEffect to fetch articles. The console shows '[error message]'. The Network tab shows the fetch succeeded with 200 status. What could cause the articles array to be empty even though the fetch succeeded?"
 
-**✅ Even better:**
-> "I'm working on the Safari Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
->
-> The component renders in Safari (I can see it in the Elements inspector) but it's not visible on screen. CSS shows 'display: flex' is applied. This works in Chrome. What Safari flexbox bugs could cause invisible-but-present elements?"
+## Success Criteria
 
-## Common Safari Gotchas
+- [ ] Article list displays all 10 articles from the fixture
+- [ ] No console errors
+- [ ] Loading state shows briefly while fetching
+- [ ] Tests pass (`npm test`)
+- [ ] You understand WHY it was broken
+- [ ] You can explain the fix to someone else
+- [ ] You removed any debug code you added
 
-Here are real Safari issues that have burned developers:
+## Common Mistakes to Avoid
 
-1. **Date parsing:** Safari hates `new Date("2025-11-19")` format
-2. **Smooth scrolling:** `scroll-behavior: smooth` not supported until Safari 15.4
-3. **Flexbox gaps:** `gap` property in flexbox came late to Safari
-4. **Backdrop filter:** Requires `-webkit-` prefix
-5. **Array.prototype.at():** Only in Safari 15.4+
-6. **Private class fields:** Different syntax requirements
-7. **Optional chaining:** Late adopter
+When using AI for debugging:
+- ❌ Don't paste the entire codebase
+- ❌ Don't blindly apply suggestions without understanding them
+- ❌ Don't add more complexity to "fix" something
+- ✅ Start with the error message
+- ✅ Form your own hypothesis first
+- ✅ Use AI to validate or expand your thinking
+
+## Testing Your Fix
+
+```bash
+# Run the dev server
+npm run dev
+
+# Open browser, should see 10 articles
+
+# Run tests
+npm test
+
+# Check there are no console errors
+```
 
 ## Commit Your Fix
 
 ```bash
 git add .
-git commit -m "fix: safari paywall display issue
+git commit -m "fix: article list not displaying data
 
-Root cause: [your explanation here]
-Solution: [what you changed]
+Root cause: [explain what was broken]
+Solution: [explain what you changed]
 
-Tested on:
-- Safari 17.x (iOS)
-- Safari 17.x (macOS)
-- Chrome 120 (still works)
-- Firefox 120 (still works)
+The bug was caused by [your explanation].
+Fixed by [your solution].
 
-AI assistance: [where it helped/didn't help]
+AI assistance: [where it helped/didn't help]"
 
-Closes #[issue-number]"
-
-git push origin workshop/your-name/safari-bug-fix
+git push origin workshop/your-name/article-list-bug
 ```
 
 ## Reflection Questions
 
 After fixing the bug:
 
-1. **How did you discover the root cause?**
-2. **Did AI's suggestions help, hurt, or both?**
+1. **How long did it take you to find the bug?**
+2. **Did you use AI? How did it help or mislead you?**
 3. **What would you do differently next time?**
-4. **How could this bug have been prevented?**
-5. **What did you learn about Safari's quirks?**
+4. **How could this bug have been caught earlier?**
+5. **What did you learn about debugging with AI?**
 
 ## Group Discussion
 
-- Compare the different "confidently wrong" suggestions the AI gave each of you. What patterns do you notice?
-- When is it better to spend time trying to get a good answer from an AI, versus going directly to the official documentation (e.g., MDN, WebKit Bug Tracker)?
-
-## Gamification Element
-
-**First person/team to:**
-- ✅ Identify the root cause correctly
-- ✅ Implement a working fix
-- ✅ Pass all tests
-- ✅ Document the debugging process
-
-**Wins the "Safari Whisperer" badge!**
-
-## Reference Material
-
-- [Safari Web Inspector Guide](https://developer.apple.com/safari/tools/)
-- [Safari Release Notes](https://developer.apple.com/documentation/safari-release-notes)
-- [Can I Use](https://caniuse.com/) - Browser compatibility checker
-- [WebKit Bug Tracker](https://bugs.webkit.org/)
+- What was the first thing each of you checked?
+- Did AI give you the right answer immediately, or did it take iteration?
+- How do you balance using AI for debugging vs. traditional debugging techniques?
+- What debugging skills did you use that AI couldn't replace?
 
 ## Next Steps
 
@@ -221,6 +189,4 @@ After completing this exercise:
 
 ---
 
-**Remember: Browser dev tools > AI guesses for debugging**
-
-**Bonus:** If you finish early, introduce a different browser-specific bug for a teammate to find!
+**Remember: The best debugging tool is a systematic approach. AI is a helper, not a replacement for thinking.**
