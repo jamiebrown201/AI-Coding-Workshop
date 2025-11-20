@@ -33,6 +33,19 @@ By the end of this module, you'll be able to:
 
 **Or build literally anything else. Make it weird.**
 
+## Prize Categories
+
+At the end of the workshop, we'll award prizes in the following categories:
+
+- 🏆 **Silliest Idea** - The most absurd, ridiculous, or hilariously pointless feature
+- ✨ **Slickest Execution** - The most polished, professional, and well-crafted implementation
+- 🤯 **Most Overengineered** - The feature that uses the most unnecessary technology for the simplest problem
+- 🎨 **Most Creative** - The most original, unexpected, or innovative concept
+- 🔥 **Actually Useful** - The feature someone would genuinely want to use in production
+- 😱 **Best Use of AI** - Demonstrated the most effective AI-assisted development workflow
+
+**Everyone demos. Everyone votes. Winners get bragging rights.**
+
 ## Structure/Activities
 
 - **Checkpoint 1 (15 min): Backend Working**
