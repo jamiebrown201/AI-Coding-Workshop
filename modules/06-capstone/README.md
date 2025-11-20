@@ -106,7 +106,7 @@ I'm building a "Wild & Wonderful" AI-powered feature. [Describe your idea]
 
 After the workshop:
 
-1. Review your code against the reference solution
+1. Review your implementation and identify areas for improvement
 2. Complete anything you didn't finish
 3. Apply these practices in your daily work
 4. Share learnings with your team

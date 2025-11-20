@@ -46,7 +46,3 @@ The frontend expects the backend running on port 4000. Update `VITE_API_URL` env
 - What architectural decisions did you have to make that the AI couldn't?
 - How much of the "full-stack development" was just stitching together boilerplate that the AI provided? Did you feel like a developer or a "code assembler"?
 - For a greenfield project like this, is it better to let the AI generate a complete first draft, or to build it piece by piece with AI assistance?
-
-## Solutions
-
-Check `solutions/` for a reference implementation.

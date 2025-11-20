@@ -216,9 +216,8 @@ After fixing the bug:
 ## Next Steps
 
 After completing this exercise:
-1. Check the solution in `solutions/` (after you've tried!)
-2. Review your debugging process
-3. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/README.md)
+1. Review your debugging process
+2. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/README.md)
 
 ---
 
