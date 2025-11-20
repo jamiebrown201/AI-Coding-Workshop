@@ -62,8 +62,6 @@ Or download from: [https://claude.ai/code](https://claude.ai/code)
 
 ##### Option 2: GitHub Copilot
 
-*Prerequisites:* Node.js v22+ and an active GitHub Copilot subscription (Individual, Business, or Enterprise)
-
 **CLI Installation:**
 ```bash
 # Install Copilot CLI globally
@@ -80,15 +78,6 @@ On first use, enter `/login` at the Copilot prompt, then follow the browser-base
 1. Open VS Code Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`)
 2. Search for "GitHub Copilot" (official extension)
 3. Click Install and sign in with your GitHub account when prompted
-4. Authorize Copilot if a browser window appears
-
-**Usage:**
-- In VS Code: Copilot suggests code as you type. Accept suggestions with `Tab`
-- In CLI: Use natural language prompts ("fix this bug", "explain this code")
-- Access Copilot Chat in VS Code sidebar for conversational assistance
-
-**Optional Configuration:**
-Open VS Code Settings, search for "GitHub Copilot", and customize inline suggestions or disable for specific languages/workspaces.
 
 ---
 
@@ -115,12 +104,6 @@ On first launch, sign in using your ChatGPT Plus, Pro, Team, Edu, or Enterprise 
 1. Open VS Code Extensions view
 2. Search for "Codex" (official OpenAI extension)
 3. Click Install and authenticate with your OpenAI account
-4. Open the Codex panel to generate, debug, and refactor code
-
-**Tips:**
-- Open relevant files to give Codex context
-- Ask for concise changes; review diffs before applying
-- Switch between chat and agent modes as needed
 
 ---
 
