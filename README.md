@@ -130,9 +130,48 @@ By completing these challenges, you'll be able to:
 - Prior AI tool experience (that's what you're learning!)
 - AWS knowledge (we use mock data)
 
+### Setting Up GitHub Copilot
+
+If you're using GitHub Copilot:
+
+**Prerequisites:**
+- Node.js v22+ and npm installed
+- Active GitHub Copilot subscription (Individual, Business, or Enterprise)
+
+**CLI Installation:**
+```bash
+# Install Copilot CLI globally
+npm install -g @github/copilot
+
+# Navigate to your project
+cd AI-Coding-Workshop
+
+# Start Copilot CLI
+copilot
+```
+
+**Authentication:**
+On first use, enter `/login` at the Copilot prompt, then follow the browser-based sign-in with your GitHub credentials.
+
+**VS Code Extension:**
+1. Open VS Code Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`)
+2. Search for "GitHub Copilot" (official extension)
+3. Click Install and sign in with your GitHub account when prompted
+4. Authorize Copilot if a browser window appears
+
+**Usage:**
+- In VS Code: Copilot suggests code as you type. Accept suggestions with `Tab`
+- In CLI: Use natural language prompts ("fix this bug", "explain this code")
+- Access Copilot Chat in VS Code sidebar for conversational assistance
+
+**Optional Configuration:**
+Open VS Code Settings, search for "GitHub Copilot", and customize inline suggestions or disable for specific languages/workspaces.
+
+---
+
 ### Setting Up Codex CLI
 
-If you're using OpenAI Codex, here's how to get started:
+If you're using OpenAI Codex:
 
 **Installation:**
 ```bash
