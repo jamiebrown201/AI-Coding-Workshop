@@ -82,9 +82,14 @@ The AI tool can:
 
 **Key point:** AI can search, but it's faster and more accurate when you point it to the right files.
 
-### Example Prompt
+### Starting a Module
+
+Since you'll open your AI agent from the repository root, tell it which module you're working on:
 
 ```
+I'm working on Module 1, Exercise 1A: Article Preview Component
+The exercise is in modules/01-foundations/exercises/article-preview/
+
 Build a React article preview component that:
 - Displays title, author, publish date
 - Shows a thumbnail image
@@ -95,6 +100,8 @@ Use the article data from data/articles.json
 ```
 
 **What makes this work:**
+- Tells AI which module/exercise you're in
+- Provides the file path
 - Clear requirements
 - Specific details
 - References relevant files
