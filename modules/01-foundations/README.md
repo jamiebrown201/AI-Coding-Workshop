@@ -53,18 +53,57 @@ Start with **Exercise 1A** (Article Preview), then move to **Exercise 1B** (Bug 
 
 Each exercise directory has its own README with detailed instructions.
 
+## Working with Your AI Tool
+
+### Opening Your AI Agent
+
+**CLI tools (Claude Code, Codex, Copilot CLI):**
+```bash
+# From your project directory
+claude-code
+# or
+codex
+# or
+copilot
+```
+
+**VS Code extensions (GitHub Copilot, Codex):**
+- Open command palette (Cmd/Ctrl + Shift + P)
+- Search for your tool (e.g., "Copilot Chat")
+- Or click the sidebar icon
+
+### How AI Sees Your Files
+
+The AI tool can access:
+- Files you explicitly reference in your prompts
+- Files in your current directory (CLI tools)
+- Files open in your editor (VS Code extensions)
+
+**Key point:** AI doesn't automatically know all your files. Give it context.
+
+### Example Prompt
+
+```
+Build a React article preview component that:
+- Displays title, author, publish date
+- Shows a thumbnail image
+- Is keyboard accessible
+- Supports screen readers
+
+Use the article data from data/articles.json
+```
+
+**What makes this work:**
+- Clear requirements
+- Specific details
+- References relevant files
+- Mentions accessibility
+
 ## Key Concepts
 
-### Context Over Prompts
-The most important lesson in this module:
+### Context Quality Matters
 
-> **More context ≠ Better results**
-
-AI often gets *worse* when given too much context. Your job isn't to give AI everything—it's to give AI the *right* things.
-
-Think about explaining code to a new teammate. You wouldn't show them every file on day one. Same with AI.
-
-**Context engineering > Prompt engineering**
+Give AI the right information, not all the information. Feeding it entire files often makes results worse.
 
 ### What AI Does Well
 - Boilerplate code generation
