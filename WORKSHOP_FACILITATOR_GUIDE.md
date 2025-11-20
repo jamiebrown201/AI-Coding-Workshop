@@ -154,9 +154,15 @@ Go around the room. Each person shares:
 **Group processing:**
 
 - Think-Pair-Share format
-- Ask: "What surprised you? What went wrong?"
 - Gallery walk (quick)
 - Mini-lesson: Code review essentials for AI code
+
+**Discussion questions:**
+- "What surprised you about working with AI?"
+- "What went wrong? What went right?"
+- "Did AI miss anything important? What?"
+- "Show of hands: Who copied code without fully understanding it?"
+- "What accessibility issues did AI generate?"
 
 **If running behind:**
 
@@ -187,8 +193,13 @@ Quick write prompt: "One thing I learned, one question I have"
 
 - Winner explains process
 - Others share alternative approaches
-- **Critical question:** "When did AI help? When did it mislead?"
-- Show of hands: "Who asked AI first before looking at the code?"
+
+**Discussion questions:**
+- "When did AI help? When did it mislead?"
+- "Show of hands: Who asked AI first before looking at the code?"
+- "What did you try that didn't work?"
+- "Did AI give you confident wrong answers? What were they?"
+- "When did you realize you needed to look at browser dev tools instead of asking AI?"
 
 **Key lesson:** Browser dev tools > AI guesses
 
@@ -248,6 +259,13 @@ Show code snippets, group votes: bug or feature?
 - Silent walk with sticky notes
 - Brief discussion of patterns
 
+**Discussion questions:**
+- "Did anyone feed AI too much code at once? What happened?"
+- "What did AI get wrong about the system architecture?"
+- "How many of you verified what AI told you? How?"
+- "What was more helpful: asking AI to explain code or reading it yourself?"
+- "Show of hands: Who found AI making assumptions about business logic?"
+
 **Key lesson:** Start at entry point, follow the path, expand deliberately
 
 #### Processing
@@ -271,7 +289,13 @@ Pair discussion on what AI helped with vs. what it got wrong
 **Share:**
 
 - Round-robin: Each group's #1 risk
-- **Facilitator point:** "How many plans did AI suggest big-bang rewrites?"
+
+**Discussion questions:**
+- "Show of hands: How many plans did AI suggest big-bang rewrites?"
+- "What risks did AI miss in the migration plan?"
+- "Did anyone's AI suggest deleting the old code immediately?"
+- "What's the difference between what AI suggested vs. what would actually be safe?"
+- "How would you test each phase of the migration?"
 
 **Key lesson:** Incremental > big-bang, AI loves rewrites (bad!)
 
@@ -347,9 +371,14 @@ Teams draw and guess coding concepts. Keep it fast and fun.
 
 #### Debrief
 
+**Discussion questions:**
 - "What was harder than expected?"
-- "What did AI do well?"
-- "What required human judgment?"
+- "What did AI do well? What did it struggle with?"
+- "What required human judgment that AI couldn't help with?"
+- "Did you have to override AI suggestions? When and why?"
+- "What would you do differently if you had more time?"
+- "Show of hands: Who ended up with error handling AI forgot?"
+- "Did anyone hit integration issues AI didn't anticipate?"
 
 **Key takeaway:** Architecture is human work
 
@@ -390,7 +419,13 @@ Quick-fire questions about today's learning
 - Reveal all vulnerabilities
 - Score teams
 - Award "Bug Bounty Hunter" badge
-- **Key question:** "Which did AI catch? Which did it miss?"
+
+**Discussion questions:**
+- "Which vulnerabilities did AI catch? Which did it miss?"
+- "Did AI give false positives? What were they?"
+- "Show of hands: Who found a vulnerability AI said was fine?"
+- "What types of security issues does AI seem to miss most often?"
+- "Would you trust AI to do a complete security review? Why or why not?"
 
 **Important lesson:** AI scanning is ONE tool, not the only tool
 
@@ -412,7 +447,12 @@ Quick-fire questions about today's learning
 
 - Different approaches
 - Trade-offs discussed
-- "Who got tricked by AI suggesting to delete critical code?"
+
+**Discussion questions:**
+- "Show of hands: Who got tricked by AI suggesting to delete critical code?"
+- "What edge cases did the old jQuery code handle that AI forgot?"
+- "Did anyone's tests catch issues AI introduced?"
+- "How did you know when to stop trusting AI's refactoring suggestions?"
 
 #### Security Deep Dive
 
@@ -426,9 +466,14 @@ Quick-fire questions about today's learning
 
 **Real talk format.**
 
-**Prompt:** "What concerns do you have about AI tools in your work?"
+**Opening prompt:** "What concerns do you have about AI tools in your work?"
 
 Capture on whiteboard, acknowledge seriously.
+
+**Follow-up questions:**
+- "Has anyone seen AI usage causing problems on your team?"
+- "What would make you feel safer using AI tools at work?"
+- "What questions do you have about adopting AI as a team?"
 
 #### Activity 5A: Guidelines
 
@@ -449,6 +494,12 @@ Capture on whiteboard, acknowledge seriously.
 - Quick share from each group
 - Synthesize into unified document
 
+**Discussion questions:**
+- "What's missing from these guidelines?"
+- "What would make these actually usable on Monday?"
+- "Which guideline will be hardest to follow? Why?"
+- "How would you enforce these without being the AI police?"
+
 **Deliverable:** Real document teams can use
 
 #### Activity 5B: Responsible Use
@@ -465,12 +516,28 @@ Capture on whiteboard, acknowledge seriously.
 2. When human judgment overrides AI
 3. Transparency about AI usage
 
+**Discussion questions for each topic:**
+
+**Junior developers:**
+- "How do juniors learn if AI writes all the code?"
+- "What skills are we not teaching when AI is available?"
+- "Should juniors use AI differently than seniors?"
+
+**Human judgment:**
+- "When have you overridden AI today? Why?"
+- "What decisions should never be delegated to AI?"
+- "How do you know when to stop asking AI?"
+
+**Transparency:**
+- "Should we tell teammates when we used AI?"
+- "What about in code reviews or PRs?"
+- "Do clients need to know?"
+
 **Facilitation tips:**
 
 - Keep discussion moving
 - Don't let it get too abstract
 - Bring it back to practical concerns
-- Level-specific prompts provided in module notes
 
 #### Synthesis
 
@@ -530,6 +597,14 @@ Share funniest AI-generated code from the day. End on a laugh.
 - Explain one decision
 - What worked/didn't work with AI
 - What you'd improve with more time
+
+**Discussion questions after demos:**
+- "What AI workflow worked best for you?"
+- "What would you have done differently without AI?"
+- "What took longer than expected? Why?"
+- "What did AI excel at in this challenge?"
+- "What did you have to do completely yourself?"
+- "Show of hands: Who had to throw away AI-generated code?"
 
 **Prize Categories (Everyone votes):**
 
