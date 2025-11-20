@@ -59,44 +59,47 @@
 **Your energy sets the tone. Be welcoming and enthusiastic.**
 
 **Script:**
-> "Welcome everyone! This is the AI Coding Workshop. Quick logistics: bathrooms are [location], WiFi is [network], breaks are every 90 minutes.
->
-> Today is about learning to work WITH AI tools, not being replaced BY them. We're going to build real code, make real mistakes, and learn from both."
+> "Welcome everyone! This is the AI Coding Workshop. Today is about learning to work WITH AI tools, not being replaced BY them. We're going to build real code, make real mistakes, and learn from both."
 
 **Ground rules (elicit from group):**
 - Ask: "What ground rules would make this a good learning experience?"
 - Capture on whiteboard
 - Add any missing: mistakes are data, challenge claims, skepticism welcome
 
-#### Icebreaker: Two Truths and a Bug (15 min)
-**Make this fun and light. Start with yourself to model vulnerability.**
+#### Icebreaker & Introductions (10 min)
+**Keep it casual and moving quickly.**
 
-**Your example:**
-> "I once spent 6 hours debugging a problem caused by a typo in an environment variable. True.
-> I've written production code that's still running after 10 years. True.
-> I fully understand monads. LIE!"
+**Format:**
+Go around the room. Each person shares:
+- Name
+- What you work on
+- One quick thing about yourself (hobby, fun fact, whatever)
 
 **Facilitation tips:**
-- Keep it moving (30 seconds per person)
-- Laugh at mistakes (including your own)
-- If group is shy, do smaller breakout groups first
+- Start with yourself to set the tone
+- Keep it light and quick (30-45 seconds per person)
+- No pressure to be clever or funny
+- If someone's stuck, offer prompts: "What did you do last weekend?" or "Coffee or tea?"
 
 #### Hopes & Fears (10 min)
 **This is crucial for surfacing concerns early.**
 
 **Instructions:**
-> "Green sticky: One hope you have for AI tools.
-> Red sticky: One concern or fear.
-> No names, complete honesty."
+> "Let's talk about hopes and concerns for AI tools. You can either:
+> - Write on sticky notes and put them on the board (anonymous), OR
+> - Just jot down your thoughts and we'll go around the room to share
+>
+> One hope you have for AI tools. One concern or fear."
 
 **Facilitation tips:**
-- Give 3 minutes for writing
-- While they write, stick notes on boards
-- Quick clustering (don't read every note aloud)
+- Give people 2-3 minutes to think and write
+- Read the room - if people seem comfortable sharing, go around verbally
+- If people prefer anonymity, use the sticky notes on boards
+- Can mix both approaches
 - Acknowledge both hopes AND concerns seriously
 - **Key message:** "All of these are valid. We'll address both today."
 
-**Leave boards visible all day!**
+**Leave boards visible all day (if using them)!**
 
 #### Objectives (5 min)
 **Be clear and realistic about what they'll learn.**
