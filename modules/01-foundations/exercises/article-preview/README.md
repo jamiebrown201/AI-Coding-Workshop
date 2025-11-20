@@ -69,6 +69,10 @@ npm install
 
 ## Sample Data
 
+**Use the provided fixture data:** `fixtures/sample-article.json`
+
+This file contains realistic article data for testing your component:
+
 ```typescript
 interface ArticlePreviewProps {
   headline: string;
@@ -80,16 +84,15 @@ interface ArticlePreviewProps {
   articleUrl: string;
 }
 
-// Example usage:
-const sampleArticle = {
-  headline: "Global Markets Rally Amid Economic Optimism",
-  summary: "Major stock indices reached new highs as investors responded positively to stronger-than-expected economic data.",
-  author: "Jane Smith",
-  publishedDate: new Date("2025-11-19"),
-  imageUrl: "/images/article-1.svg",
-  imageAlt: "Stock market trading floor with traders celebrating",
-  articleUrl: "/articles/global-markets-rally"
-};
+// Import and use the fixture data:
+import sampleArticle from './fixtures/sample-article.json';
+
+// The fixture contains:
+// - Realistic headline and summary
+// - Author name
+// - ISO date string (convert to Date object)
+// - Local image path (/images/article-1.svg)
+// - Descriptive alt text
 
 // More sample images available in public/images/:
 // - article-1.svg (Global Markets theme)

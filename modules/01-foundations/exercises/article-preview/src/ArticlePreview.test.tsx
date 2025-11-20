@@ -2,31 +2,28 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import ArticlePreview from './ArticlePreview';
+import fixtureData from '../fixtures/sample-article.json';
 
 describe('ArticlePreview', () => {
+  // Use the actual fixture data for tests
   const mockArticle = {
-    headline: 'Test Article Headline',
-    summary: 'This is a test summary for the article.',
-    author: 'Test Author',
-    publishedDate: new Date('2025-11-19'),
-    imageUrl: 'https://example.com/image.jpg',
-    imageAlt: 'Test image description',
-    articleUrl: '/articles/test-article',
+    ...fixtureData,
+    publishedDate: new Date(fixtureData.publishedDate),
   };
 
   it('renders article headline', () => {
     render(<ArticlePreview {...mockArticle} />);
-    expect(screen.getByText('Test Article Headline')).toBeInTheDocument();
+    expect(screen.getByText(fixtureData.headline)).toBeInTheDocument();
   });
 
   it('renders article summary', () => {
     render(<ArticlePreview {...mockArticle} />);
-    expect(screen.getByText(/This is a test summary/)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(fixtureData.summary.substring(0, 30)))).toBeInTheDocument();
   });
 
   it('renders author name', () => {
     render(<ArticlePreview {...mockArticle} />);
-    expect(screen.getByText(/Test Author/)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(fixtureData.author))).toBeInTheDocument();
   });
 
   it('renders formatted date', () => {
@@ -68,7 +65,7 @@ describe('ArticlePreview', () => {
   it('has proper heading hierarchy', () => {
     render(<ArticlePreview {...mockArticle} />);
     const heading = screen.getByRole('heading', { level: 2 });
-    expect(heading).toHaveTextContent('Test Article Headline');
+    expect(heading).toHaveTextContent(fixtureData.headline);
   });
 
   it('formats date with time element', () => {

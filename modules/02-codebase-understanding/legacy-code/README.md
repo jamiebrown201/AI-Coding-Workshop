@@ -75,10 +75,16 @@ legacy-code/
 ├── jobs/
 │   ├── renewalReminder.js
 │   └── expiredSubscriptions.js
+├── fixtures/                 # Sample data for testing
+│   ├── users.json
+│   ├── subscriptions.json
+│   └── payments.json
 └── utils/
     ├── logger.js
     └── validators.js
 ```
+
+**Note:** The `fixtures/` folder contains sample data representing users, subscriptions, and payments. Use this data to understand the data structures and relationships.
 
 ## Context Strategy
 
