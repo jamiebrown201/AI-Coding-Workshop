@@ -73,7 +73,6 @@ Go around the room. Each person shares:
 **Facilitation tips:**
 - Start with yourself to set the tone
 - Keep it light and moving quickly
-- The answers are usually more fun than expected
 - If someone's stuck, prompt: "Practical or fun?" or "Survival or entertainment?"
 
 #### Hopes & Fears
