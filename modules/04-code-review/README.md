@@ -1,7 +1,5 @@
 # Module 4: Code Review & Security
 
-**Duration:** 60 minutes
-
 This module brings a crucial reality check to working with AI: the significant risk of security vulnerabilities in AI-generated code. You'll switch roles from builder to auditor, learning to critically review AI-assisted work for common security pitfalls. Understanding *why* AI makes these mistakes and how to catch them is paramount to safely integrating AI into your development workflow. Get ready to hunt for bugs that bite!
 
 ## Learning Objectives
@@ -20,14 +18,14 @@ By the end of this module, you'll be able to:
 
 This module has two activities:
 
-### Activity 4A: Security Review Challenge (25 min)
+### Activity 4A: Security Review Challenge
 Hunt for vulnerabilities in AI-generated code.
 
 **Location:** `vulnerable-prs/`
 
 **What you're reviewing:** A comment system PR that "works great" but has at least 5 security issues.
 
-### Activity 4B: Refactoring Challenge (25 min)
+### Activity 4B: Refactoring Challenge
 Safely modernize legacy code without breaking it.
 
 **Location:** `refactoring-challenge/`
@@ -36,9 +34,9 @@ Safely modernize legacy code without breaking it.
 
 ## Structure/Activities
 
-- **Activity 4A: Security Review Challenge (25 min)**
-- **Activity 4B: Refactoring Challenge (25 min)**
-- **Activity 4C: AI-Powered Test Generation (25 min)**
+- **Activity 4A: Security Review Challenge**
+- **Activity 4B: Refactoring Challenge**
+- **Activity 4C: AI-Powered Test Generation**
 
 ## Prerequisites
 

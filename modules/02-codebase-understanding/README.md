@@ -1,7 +1,5 @@
 # Module 2: Understanding Codebases
 
-**Duration:** 75 minutes
-
 After getting your feet wet with basic AI interactions, this module takes you into the trenches of real-world development: deciphering unfamiliar codebases. You'll learn how AI can be an invaluable assistant in understanding legacy systems, mapping architectures, and planning safe refactoring strategies. Get ready to put on your archaeologist hat and dig into some "historical decisions."
 
 ## Learning Objectives
@@ -19,14 +17,14 @@ By the end of this module, you'll be able to:
 
 This module has two hands-on exercises:
 
-### Activity 2A: Architecture Analysis (30 min)
+### Activity 2A: Architecture Analysis
 Explore a complex legacy backend system and document its architecture.
 
 **Location:** `legacy-code/`
 
 **What you're exploring:** A subscription management system that's been through 5 years and 3 teams. It works, but nobody remembers exactly how.
 
-### Activity 2B: Refactoring Planning (30 min)
+### Activity 2B: Refactoring Planning
 Plan a safe migration strategy for modernizing legacy code.
 
 **Location:** `refactoring-challenge/`
@@ -35,8 +33,8 @@ Plan a safe migration strategy for modernizing legacy code.
 
 ## Structure/Activities
 
-- **Activity 2A: Architecture Analysis (30 min)**
-- **Activity 2B: Refactoring Planning (30 min)**
+- **Activity 2A: Architecture Analysis**
+- **Activity 2B: Refactoring Planning**
 
 ## Prerequisites
 

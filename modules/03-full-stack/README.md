@@ -1,7 +1,5 @@
 # Module 3: Full-Stack Features
 
-**Duration:** 90 minutes
-
 In this module, we move beyond isolated components and bug fixes to building complete, end-to-end features with AI assistance. You'll tackle the exciting challenge of shipping a full-stack application, integrating frontend and backend, handling real-time data, and making critical architectural decisions that AI can't make for you. It's time to truly "Ship It!" with your AI co-pilot.
 
 ## Learning Objectives
@@ -27,20 +25,20 @@ So that I can make data-driven decisions about what to promote
 
 Requirements:
 - Real-time updates (via WebSocket or polling)
-- Shows last 5 minutes of activity
+- Shows recent activity
 - Filters by content type (news, opinion, analysis)
 - Works on desktop and tablet
-- Loads in under 2 seconds
+- Fast page loads
 - Gracefully handles API failures
 ```
 
 ## Structure/Activities
 
-- **Phase 1: Planning (10 min)**
-- **Phase 2: Backend (20 min)**
-- **Phase 3: Frontend (25 min)**
-- **Phase 4: Integration & Polish (20 min)**
-- **Phase 5: Demo Prep (10 min)**
+- **Phase 1: Planning**
+- **Phase 2: Backend**
+- **Phase 3: Frontend**
+- **Phase 4: Integration & Polish**
+- **Phase 5: Demo Prep**
 
 ## Prerequisites
 
@@ -69,7 +67,7 @@ npm install
 - [ ] Error states handled
 - [ ] Basic tests pass
 - [ ] README explains how to run
-- [ ] You can demo it in 3 minutes
+- [ ] You can demo it
 - [ ] Code is readable
 - [ ] You understand every line
 

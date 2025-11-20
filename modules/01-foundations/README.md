@@ -1,7 +1,5 @@
 # Module 1: Foundations & First Steps
 
-**Duration:** 90 minutes
-
 Welcome to the start of your AI coding assistant journey! In this module, we'll dive into the absolute basics of working with AI tools. You'll get hands-on experience generating code, identifying common AI pitfalls (especially around accessibility), and learning how to effectively debug with AI. This is where you'll build the critical foundational skills for interacting with AI confidently and critically.
 
 ## Learning Objectives
@@ -19,14 +17,14 @@ By the end of this module, you'll be able to:
 
 This module has two hands-on exercises:
 
-### Exercise 1A: Article Preview Component (35 min)
+### Exercise 1A: Article Preview Component
 Build a React component with AI assistance, focusing on accessibility and requirements verification.
 
 **Location:** `exercises/article-preview/`
 
 **What you're building:** An FT article preview component that's accessible, responsive, and follows design standards.
 
-### Exercise 1B: Safari Bug Hunt (35 min)
+### Exercise 1B: Safari Bug Hunt
 Debug a browser-specific issue with AI assistance.
 
 **Location:** `exercises/bug-hunt/`
@@ -35,8 +33,8 @@ Debug a browser-specific issue with AI assistance.
 
 ## Structure/Activities
 
-- **Exercise 1A: Article Preview Component (35 min)**
-- **Exercise 1B: Safari Bug Hunt (35 min)**
+- **Exercise 1A: Article Preview Component**
+- **Exercise 1B: Safari Bug Hunt**
 
 ## Prerequisites
 

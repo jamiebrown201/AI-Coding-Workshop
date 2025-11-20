@@ -1,7 +1,5 @@
 # Module 5: Team Practices & Responsible Use
 
-**Duration:** 75 minutes
-
 Moving beyond individual use, this module addresses the critical questions of integrating AI coding tools effectively and responsibly within a team. You'll explore how to establish guidelines, define code review standards for AI-assisted work, protect junior developer growth, and navigate the ethical considerations of AI. The goal here is to ensure AI adoption enhances, rather than compromises, your team's overall productivity and code quality.
 
 ## Learning Objectives
@@ -20,10 +18,10 @@ By the end of this module, you'll be able to:
 
 ## Structure/Activities
 
-- **Activity 5A: Create Team Guidelines (30 min)**
-- **Activity 5B: Responsible Use Discussion (25 min)**
-- **Activity 5C: Measuring Impact (Optional, 10 min)**
-- **Synthesis & Action Planning (10 min)**
+- **Activity 5A: Create Team Guidelines**
+- **Activity 5B: Responsible Use Discussion**
+- **Activity 5C: Measuring Impact (Optional)**
+- **Synthesis & Action Planning**
 
 ## Prerequisites
 

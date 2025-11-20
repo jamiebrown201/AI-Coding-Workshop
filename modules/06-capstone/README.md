@@ -1,7 +1,5 @@
 # Module 6: Capstone Challenge - The "Wild & Wonderful" AI-Powered Feature
 
-**Duration:** 60 minutes
-
 This is it! The Capstone Challenge is your opportunity to synthesize everything you've learned and build something creative, fun, or interesting. Under time pressure, you'll build a complete, production-ready feature, applying your skills in AI-assisted development, security, testing, and documentation.
 
 ## Learning Objectives
@@ -9,7 +7,7 @@ This is it! The Capstone Challenge is your opportunity to synthesize everything 
 By the end of this module, you'll be able to:
 
 - ✓ Apply all the skills and concepts from the previous modules in a single challenge.
-- ✓ Build a complete full-stack feature under time pressure.
+- ✓ Build a complete full-stack feature.
 - ✓ Make trade-offs between functionality, security, and quality.
 - ✓ Present your work and explain your technical decisions.
 
@@ -49,10 +47,10 @@ At the end of the workshop, we'll award prizes in the following categories:
 
 ## Structure/Activities
 
-- **Checkpoint 1 (15 min): Backend Working**
-- **Checkpoint 2 (30 min): Full Integration**
-- **Checkpoint 3 (50 min): Polish & Security**
-- **Checkpoint 4 (60 min): Demo Time!**
+- **Checkpoint 1: Backend Working**
+- **Checkpoint 2: Full Integration**
+- **Checkpoint 3: Polish & Security**
+- **Checkpoint 4: Demo Time!**
 
 ## Prerequisites
 
@@ -123,7 +121,7 @@ After completing the capstone:
 
 ## Group Discussion
 
-- This challenge had a tight time limit. How did the time pressure affect your decision-making process when it came to using the AI and verifying its output?
+- How did working with AI affect your decision-making process when it came to using the AI and verifying its output?
 - After completing this entire workshop, what is your biggest remaining concern about the widespread use of AI coding assistants in the software industry?
 
 ## Key Takeaways
