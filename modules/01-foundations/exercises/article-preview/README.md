@@ -89,10 +89,16 @@ const sampleArticle = {
   summary: "Major stock indices reached new highs as investors responded positively to stronger-than-expected economic data.",
   author: "Jane Smith",
   publishedDate: new Date("2025-11-19"),
-  imageUrl: "https://via.placeholder.com/600x400",
+  imageUrl: "/images/article-1.svg",
   imageAlt: "Stock market trading floor with traders celebrating",
   articleUrl: "/articles/global-markets-rally"
 };
+
+// More sample images available in public/images/:
+// - article-1.svg (Global Markets theme)
+// - article-2.svg (Technology theme)
+// - article-3.svg (Politics theme)
+// - fallback.svg (No image placeholder)
 ```
 
 ## ⚠️ Common Pitfalls (that AI might not catch)
