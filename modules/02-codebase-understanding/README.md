@@ -57,12 +57,6 @@ I need to analyze the legacy subscription system in the legacy-code/ directory.
 
 ## Key Concepts
 
-### Context Quality > Prompt Quality
-
-> **More context ≠ Better results**
-
-AI often gets **worse** when given too much context. The model can't distinguish signal from noise. Your job isn't to give AI everything—it's to give AI the **right** things.
-
 ### What AI Does Well for Codebase Understanding
 - Explaining individual functions and modules
 - Identifying patterns and conventions
@@ -87,9 +81,6 @@ You'll know you've succeeded when:
 - [ ] You can plan changes without breaking things
 
 ## Common Pitfalls
-
-**"Just feed AI the whole repo"**
-- Too much context makes AI output worse, not better
 
 **"AI said this is how it works"**
 - AI makes educated guesses based on patterns

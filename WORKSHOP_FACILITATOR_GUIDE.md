@@ -215,20 +215,6 @@ Show code snippets, group votes: bug or feature?
 
 ### Module 2: Codebase Understanding
 
-#### Opening: Context Quality Lesson
-
-**This might be the most important lesson of the day.**
-
-**Script:**
-
-> "More context ≠ Better results.
->
-> AI gets WORSE with too much context. Your job is to give the RIGHT information, not ALL information.
->
-> Context engineering > Prompt engineering."
-
-**Use analogy:** Explaining to a new teammate
-
 #### Activity 2A: Architecture Analysis
 
 **Setup:**
