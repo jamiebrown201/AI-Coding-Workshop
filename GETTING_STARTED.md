@@ -20,19 +20,12 @@ node --version
 - **Linux:** `sudo apt install nodejs npm` or use your package manager
 
 #### Git (Required)
-You definitely have this, but just in case:
 
 ```bash
 git --version
 ```
 
-If not: [git-scm.com](https://git-scm.com/)
-
-**Configure Git if you haven't:**
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@ft.com"
-```
+If not installed: [git-scm.com](https://git-scm.com/)
 
 #### AI Coding Tool (Choose One or More)
 
