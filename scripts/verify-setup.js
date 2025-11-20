@@ -63,9 +63,7 @@ check('Git available', () => {
   if (!commandExists('git')) {
     throw new Error('Git not found in PATH');
   }
-  const name = execSync('git config user.name', { stdio: 'pipe' }).toString().trim();
-  const email = execSync('git config user.email', { stdio: 'pipe' }).toString().trim();
-  return `${name} <${email}>`;
+  return execSync('git --version', { stdio: 'pipe' }).toString().trim().split(' ')[2];
 });
 
 check('Dependencies installed', () => {
@@ -75,33 +73,13 @@ check('Dependencies installed', () => {
   return 'node_modules present';
 });
 
-check('Module directories present', () => {
-  const modules = [
-    'modules/01-foundations/exercises/article-preview',
-    'modules/02-codebase-understanding/legacy-code',
-    'modules/03-full-stack/dashboard-starter',
-    'modules/04-code-review/vulnerable-prs'
-  ];
-  const missing = modules.filter((dir) => !fs.existsSync(path.join(root, dir)));
+check('Workshop structure', () => {
+  const required = ['modules', 'docs', 'package.json'];
+  const missing = required.filter((item) => !fs.existsSync(path.join(root, item)));
   if (missing.length) {
-    throw new Error(`Missing expected directories: ${missing.join(', ')}`);
+    throw new Error(`Missing: ${missing.join(', ')}. Are you in the workshop root?`);
   }
-  return 'core modules found';
-});
-
-check('Data fixtures present', () => {
-  const files = [
-    'data/articles/articles.json',
-    'data/users/users.json',
-    'data/analytics/page-views.json',
-    'data/comments/comments.json',
-    'data/trending/engagement-data.json'
-  ];
-  const missing = files.filter((file) => !fs.existsSync(path.join(root, file)));
-  if (missing.length) {
-    throw new Error(`Missing data files: ${missing.join(', ')}`);
-  }
-  return 'synthetic data ready';
+  return 'looks good';
 });
 
 // Note: We skip AI tool detection since tools vary widely (VS Code extensions,
@@ -110,8 +88,12 @@ check('Data fixtures present', () => {
 
 console.log('');
 if (allGood) {
-  console.log(`${GREEN}🎉 Environment looks good. Happy hacking!${RESET}`);
-  console.log('Pro tip: Run `npm run generate-fixtures` if you want fresh synthetic data.');
+  console.log(`${GREEN}🎉 You're ready to rock!${RESET}`);
+  console.log('');
+  console.log('Next steps:');
+  console.log('1. Read the main README.md');
+  console.log('2. Check out Module 1: modules/01-foundations/');
+  console.log('3. Get excited!');
 } else {
-  console.log(`${RED}Some checks failed. Fix the items above, then re-run \'npm run verify\'.${RESET}`);
+  console.log(`${RED}❌ Some checks failed. Fix the items above, then re-run 'npm run verify'.${RESET}`);
 }

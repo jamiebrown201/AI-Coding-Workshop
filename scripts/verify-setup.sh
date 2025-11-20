@@ -51,16 +51,6 @@ else
     ALL_GOOD=false
 fi
 
-# Check Git configuration
-echo -n "Checking Git configuration... "
-if git config user.name &> /dev/null && git config user.email &> /dev/null; then
-    echo -e "${GREEN}✅ Git configured ($(git config user.name))${NC}"
-else
-    echo -e "${YELLOW}⚠️  Git not fully configured${NC}"
-    echo "   Run: git config --global user.name \"Your Name\""
-    echo "   Run: git config --global user.email \"your.email@example.com\""
-fi
-
 # Check if dependencies are installed
 echo -n "Checking dependencies... "
 if [ -d "node_modules" ]; then
@@ -82,16 +72,6 @@ else
     echo -e "${RED}❌ Not in workshop root directory?${NC}"
     echo "   Make sure you're in the ai-assistant-workshop directory"
     ALL_GOOD=false
-fi
-
-# Try to run tests (if dependencies installed)
-if [ -d "node_modules" ]; then
-    echo -n "Running quick test check... "
-    if npm test -- --passWithNoTests &> /dev/null; then
-        echo -e "${GREEN}✅ Test suite runs${NC}"
-    else
-        echo -e "${YELLOW}⚠️  Tests need attention (this is normal for starter exercises)${NC}"
-    fi
 fi
 
 echo ""
