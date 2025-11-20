@@ -130,6 +130,44 @@ By completing these challenges, you'll be able to:
 - Prior AI tool experience (that's what you're learning!)
 - AWS knowledge (we use mock data)
 
+### Setting Up Codex CLI
+
+If you're using OpenAI Codex, here's how to get started:
+
+**Installation:**
+```bash
+# Via npm (recommended)
+npm install -g @openai/codex
+
+# Or via Homebrew (macOS/Linux)
+brew install codex
+```
+
+**First Run:**
+```bash
+# Navigate to your project directory
+cd AI-Coding-Workshop
+
+# Initialize git if needed
+git init
+
+# Start Codex CLI
+codex
+```
+
+On first launch, sign in using your ChatGPT Plus, Pro, Team, Edu, or Enterprise account.
+
+**VS Code Extension:**
+1. Open VS Code Extensions view
+2. Search for "Codex" (official OpenAI extension)
+3. Click Install and authenticate with your OpenAI account
+4. Open the Codex panel to generate, debug, and refactor code
+
+**Tips:**
+- Open relevant files to give Codex context
+- Ask for concise changes; review diffs before applying
+- Switch between chat and agent modes as needed
+
 ---
 
 ## 📖 Two Ways to Learn
