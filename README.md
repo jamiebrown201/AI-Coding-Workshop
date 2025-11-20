@@ -2,7 +2,7 @@
 
 **Learn to work with AI coding assistants without losing your mind, your job, or your ability to think critically.**
 
-This is a hands-on workshop with **7 real coding challenges** that teach you to use AI tools like Claude Code, GitHub Copilot, and Codex effectively and safely.
+This is a hands-on workshop with **6 real coding challenges** that teach you to use AI tools like Claude Code, GitHub Copilot, and Codex effectively and safely.
 
 **📖 [Full Setup Guide (GETTING_STARTED.md)](GETTING_STARTED.md)** - Detailed instructions for all setup steps
 
@@ -15,23 +15,27 @@ This is a hands-on workshop with **7 real coding challenges** that teach you to 
 **You'll need an AI coding assistant** - either a code editor extension (like GitHub Copilot) or CLI tool (like Codex).
 
 Popular options with setup guides:
+
 - **Claude Code** - [Setup instructions](GETTING_STARTED.md#option-1-claude-code-recommended-for-this-workshop)
 - **GitHub Copilot** - [Setup instructions](GETTING_STARTED.md#option-2-github-copilot)
 - **OpenAI Codex** - [Setup instructions](GETTING_STARTED.md#option-3-openai-codex)
 - **Or any other AI coding assistant** - The principles apply to all tools
 
 ### 2. Clone This Repository
+
 ```bash
 git clone https://github.com/jamiebrown201/AI-Coding-Workshop.git
 cd AI-Coding-Workshop
 ```
 
 ### 3. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 4. Verify Everything Works
+
 ```bash
 npm run verify
 ```
@@ -46,6 +50,7 @@ npm run verify
 Each challenge is a real coding task. You'll use AI to help, but you're in control.
 
 ### Challenge 1: Build an Accessible Component
+
 **What you'll do:** Build a React article preview component using AI assistance
 **What you'll learn:** AI is great at boilerplate but misses accessibility
 **The catch:** AI will forget things like alt text and keyboard navigation
@@ -55,6 +60,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 ---
 
 ### Challenge 2: Debug a Safari Bug
+
 **What you'll do:** Fix a paywall that works in Chrome but not Safari
 **What you'll learn:** When AI helps vs when it confidently misleads
 **The catch:** AI will make confident guesses about browser bugs without real knowledge
@@ -64,6 +70,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 ---
 
 ### Challenge 3: Understand Legacy Code
+
 **What you'll do:** Map the architecture of a messy subscription system
 **What you'll learn:** Context quality matters more than prompt quality
 **The catch:** Feeding AI too much code makes it worse, not better
@@ -73,6 +80,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 ---
 
 ### Challenge 4: Plan a Safe Refactor
+
 **What you'll do:** Plan migrating jQuery code to React without breaking production
 **What you'll learn:** AI loves "rewrite everything" (which is usually a bad idea)
 **The catch:** Big-bang rewrites introduce bugs; incremental is safer
@@ -82,6 +90,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 ---
 
 ### Challenge 5: Build a Real-Time Dashboard
+
 **What you'll do:** Build a complete feature from scratch (frontend + backend + tests)
 **What you'll learn:** Where AI helps most (boilerplate) and least (architecture)
 **The catch:** AI can't make strategic decisions; you have to
@@ -91,6 +100,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 ---
 
 ### Challenge 6: Hunt for Security Bugs
+
 **What you'll do:** Review AI-generated code and find planted vulnerabilities
 **What you'll learn:** 45% of AI code has security issues
 **The catch:** AI-generated code looks right but is often dangerously wrong
@@ -100,6 +110,7 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 ---
 
 ### Capstone Challenge
+
 **What you'll do:** Build a trending topics feature with real-time data
 **What you'll learn:** Everything from the previous challenges under time pressure
 **The catch:** Must pass a security checklist
@@ -124,12 +135,14 @@ By completing these challenges, you'll be able to:
 ## 🛠️ What You Need
 
 **Required:**
+
 - Node.js 18+
 - Git
 - An AI coding tool (Claude Code, GitHub Copilot, or Codex)
 - Basic JavaScript/React knowledge
 
 **Don't need:**
+
 - Expert coding skills (we'll guide you)
 - Prior AI tool experience (that's what you're learning!)
 - AWS knowledge (we use mock data)
@@ -141,7 +154,9 @@ By completing these challenges, you'll be able to:
 ## 📖 Two Ways to Learn
 
 ### Option 1: Self-Paced (Recommended for Solo Learners)
+
 Work through challenges at your own speed. Each challenge has:
+
 - Clear instructions in its README
 - Starter code to begin with
 - Complete solutions in a `solutions` directory to check against
@@ -150,7 +165,9 @@ Work through challenges at your own speed. Each challenge has:
 **Start here:** [Self-Paced Guide](docs/self-paced-guide.md)
 
 ### Option 2: In-Person Workshop (For Teams/Groups)
+
 Run as a facilitated full-day workshop with:
+
 - Group activities and discussions
 - Competitive elements and badges
 - Peer learning opportunities
@@ -163,19 +180,24 @@ Run as a facilitated full-day workshop with:
 ## 🔑 Key Principles You'll Learn
 
 ### 1. Understanding > Speed
+
 Fast code you don't understand is a liability. Every challenge requires you to explain what AI generated.
 
 ### 2. Security is Non-Negotiable
+
 45% of AI-generated code has vulnerabilities. Challenge 6 will show you why code review is essential.
 
 ### 3. Skepticism is Healthy
+
 Question everything AI suggests. Challenge 2 will teach you this when AI confidently suggests the wrong fix.
 
 ### 4. AI Augments, Doesn't Replace
+
 AI handles boilerplate. You handle thinking. This distinction becomes clear by Challenge 5.
 
 ### 5. Context Quality > Prompt Quality
-Giving AI the *right* 50 lines beats dumping 5000 lines. You'll learn this the hard way in Challenge 3.
+
+Giving AI the _right_ 50 lines beats dumping 5000 lines. You'll learn this the hard way in Challenge 3.
 
 ---
 
@@ -210,35 +232,3 @@ AI-Coding-Workshop/
 ```
 
 Need a fresh dataset? Run `npm run generate-fixtures` to recreate everything under `data/` and the legacy fixtures.
-
----
-
-## 🏃 Get Started Now
-
-### Beginner? Start Here:
-1. Read [GETTING_STARTED.md](GETTING_STARTED.md)
-2. Do [Challenge 1](modules/01-foundations/exercises/article-preview/README.md)
-3. Then [Challenge 2](modules/01-foundations/exercises/bug-hunt/README.md)
-
-### Experienced? Jump In:
-1. Run `npm run verify`
-2. Pick any challenge that interests you
-3. Work through at your own pace
-
-### Running a Workshop? Guide Here:
-1. Read [WORKSHOP_FACILITATOR_GUIDE.md](WORKSHOP_FACILITATOR_GUIDE.md)
-2. Review all challenge READMEs
-3. Prepare materials listed in guide
-
----
-
-## ⚡ Quick Links
-
-**For Learners:**
-- 📝 [Getting Started](GETTING_STARTED.md)
-- 🎯 [Self-Paced Guide](docs/self-paced-guide.md)
-- 🔒 [Security Checklist](docs/security-checklist.md)
-- 💡 [Prompting Guide](docs/prompting-guide.md)
-
-**For Facilitators:**
-- 👥 [Facilitator Guide](WORKSHOP_FACILITATOR_G
