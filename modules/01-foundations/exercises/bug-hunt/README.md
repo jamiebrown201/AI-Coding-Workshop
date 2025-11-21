@@ -53,7 +53,7 @@ The search works as you type, but pressing Enter or clicking the button causes t
 
 ## Using AI to Debug: Your Approach
 
-This exercise is about learning **how to use AI effectively for debugging**, not just finding the bug.
+This exercise is about learning **how to use AI effectively for debugging**, not just finding the bug as im sure for some people the bug may be slightly obvious.
 
 **The Goal:**
 
