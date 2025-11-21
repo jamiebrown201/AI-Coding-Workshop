@@ -63,7 +63,11 @@ npm install
 npm run dev  # Starts server at http://localhost:3001
 ```
 
-Open http://localhost:3001 to see a demo frontend. The real system is the API backend - that's what you'll be exploring.
+**Frontend interfaces available:**
+- **http://localhost:3001/** - User subscription page (basic jQuery interactions)
+- **http://localhost:3001/admin.html** - Admin panel (300+ lines of jQuery - the main refactoring target!)
+
+The system has jQuery-based UIs on the frontend and an Express API backend. Both are worth exploring!
 
 ## ⚠️ Critical: Verify Everything
 

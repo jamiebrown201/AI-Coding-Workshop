@@ -14,11 +14,11 @@ You've just completed your architecture analysis and discovered several issues:
 
 - JSON file storage instead of a real database
 - No authentication middleware applied
-- Legacy jQuery admin interface (`public/admin.html`)
+- Legacy jQuery throughout the frontend (`public/index.html` and `public/admin.html`)
 - Inconsistent pricing logic
 - No webhook signature validation
 
-**Your tech lead says:** "Great analysis! Now let's plan how to fix some of this. Start with the admin interface - that jQuery code is from 2019 and it's blocking new features."
+**Your tech lead says:** "Great analysis! Now let's plan how to fix some of this. Start with the admin interface (`admin.html`) - that jQuery code is from 2019 and it's blocking new features. The user subscription page (`index.html`) also has jQuery but that's simpler - focus on the admin panel first."
 
 ---
 
