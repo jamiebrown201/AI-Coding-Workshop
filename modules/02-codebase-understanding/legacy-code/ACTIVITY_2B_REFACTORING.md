@@ -45,7 +45,7 @@ Technical Requirements:
 - Make it extensible for upcoming features
 - Zero downtime during migration
 - Can use the existing API at /api/subscriptions
-- Can't do a big-bang rewrite (learned that lesson before)
+- Can't do a big-bang rewrite
 ```
 
 ---
@@ -94,9 +94,7 @@ modules/02-codebase-understanding/legacy-code/
 I need to refactor this jQuery-based admin interface at public/admin.html.
 
 Looking at this code, what are the current features and what state
-management patterns is it using?
-
-[Paste the admin.html file or relevant sections]"
+management patterns is it using?"
 ```
 
 **Phase 2: Explore Refactoring Approaches**
@@ -176,6 +174,19 @@ Choose ONE approach and document:
 - **During refactoring:** How do we verify each step?
 - **After refactoring:** Final validation approach
 - **Regression tests:** How do we catch breaking changes?
+
+### 4. How You Used AI
+
+Document your AI interaction process:
+
+- **What prompts did you use?** Share the most useful prompts
+- **What did AI suggest?** List AI's recommendations
+- **What did you accept?** Which suggestions were good?
+- **What did you reject?** Where did AI suggest risky approaches?
+- **Where did you push back?** How did you guide AI to better suggestions?
+- **What did you verify?** What claims did you fact-check against the code?
+
+This reflection helps you understand how to use AI effectively for planning.
 
 ---
 
