@@ -215,8 +215,10 @@ After fixing the bug:
 
 - What different approaches did people take to find the bug?
 - Did anyone find it without AI? How?
+- **Do you think you could have solved this faster without using AI? Why or why not?**
 - What "obvious in hindsight" mistakes did we all miss initially?
 - How do you balance traditional debugging (console.log, debugger) with AI assistance?
+- For those who used AI: Did it speed you up or slow you down? Did it find the bug or lead you astray?
 
 ## Next Steps
 
