@@ -2,11 +2,17 @@
 
 ## Module Overview
 
-**Goal**: Teach participants to build complete features from scratch with AI assistance, emphasizing planning, architectural decision-making, and practical time management.
+**Goal**: Teach participants to break down problems, make architectural decisions, and use AI effectively at each step of building a full-stack feature.
 
 **Duration**: 90-120 minutes (challenge) + 30-45 minutes (discussion)
 
-**Key Learning Outcome**: Participants understand that **architecture is human work, implementation can be AI-assisted**.
+**Key Learning Outcome**: Participants can **plan first, code second** - making decisions AI can't make, then guiding AI to implement their vision.
+
+**Teaching Philosophy**:
+- Focus on user stories and breaking down problems
+- Show concrete examples of HOW to use AI at each phase
+- Give frameworks, not fluff
+- Let participants stand on their own two feet
 
 ---
 
@@ -39,17 +45,17 @@ The `dashboard-starter/` directory contains:
 
 **Set the context**:
 
-> "You've debugged existing code and explored legacy systems. Now you're building something new. This is harder because there's no code to read—you have to create the architecture."
+> "You've debugged existing code and explored legacy systems. Now you're building something new. The key skill: breaking down problems and using AI at each step."
 
 **Key Message**:
-- AI is great at **implementation** (writing code)
-- AI is terrible at **architecture** (making decisions)
-- Your job: Make decisions, guide AI, verify output
+- **Plan first, code second** - architectural decisions before implementation
+- **AI helps at each phase** - but you make the decisions
+- **Time-boxed shipping** - working code beats perfect code
 
-**Show the challenge**:
-- Real-time analytics dashboard
-- 90-minute time budget
-- Focus on shipping, not perfection
+**Show the user stories and approach**:
+- Display the acceptance criteria from README
+- Show example prompts for planning, backend, frontend
+- Emphasize: "I'll show you HOW to break it down, then you do it"
 
 ---
 
@@ -67,21 +73,16 @@ The `dashboard-starter/` directory contains:
    - Component structure (what components, what props)
    - Risk areas (what could go wrong)
 
-3. **Demo how to use AI for planning**:
-   ```
-   Prompt: "I'm building a real-time dashboard. Should I use WebSocket or polling?
-
-   Context:
-   - 90 minute time budget
-   - Need something working quickly
-   - 5-10 concurrent users
-
-   Give me pros/cons for THIS specific context."
-   ```
+3. **Demo the example prompts from README**:
+   - Show planning prompt (WebSocket vs polling)
+   - Show backend prompt (create endpoint)
+   - Show frontend prompt (create hook)
+   - Emphasize: "These are templates. Adapt them to your needs."
 
 4. **Emphasize**: AI gives options, YOU make the decision
-   - Show how to push back on AI suggestions
-   - Demo: "That's too complex for my time budget. Simpler approach?"
+   - Show how to push back: "That's too complex. Simpler approach?"
+   - Show iteration: "Can you explain why you chose X over Y?"
+   - Teach skepticism: "Does this actually solve my problem?"
 
 **Common Issues**:
 

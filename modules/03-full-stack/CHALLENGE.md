@@ -753,38 +753,4 @@ Submit (or demo) these artifacts:
 
 ---
 
-## Tips for Success
-
-### Time Management
-⏱️ **Set a timer for each phase**. If you're over time, move on anyway. Better to have something half-finished than nothing at all.
-
-### AI Collaboration
-🤖 **Treat AI like a junior developer**: Good at implementation, needs guidance on architecture. You're the senior engineer making decisions.
-
-### Scope Management
-✂️ **Cut features ruthlessly**. If you're behind schedule, drop the least important feature. Filtering can wait. Error handling cannot.
-
-### Debugging Strategy
-🐛 **Console.log is your friend**. When something doesn't work, log everything. Where is data undefined? Where does the flow break?
-
-### Ask for Help
-🙋 **Stuck for >15 minutes?** Ask a facilitator, classmate, or try a different approach. Don't waste time being stuck.
-
----
-
-## Next Steps
-
-After completing this challenge:
-
-1. **Do a code review** with a peer (Module 4 practice!)
-2. **Compare approaches** - Did others choose WebSocket or polling? Why?
-3. **Refactor one thing** - Pick the messiest code and clean it up
-4. **Move to Module 4** - Code Review & Security
-
----
-
-**Remember: The goal isn't perfect code. The goal is learning to build real features with AI assistance in realistic time constraints.**
-
-**Ship it. Learn from it. Iterate on it.**
-
-🚀 **Good luck!**
+**Remember: Plan first, code second. Ship working code, not perfect code.**
