@@ -6,17 +6,18 @@ This module brings a crucial reality check to working with AI: the significant r
 
 By the end of this module, you'll be able to:
 - ✓ Identify common security vulnerabilities in AI-generated code
-- ✓ Conduct effective code reviews on AI-assisted work
-- ✓ Use AI tools to help scan for issues (but verify results)
+- ✓ Conduct effective code reviews using AI assistance
+- ✓ Use AI for targeted code review checks (performance, accessibility, etc.)
 - ✓ Understand the 45% vulnerability statistic and why it matters
-- ✓ Plan safe refactoring strategies
-- ✓ Know when to reject AI suggestions outright
+- ✓ Verify AI suggestions before incorporating them into reviews
+- ✓ Know when to use AI vs. manual judgment in reviews
+- ✓ Generate comprehensive tests with AI assistance
 
 ## Introduction/Scenario
 
 **The Reality Check:** AI-generated code has a 45% chance of containing security vulnerabilities.
 
-This module has two activities:
+This module has three activities:
 
 ### Activity 4A: Security Review Challenge
 Hunt for vulnerabilities in AI-generated code.
@@ -25,17 +26,24 @@ Hunt for vulnerabilities in AI-generated code.
 
 **What you're reviewing:** A comment system PR that "works great" but has at least 5 security issues.
 
-### Activity 4B: Refactoring Challenge
-Safely modernize legacy code without breaking it.
+### Activity 4B: AI-Assisted Code Review
+Learn to use AI effectively during code reviews.
 
-**Location:** `refactoring-challenge/`
+**Location:** `ai-code-review/`
 
-**What you're refactoring:** jQuery search code → React, maintaining all functionality.
+**What you're reviewing:** An article recommendations feature with performance, accessibility, and code quality issues.
+
+### Activity 4C: AI-Powered Test Generation
+Use AI to write comprehensive test suites.
+
+**Location:** `ai-powered-tests/`
+
+**What you're testing:** Generate tests for utility functions with AI assistance.
 
 ## Structure/Activities
 
 - **Activity 4A: Security Review Challenge**
-- **Activity 4B: Refactoring Challenge**
+- **Activity 4B: AI-Assisted Code Review**
 - **Activity 4C: AI-Powered Test Generation**
 
 ## Getting Started
@@ -44,7 +52,7 @@ Safely modernize legacy code without breaking it.
 cd modules/04-code-review
 ```
 
-Start with **Activity 4A** (Security Review), then move to **Activity 4B** (Refactoring).
+Start with **Activity 4A** (Security Review), then move to **Activity 4B** (AI-Assisted Code Review), and finally **Activity 4C** (Test Generation).
 
 ### Starting This Module
 
@@ -77,11 +85,12 @@ When reviewing AI-generated code, ask:
 ## Success Criteria
 
 You'll know you've succeeded when:
-- [ ] You've identified at least 5 vulnerabilities
-- [ ] You understand *why* each is a vulnerability
-- [ ] You can explain the fix to someone else
-- [ ] You've refactored code without breaking tests
-- [ ] You understand when AI helps vs. hurts security
+- [ ] You've identified at least 5 security vulnerabilities
+- [ ] You've conducted an effective AI-assisted code review
+- [ ] You understand *why* each issue is a problem
+- [ ] You can explain fixes to someone else
+- [ ] You've verified AI suggestions before using them
+- [ ] You understand when AI helps vs. when manual review is better
 
 ## Common Pitfalls
 
@@ -91,11 +100,11 @@ You'll know you've succeeded when:
 **"It works, so it's fine"**
 - Working ≠ Secure
 
-**"Big bang refactoring"**
-- AI loves to suggest "rewrite everything"
+**"AI will catch everything in my review"**
+- AI is a tool, not a replacement for critical thinking
 
-**"The old code is ugly, delete it"**
-- That "ugly" code might handle critical cases
+**"I'll just copy-paste AI's review comments"**
+- You must verify and understand before adding to your review
 
 ## Resources
 
