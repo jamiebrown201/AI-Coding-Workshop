@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import './ArticleRecommendations.css';
 
 /**
  * PR #847: Add article recommendations feature
  *
  * Author: @new-dev
  * Description: "Added recommendations based on user reading history.
- *               Works great on my machine! Ready for review."
+ *               Tested locally and works great! Ready for review."
  *
  * Files changed: 1
- * Lines added: 120
- * Lines deleted: 0
+ * Lines: +145 / -0
  */
 
 const ArticleRecommendations = ({ userId, currentArticleId }) => {
@@ -18,6 +18,7 @@ const ArticleRecommendations = ({ userId, currentArticleId }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    console.log('Fetching recommendations for user:', userId);
     fetchRecommendations();
   }, [userId]);
 
@@ -27,77 +28,130 @@ const ArticleRecommendations = ({ userId, currentArticleId }) => {
       const response = await fetch(`/api/recommendations?userId=${userId}&articleId=${currentArticleId}`);
       const data = await response.json();
 
-      // 🐛 ISSUE #1: No error handling for non-200 responses
+      console.log('Received data:', data);
+
+     
       setRecommendations(data);
       setLoading(false);
     } catch (err) {
+      console.error('Failed to fetch recommendations:', err);
       setError(err.message);
       setLoading(false);
     }
   };
 
-  // 🐛 ISSUE #2: Expensive calculation runs on every render
   const calculateRelevanceScore = (article) => {
+   
     let score = 0;
 
-    // Simulate expensive computation
-    for (let i = 0; i < 1000000; i++) {
-      score += Math.random();
-    }
+    // Weight by category
+    const categoryWeights = {
+      'technology': 10,
+      'business': 8,
+      'politics': 6,
+      'sports': 4
+    };
 
-    if (article.category === 'technology') score += 10;
+    score += categoryWeights[article.category] || 0;
+
+    // Boost articles from popular authors
     if (article.author === 'Sarah Chen') score += 5;
+    if (article.author === 'Michael Rodriguez') score += 5;
 
-    return score;
+   
+    const daysOld = (new Date() - new Date(article.publishedDate)) / (1000 * 60 * 60 * 24);
+    score -= daysOld * 0.1; // Penalize old articles
+
+    return Math.max(0, score);
   };
 
-  // 🐛 ISSUE #3: Race condition - currentArticleId might change during fetch
   const handleRefresh = () => {
+    console.log('Refreshing recommendations');
     fetchRecommendations();
   };
 
-  // 🐛 ISSUE #4: Renders all articles even if there are hundreds
-  // No virtualization or pagination
-  const renderRecommendations = () => {
-    return recommendations.map((article) => {
-      const score = calculateRelevanceScore(article); // Called for every article on every render!
-
-      return (
-        <div key={article.id} className="recommendation-card">
-          <h3>{article.title}</h3>
-          <p>{article.summary}</p>
-          <span className="score">Relevance: {score.toFixed(2)}</span>
-          {/* 🐛 ISSUE #5: Accessibility - no semantic HTML or ARIA labels */}
-          <div onClick={() => window.location.href = `/articles/${article.id}`}>
-            Read More →
-          </div>
-        </div>
-      );
-    });
+  const handleArticleClick = (articleId) => {
+   
+    window.location.href = `/articles/${articleId}`;
   };
 
   if (loading) {
-    // 🐛 ISSUE #6: No loading skeleton, just text
-    return <div>Loading...</div>;
+    return <div className="loading">Loading...</div>;
   }
 
   if (error) {
-    // 🐛 ISSUE #7: Exposes raw error messages to users
-    return <div>Error: {error}</div>;
+   
+    return (
+      <div className="error">
+        <p>Error: {error}</p>
+        <button onClick={handleRefresh}>Try Again</button>
+      </div>
+    );
   }
 
-  // 🐛 ISSUE #8: No empty state handling
+ 
   return (
     <div className="recommendations-container">
       <div className="recommendations-header">
-        <h2>Recommended for you</h2>
-        {/* 🐛 ISSUE #9: No debouncing - user can spam refresh */}
-        <button onClick={handleRefresh}>Refresh</button>
+        <h2>Recommended for You</h2>
+        <button onClick={handleRefresh} className="refresh-btn">
+          🔄 Refresh
+        </button>
       </div>
 
-      <div className="recommendations-list">
-        {renderRecommendations()}
+      {/* 🐛 ISSUE: Commented-out code should be removed
+      <div className="filters">
+        <button>Technology</button>
+        <button>Business</button>
+        <button>All</button>
       </div>
+      */}
+
+      <div className="recommendations-list">
+        {recommendations.map((article) => {
+          const score = calculateRelevanceScore(article);
+
+          return (
+           
+            <div
+              key={article.id}
+              className="recommendation-card"
+             
+              onClick={() => handleArticleClick(article.id)}
+            >
+              {article.imageUrl && (
+               
+                <img src={article.imageUrl} className="article-image" />
+              )}
+
+              <div className="article-content">
+                {/* 🐛 ISSUE: Using h3 in clickable div - confusing for screen readers */}
+                <h3 className="article-title">{article.title}</h3>
+                <p className="article-summary">{article.summary}</p>
+
+                <div className="article-meta">
+                  <span className="author">{article.author}</span>
+                  <span className="date">{article.publishedDate}</span>
+                  <span className="score">Score: {score.toFixed(1)}</span>
+                </div>
+              </div>
+
+              {/* 🐛 ISSUE: Using inline arrow instead of proper button/link */}
+              <div className="read-more">→</div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* 🐛 ISSUE: TODO comment left in production code */}
+      {/* TODO: Add pagination when we have more than 10 results */}
+
+      {/* 🐛 ISSUE: Hardcoded user tracking - privacy concern? */}
+      <img
+        src={`https://analytics.example.com/track?user=${userId}&page=recommendations`}
+        style={{ display: 'none' }}
+        alt=""
+      />
     </div>
   );
 };

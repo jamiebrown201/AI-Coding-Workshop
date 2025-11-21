@@ -11,13 +11,13 @@ By the end of this module, you'll be able to:
 - ✓ Understand the 45% vulnerability statistic and why it matters
 - ✓ Verify AI suggestions before incorporating them into reviews
 - ✓ Know when to use AI vs. manual judgment in reviews
-- ✓ Generate comprehensive tests with AI assistance
+- ✓ Spot hidden issues like console.log, commented code, and TODO comments
 
 ## Introduction/Scenario
 
 **The Reality Check:** AI-generated code has a 45% chance of containing security vulnerabilities.
 
-This module has three activities:
+This module has two activities focused on code review:
 
 ### Activity 4A: Security Review Challenge
 Hunt for vulnerabilities in AI-generated code.
@@ -31,20 +31,12 @@ Learn to use AI effectively during code reviews.
 
 **Location:** `ai-code-review/`
 
-**What you're reviewing:** An article recommendations feature with performance, accessibility, and code quality issues.
-
-### Activity 4C: AI-Powered Test Generation
-Use AI to write comprehensive test suites.
-
-**Location:** `ai-powered-tests/`
-
-**What you're testing:** Generate tests for utility functions with AI assistance.
+**What you're reviewing:** An article recommendations feature with hidden issues like console.log statements, commented code, performance problems, accessibility issues, and privacy concerns. A runnable app so you can test it yourself!
 
 ## Structure/Activities
 
 - **Activity 4A: Security Review Challenge**
 - **Activity 4B: AI-Assisted Code Review**
-- **Activity 4C: AI-Powered Test Generation**
 
 ## Getting Started
 
@@ -52,7 +44,7 @@ Use AI to write comprehensive test suites.
 cd modules/04-code-review
 ```
 
-Start with **Activity 4A** (Security Review), then move to **Activity 4B** (AI-Assisted Code Review), and finally **Activity 4C** (Test Generation).
+Start with **Activity 4A** (Security Review), then move to **Activity 4B** (AI-Assisted Code Review).
 
 ### Starting This Module
 
@@ -85,12 +77,14 @@ When reviewing AI-generated code, ask:
 ## Success Criteria
 
 You'll know you've succeeded when:
-- [ ] You've identified at least 5 security vulnerabilities
-- [ ] You've conducted an effective AI-assisted code review
+- [ ] You've identified at least 5 security vulnerabilities in Activity 4A
+- [ ] You've found at least 8 code review issues in Activity 4B
+- [ ] You found hidden issues like console.log and commented code
 - [ ] You understand *why* each issue is a problem
 - [ ] You can explain fixes to someone else
 - [ ] You've verified AI suggestions before using them
 - [ ] You understand when AI helps vs. when manual review is better
+- [ ] You've tested the code in the browser to see issues firsthand
 
 ## Common Pitfalls
 

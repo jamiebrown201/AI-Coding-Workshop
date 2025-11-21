@@ -33,12 +33,30 @@ You're reviewing a PR from a colleague who's new to the team. The feature **work
 
 ```bash
 cd modules/04-code-review/ai-code-review
+npm install
+
+# In one terminal - start the mock API server
+npm run api
+
+# In another terminal - start the dev server
+npm run dev
 ```
+
+The app will open at http://localhost:3000
 
 **What you have:**
 - `ArticleRecommendations.jsx` - The PR code to review
+- A working app you can test in the browser
+- Mock API serving article recommendations
 - Your AI coding assistant
 - This guide on AI-assisted code review
+
+**Test the feature:**
+- Open http://localhost:3000
+- You'll see article recommendations
+- Click "Refresh" to reload recommendations
+- Click on cards to navigate (will change URL)
+- Open browser console (you'll see some output...)
 
 ## Learning Objectives
 
@@ -237,21 +255,31 @@ Consider loading states, empty states, and error handling."
 
 ## Expected Issues to Find
 
-There are **at least 9 issues** in this code. Can you find them all?
+There are **at least 12 issues** in this code. The challenge is finding the subtle ones!
 
-**Hint categories:**
-- 2-3 performance issues
-- 2-3 accessibility issues
-- 2-3 error handling issues
-- 1-2 race condition issues
+**Categories to check:**
+- **Console statements** - Left-in debugging code
+- **Commented code** - Should be deleted, not committed
+- **TODO comments** - Incomplete work
+- **Performance issues** - Expensive calculations, missing memoization
+- **Accessibility issues** - Missing semantic HTML, alt text, proper roles
+- **Error handling** - Technical errors exposed to users, poor UX
+- **React hooks** - Missing dependencies, race conditions
+- **User tracking** - Privacy concerns?
+- **Navigation** - Direct DOM manipulation instead of React patterns
+- **Code quality** - Niche patterns, deprecated approaches
+
+**The challenge:** Some issues are obvious (console.log), others are subtle (missing dependencies, privacy concerns). Use AI to help find the patterns, but YOU need to judge severity and business impact.
 
 ## Success Criteria
 
-- [ ] You've identified at least 6 of the 9 issues
+- [ ] You've identified at least 8 of the 12 issues
+- [ ] You found at least 2 "hidden" issues (console.log, commented code, TODO)
 - [ ] You understand WHY each is a problem
 - [ ] You've written constructive review comments
 - [ ] You've verified AI's suggestions (not blindly copied)
 - [ ] You can explain how AI helped vs. where you used manual judgment
+- [ ] You tested the app in the browser to see the issues firsthand
 - [ ] You have a `review-comments.md` file with your findings
 
 ## Template: review-comments.md

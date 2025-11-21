@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "AI Transforms Financial Markets Analysis",
+    "summary": "Machine learning algorithms are revolutionizing how traders analyze market patterns and make investment decisions.",
+    "author": "Sarah Chen",
+    "category": "technology",
+    "publishedDate": "2025-11-18",
+    "imageUrl": "/images/ai-finance.jpg"
+  },
+  {
+    "id": 2,
+    "title": "European Central Bank Signals Rate Changes",
+    "summary": "ECB officials hint at potential monetary policy shifts in response to evolving economic conditions across the eurozone.",
+    "author": "Michael Rodriguez",
+    "category": "business",
+    "publishedDate": "2025-11-17",
+    "imageUrl": "/images/ecb.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Computing Breakthrough Announced",
+    "summary": "Researchers achieve significant milestone in quantum error correction, bringing practical quantum computers closer to reality.",
+    "author": "Dr. Emily Watson",
+    "category": "technology",
+    "publishedDate": "2025-11-16",
+    "imageUrl": "/images/quantum.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Global Climate Summit Reaches Agreement",
+    "summary": "World leaders commit to new emissions targets in historic climate accord aimed at limiting global temperature rise.",
+    "author": "James Patterson",
+    "category": "politics",
+    "publishedDate": "2025-11-15",
+    "imageUrl": "/images/climate.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Startup Valuations Face Reality Check",
+    "summary": "Tech startups adjust expectations as investors become more cautious amid economic uncertainty.",
+    "author": "Sarah Chen",
+    "category": "business",
+    "publishedDate": "2025-11-14",
+    "imageUrl": "/images/startups.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Premier League Transfer Window Heats Up",
+    "summary": "Top clubs compete for star players as the January transfer window opens with record-breaking bids.",
+    "author": "David Miller",
+    "category": "sports",
+    "publishedDate": "2025-11-13",
+    "imageUrl": "/images/football.jpg"
+  }
+]
