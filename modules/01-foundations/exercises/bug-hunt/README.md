@@ -80,18 +80,7 @@ This exercise is about learning **how to use AI effectively for debugging**, not
 
 ### Step 2: Ask AI to Analyze the Component
 
-**Prompt the AI to examine the search component:**
-
-```
-"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
-
-I'm working on a search feature in src/components/SearchableArticleList.jsx.
-
-The search filters correctly as I type, but when I press Enter or click the
-Search button, the page reloads and I lose my search. There are no console errors.
-
-Can you analyze the handleSearch function and the form submission behavior?"
-```
+...
 
 ### Step 3: Ask AI for Multiple Hypotheses
 
