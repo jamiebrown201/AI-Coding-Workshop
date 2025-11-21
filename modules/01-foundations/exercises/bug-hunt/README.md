@@ -206,9 +206,10 @@ After fixing the bug:
 
 1. **What was the first clue that led you to the bug?**
 2. **Did you use AI? How did it help or mislead you?**
-3. **How long did it take to find vs. fix?**
-4. **What debugging technique was most useful?**
-5. **How could this bug have been prevented?**
+3. **Could you have done this quicker without AI? Why or why not?**
+4. **How long did it take to find vs. fix?**
+5. **What debugging technique was most useful?**
+6. **How could this bug have been prevented?**
 
 ## Group Discussion
 
