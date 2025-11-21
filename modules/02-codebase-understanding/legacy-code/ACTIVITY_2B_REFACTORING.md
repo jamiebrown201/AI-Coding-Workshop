@@ -12,7 +12,6 @@ Now that you've mapped out the subscription management system, it's time to plan
 
 You've just completed your architecture analysis and discovered several issues:
 
-- JSON file storage instead of a real database
 - No authentication middleware applied
 - Legacy jQuery throughout the frontend (`public/index.html` and `public/admin.html`)
 - Inconsistent pricing logic
