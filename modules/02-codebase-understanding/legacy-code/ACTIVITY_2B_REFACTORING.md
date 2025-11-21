@@ -188,44 +188,6 @@ Document your AI interaction process:
 
 This reflection helps you understand how to use AI effectively for planning.
 
----
-
-## Red Flags to Watch For
-
-### 🚩 AI Suggests Big-Bang Rewrite
-
-**AI says:** "Let's rewrite the entire admin interface from scratch in React."
-
-**Why it's risky:** No incremental steps, hard to test, long to complete, no rollback.
-
-**What to do:** Ask AI for _incremental_ strategies instead.
-
-### 🚩 AI Ignores Testing
-
-**AI says:** "First step: delete jQuery, add React."
-
-**Why it's risky:** No test coverage before making changes.
-
-**What to do:** Always write tests BEFORE refactoring.
-
-### 🚩 AI Underestimates Complexity
-
-**AI says:** "This refactoring should take 2-3 days."
-
-**Why it's risky:** Always takes longer. Hidden complexity in edge cases.
-
-**What to do:** Add buffer time, plan for unknowns.
-
-### 🚩 AI Doesn't Consider User Behavior
-
-**AI says:** "We can change the filter UI layout."
-
-**Why it's risky:** Users have muscle memory, might depend on exact behavior.
-
-**What to do:** Maintain UI/UX during refactoring when possible.
-
----
-
 ## Exploration Checklist
 
 - [ ] Identified all features in current jQuery implementation
