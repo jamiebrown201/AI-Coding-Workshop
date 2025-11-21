@@ -13,26 +13,34 @@ const SearchableArticleList = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredArticles, setFilteredArticles] = useState(articlesData);
 
-  // Handle search form submission
-  const handleSearch = (event) => {
-    const term = searchTerm.toLowerCase().trim();
+  // Filter articles based on search term
+  const filterArticles = (term) => {
+    const searchLower = term.toLowerCase().trim();
 
-    if (!term) {
+    if (!searchLower) {
       // Empty search shows all articles
-      setFilteredArticles(articles);
-    } else {
-      // Filter articles by title or summary
-      const filtered = articles.filter(article =>
-        article.title.toLowerCase().includes(term) ||
-        article.summary.toLowerCase().includes(term)
-      );
-      setFilteredArticles(filtered);
+      return articles;
     }
+
+    // Search in title, summary, AND category
+    return articles.filter(article =>
+      article.title.toLowerCase().includes(searchLower) ||
+      article.summary.toLowerCase().includes(searchLower) ||
+      article.category.toLowerCase().includes(searchLower)
+    );
   };
 
-  // Handle input change
+  // Handle input change - search on type
   const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
+    const newSearchTerm = event.target.value;
+    setSearchTerm(newSearchTerm);
+    // Filter immediately as user types
+    setFilteredArticles(filterArticles(newSearchTerm));
+  };
+
+  // Handle form submission (for accessibility - Enter key)
+  const handleSearch = (event) => {
+    setFilteredArticles(filterArticles(searchTerm));
   };
 
   return (
