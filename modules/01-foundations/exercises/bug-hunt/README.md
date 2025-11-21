@@ -1,27 +1,26 @@
 # Exercise 1B: Bug Hunt
 
-## 🐛 The Case of the Broken Article List
+## 🐛 The Case of the Broken Search
 
-**Current status:** 🔥 Users can't read articles
+**Current status:** 🔥 Users can't find anything
 
 ## Product Context / Bug Report
 
 ```
 As a FT reader
-I want to see the list of articles load correctly
-So that I can browse and read content
+I want to search for articles by keyword
+So that I can find relevant content quickly
 
-Bug Report from QA:
-"The article list page isn't working. When you visit the page,
-articles should load and display, but instead nothing appears.
-The page just shows 'No articles found' even though we know
-there are articles in the data file. The loading spinner shows
-briefly, then disappears and shows the empty state."
+Bug Report from Users:
+"The search bar isn't working properly. I type in a keyword
+and hit search, but nothing happens. The articles just stay
+the same - no filtering is happening. I've tried different
+keywords but it never filters the results."
 
-Priority: HIGH (users can't access content)
+Priority: HIGH (search is a core feature)
 Reproducible: Yes, every time
-Expected: Article list displays 10 articles from fixtures/articles.json
-Actual: "No articles found" message shows instead
+Expected: Typing and searching should filter the article list
+Actual: Articles remain unchanged, search appears to do nothing
 ```
 
 ## Your Mission
@@ -34,32 +33,33 @@ Use AI to help investigate, but remember: **AI might confidently suggest the wro
 
 ```bash
 cd modules/01-foundations/exercises/bug-hunt
-git checkout -b workshop/your-name/article-list-bug
+git checkout -b workshop/your-name/search-bug-fix
 npm install
 npm run dev  # Should start local server at http://localhost:3000
 ```
 
 ## The Scenario
 
-You've been given a simple article list page that should:
-1. Fetch articles from `fixtures/articles.json`
-2. Display them in a list
-3. Show loading state while fetching
-4. Show empty state if no articles found
+You've been given a search feature that should:
+1. Display a list of articles
+2. Let users type a search keyword
+3. Filter articles by title/summary when user clicks "Search"
+4. Show "No results found" if no matches
 
-The code looks fine at first glance, but something's broken.
+The search bar is there, you can type in it, but clicking search does nothing.
 
 ## Hints (Read These First!)
 
-- Open the browser dev tools Console tab - what do you see?
-- Check the Network tab - is the fetch request happening?
-- Look at the component code - is there a logic error?
-- The bug is subtle but common in React/async code
-- AI might suggest adding more code, but the fix is simpler than that
+- Open the browser dev tools Console tab - any errors?
+- Try typing in the search box and clicking Search
+- Check the React DevTools - is state updating?
+- Look at the search handler function - is it being called?
+- The bug might be in the event handler, state management, or filtering logic
+- Sometimes the simplest bugs are the hardest to spot
 
 ## Things You Have At Your Disposal
 
-- Browser dev tools (Console, Network, Elements tabs)
+- Browser dev tools (Console, React DevTools)
 - AI debugging assistance
 - The codebase in this directory
 - `fixtures/articles.json` with sample data
@@ -70,68 +70,71 @@ The code looks fine at first glance, but something's broken.
 ### Step 1: Reproduce & Observe
 1. Run `npm run dev`
 2. Open http://localhost:3000 in your browser
-3. Open DevTools Console tab
-4. What do you see? Any errors? Any logs?
-5. Check the Network tab - is `articles.json` being fetched?
+3. Try searching for a keyword (e.g., "technology", "markets")
+4. What happens? Anything in the Console?
+5. Open React DevTools - does state change when you search?
 
 ### Step 2: Investigate the Code
-1. Look at `src/ArticleList.tsx` - how does it fetch data?
-2. Look at `src/App.tsx` - how is ArticleList used?
-3. Check `fixtures/articles.json` - is the data there?
-4. Use AI to help understand what might be wrong
+1. Look at `src/SearchBar.tsx` - how does the search handler work?
+2. Look at the parent component - how is search state managed?
+3. Check the filter logic - is it correct?
+4. Add console.logs to trace the flow
+5. Use AI to help spot issues
 
 ### Step 3: Form a Hypothesis
-Based on console errors or logs, what do you think is broken?
-- Is it a fetch error?
-- Is it a parsing error?
-- Is it a state management issue?
-- Is it a conditional rendering issue?
+Based on your investigation, what do you think is broken?
+- Is the event handler attached correctly?
+- Is the state updating?
+- Is the filter logic wrong?
+- Is there a typo in a prop name?
 
 ### Step 4: Fix & Test
 1. Make ONE change at a time
 2. Test after each change
-3. Check both the browser and console
-4. Verify the fix actually works
+3. Try different search terms
+4. Verify both matches and no-matches work
 
 ### Step 5: Verify & Clean Up
 1. Run `npm test` to ensure tests pass
 2. Remove any debug console.logs you added
-3. Make sure the fix doesn't break anything else
+3. Test edge cases (empty search, special characters)
 
 ## Example AI Prompts
 
 **❌ Vague:**
-> "Fix my broken React component"
+> "My search isn't working"
 
 **✅ Better:**
 > "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 >
-> I have a React component that fetches articles from a JSON file. The fetch seems to work (I see it in Network tab) but the articles don't display. The component shows 'No articles found' instead. What are common issues with async data fetching in React?"
+> I have a search bar component that should filter a list of articles. When I click the search button, nothing happens - the list doesn't filter. There are no console errors. What are common issues with search/filter functionality in React?"
 
 **✅ Even better (with specifics):**
 > "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 >
-> In ArticleList.tsx, I'm using useState and useEffect to fetch articles. The console shows '[error message]'. The Network tab shows the fetch succeeded with 200 status. What could cause the articles array to be empty even though the fetch succeeded?"
+> In SearchBar.tsx, I have a form with an input and button. The handleSearch function should update state, but when I add console.logs, I see [what you see]. The state is [describe state]. What could prevent the search handler from working correctly?"
 
 ## Success Criteria
 
-- [ ] Article list displays all 10 articles from the fixture
+- [ ] Search filters articles by title/summary
+- [ ] Typing "technology" shows only tech articles
+- [ ] Typing "markets" shows only market articles  
+- [ ] Empty search shows all articles
+- [ ] "No results" shows when no matches
 - [ ] No console errors
-- [ ] Loading state shows briefly while fetching
 - [ ] Tests pass (`npm test`)
 - [ ] You understand WHY it was broken
 - [ ] You can explain the fix to someone else
-- [ ] You removed any debug code you added
 
-## Common Mistakes to Avoid
+## Common Issues to Check
 
-When using AI for debugging:
-- ❌ Don't paste the entire codebase
-- ❌ Don't blindly apply suggestions without understanding them
-- ❌ Don't add more complexity to "fix" something
-- ✅ Start with the error message
-- ✅ Form your own hypothesis first
-- ✅ Use AI to validate or expand your thinking
+When debugging search functionality:
+- [ ] Is the form submitting and causing a page reload?
+- [ ] Is the event handler being called?
+- [ ] Is state updating with the search term?
+- [ ] Is the filter function correct?
+- [ ] Are prop names spelled correctly?
+- [ ] Is the filtered data being used for rendering?
 
 ## Testing Your Fix
 
@@ -139,47 +142,49 @@ When using AI for debugging:
 # Run the dev server
 npm run dev
 
-# Open browser, should see 10 articles
+# Test searches:
+# - "technology" should show tech articles
+# - "markets" should show market articles
+# - "zzz" should show "No results found"
+# - Empty search should show all articles
 
 # Run tests
 npm test
-
-# Check there are no console errors
 ```
 
 ## Commit Your Fix
 
 ```bash
 git add .
-git commit -m "fix: article list not displaying data
+git commit -m "fix: search functionality not filtering articles
 
 Root cause: [explain what was broken]
 Solution: [explain what you changed]
 
-The bug was caused by [your explanation].
+The search feature wasn't working because [your explanation].
 Fixed by [your solution].
 
-AI assistance: [where it helped/didn't help]"
+Tested with various search terms to verify filtering works correctly."
 
-git push origin workshop/your-name/article-list-bug
+git push origin workshop/your-name/search-bug-fix
 ```
 
 ## Reflection Questions
 
 After fixing the bug:
 
-1. **How long did it take you to find the bug?**
+1. **What was the first clue that led you to the bug?**
 2. **Did you use AI? How did it help or mislead you?**
-3. **What would you do differently next time?**
-4. **How could this bug have been caught earlier?**
-5. **What did you learn about debugging with AI?**
+3. **How long did it take to find vs. fix?**
+4. **What debugging technique was most useful?**
+5. **How could this bug have been prevented?**
 
 ## Group Discussion
 
-- What was the first thing each of you checked?
-- Did AI give you the right answer immediately, or did it take iteration?
-- How do you balance using AI for debugging vs. traditional debugging techniques?
-- What debugging skills did you use that AI couldn't replace?
+- What different approaches did people take to find the bug?
+- Did anyone find it without AI? How?
+- What "obvious in hindsight" mistakes did we all miss initially?
+- How do you balance traditional debugging (console.log, debugger) with AI assistance?
 
 ## Next Steps
 
@@ -189,4 +194,4 @@ After completing this exercise:
 
 ---
 
-**Remember: The best debugging tool is a systematic approach. AI is a helper, not a replacement for thinking.**
+**Remember: Good debugging is methodical. Check the simple things first, then get creative.**
