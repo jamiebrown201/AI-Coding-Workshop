@@ -1,16 +1,14 @@
 {
-  "name": "safari-bug-hunt",
+  "name": "bug-hunt-search",
   "version": "1.0.0",
-  "description": "Module 1B: Safari Bug Hunt Exercise",
+  "description": "Module 1B: Bug Hunt Exercise - Search Functionality",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "jest",
-    "test:safari": "jest --testPathPattern=safari",
     "lint": "eslint src --ext .js,.jsx"
   },
-  "keywords": ["debugging", "safari", "browser-compatibility"],
+  "keywords": ["debugging", "react", "search", "forms"],
   "author": "FT Labs",
   "license": "MIT",
   "dependencies": {

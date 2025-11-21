@@ -41,6 +41,7 @@ npm run dev  # Should start local server at http://localhost:3000
 ## The Scenario
 
 You've been given a search feature that should:
+
 1. Display a list of articles
 2. Let users type a search keyword
 3. Filter articles by title/summary when user clicks "Search"
@@ -48,87 +49,122 @@ You've been given a search feature that should:
 
 The search bar is there, you can type in it, but clicking search does nothing.
 
-## Hints (Read These First!)
+## Using AI to Debug: Your Approach
 
-- Open the browser dev tools Console tab - any errors?
-- Try typing in the search box and clicking Search
-- Check the React DevTools - is state updating?
-- Look at the search handler function - is it being called?
-- The bug might be in the event handler, state management, or filtering logic
-- Sometimes the simplest bugs are the hardest to spot
+This exercise is about learning **how to use AI effectively for debugging**, not just finding the bug.
 
-## Things You Have At Your Disposal
+**The Goal:**
+- Use AI to help you identify and fix the bug faster
+- Learn what information AI needs to be helpful
+- Understand when to trust AI vs. verify yourself
+- Practice iterative debugging with an AI assistant
 
-- Browser dev tools (Console, React DevTools)
-- AI debugging assistance
-- The codebase in this directory
-- `fixtures/articles.json` with sample data
-- Your debugging skills
+## Debugging Strategy with AI
 
-## Debugging Strategy
+### Step 1: Reproduce the Bug First
+**Before asking AI anything, gather evidence:**
 
-### Step 1: Reproduce & Observe
-1. Run `npm run dev`
-2. Open http://localhost:3000 in your browser
-3. Try searching for a keyword (e.g., "technology", "markets")
-4. What happens? Anything in the Console?
-5. Open React DevTools - does state change when you search?
+1. Run `npm run dev` and open http://localhost:3000
+2. Try searching for "technology" or "markets"
+3. Observe what happens - does the page reload? Do results change?
+4. Open browser Console - any errors?
+5. Check Network tab - is the page refreshing?
 
-### Step 2: Investigate the Code
-1. Look at `src/SearchBar.tsx` - how does the search handler work?
-2. Look at the parent component - how is search state managed?
-3. Check the filter logic - is it correct?
-4. Add console.logs to trace the flow
-5. Use AI to help spot issues
+**Why this matters:** AI needs context. "It's broken" is useless. "When I click search, the page reloads and nothing filters" is actionable.
 
-### Step 3: Form a Hypothesis
-Based on your investigation, what do you think is broken?
-- Is the event handler attached correctly?
-- Is the state updating?
-- Is the filter logic wrong?
-- Is there a typo in a prop name?
+### Step 2: Ask AI to Analyze the Component
 
-### Step 4: Fix & Test
-1. Make ONE change at a time
-2. Test after each change
-3. Try different search terms
-4. Verify both matches and no-matches work
+**Prompt the AI to examine the search component:**
 
-### Step 5: Verify & Clean Up
-1. Run `npm test` to ensure tests pass
-2. Remove any debug console.logs you added
-3. Test edge cases (empty search, special characters)
+```
+"I'm working on a search feature in src/components/SearchableArticleList.jsx.
+
+When I type a keyword and click the Search button, the page appears to
+reload and the articles don't filter. There are no console errors.
+
+Can you analyze the handleSearch function and identify potential issues?"
+```
+
+**What AI might suggest:**
+- Missing event.preventDefault()
+- State not updating
+- Form submission behavior
+- Event handler not attached
+
+**Your job:** Verify AI's suggestions by testing them
+
+### Step 3: Ask AI for Multiple Hypotheses
+
+**Don't accept the first answer - ask for alternatives:**
+
+```
+"You suggested [AI's answer]. What are 2-3 other possible causes
+for a search button that doesn't filter results? I want to check
+each possibility systematically."
+```
+
+**Why this works:** AI might miss the obvious. Getting multiple theories helps you debug methodically.
+
+### Step 4: Use AI to Generate Debugging Code
+
+**Ask AI to help you verify your hypothesis:**
+
+```
+"I think the issue might be [your hypothesis]. Can you show me
+how to add console.logs to verify if the handleSearch function
+is being called and if state is updating?"
+```
+
+**AI can generate:**
+- Console.log statements
+- Debugger breakpoints
+- Quick test code
+
+### Step 5: Implement the Fix with AI
+
+**Once you've identified the bug, ask AI for the fix:**
+
+```
+"The bug is that the form submits and causes a page reload.
+Show me how to prevent the default form submission behavior."
+```
+
+**But verify the fix yourself!** Don't just copy-paste. Understand WHY it works.
 
 ## Example AI Prompts
 
 **❌ Vague:**
+
 > "My search isn't working"
 
 **✅ Better:**
+
 > "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 >
 > I have a search bar component that should filter a list of articles. When I click the search button, nothing happens - the list doesn't filter. There are no console errors. What are common issues with search/filter functionality in React?"
 
 **✅ Even better (with specifics):**
+
 > "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 >
-> In SearchBar.tsx, I have a form with an input and button. The handleSearch function should update state, but when I add console.logs, I see [what you see]. The state is [describe state]. What could prevent the search handler from working correctly?"
+> In SearchableArticleList.jsx, I have a form with an input and button. The handleSearch function should update state, but when I add console.logs, I see [what you see]. The state is [describe state]. What could prevent the search handler from working correctly?"
 
 ## Success Criteria
 
 - [ ] Search filters articles by title/summary
 - [ ] Typing "technology" shows only tech articles
-- [ ] Typing "markets" shows only market articles  
+- [ ] Typing "markets" shows only market articles
 - [ ] Empty search shows all articles
 - [ ] "No results" shows when no matches
 - [ ] No console errors
-- [ ] Tests pass (`npm test`)
+- [ ] Build completes without errors (`npm run build`)
 - [ ] You understand WHY it was broken
 - [ ] You can explain the fix to someone else
 
 ## Common Issues to Check
 
 When debugging search functionality:
+
 - [ ] Is the form submitting and causing a page reload?
 - [ ] Is the event handler being called?
 - [ ] Is state updating with the search term?
@@ -143,13 +179,14 @@ When debugging search functionality:
 npm run dev
 
 # Test searches:
-# - "technology" should show tech articles
-# - "markets" should show market articles
+# - "technology" should show 3 tech articles
+# - "markets" should show 2 market articles
+# - "environment" should show 1 article about green energy
 # - "zzz" should show "No results found"
-# - Empty search should show all articles
+# - Empty search should show all 8 articles
 
-# Run tests
-npm test
+# Run build to check for errors
+npm run build
 ```
 
 ## Commit Your Fix
@@ -189,6 +226,7 @@ After fixing the bug:
 ## Next Steps
 
 After completing this exercise:
+
 1. Review your debugging process
 2. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/README.md)
 

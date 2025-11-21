@@ -1,10 +1,10 @@
 import React from 'react'
-import Paywall from './components/Paywall'
+import SearchableArticleList from './components/SearchableArticleList'
 
 function App() {
   return (
     <div>
-      <Paywall />
+      <SearchableArticleList />
     </div>
   )
 }

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Global Markets Rally Amid Economic Optimism",
+    "summary": "Stock markets across the world reached new highs as investors responded positively to economic data showing stronger than expected growth.",
+    "category": "markets",
+    "author": "Sarah Chen",
+    "date": "2025-11-18"
+  },
+  {
+    "id": 2,
+    "title": "Tech Giants Face New Regulatory Challenges",
+    "summary": "European regulators announced sweeping new rules targeting big tech companies, focusing on data privacy and market competition.",
+    "category": "technology",
+    "author": "Michael Rodriguez",
+    "date": "2025-11-17"
+  },
+  {
+    "id": 3,
+    "title": "Central Banks Signal Policy Shift",
+    "summary": "Major central banks indicated a potential change in monetary policy direction, citing improved inflation figures and stable employment.",
+    "category": "economics",
+    "author": "Emma Thompson",
+    "date": "2025-11-16"
+  },
+  {
+    "id": 4,
+    "title": "AI Startups Attract Record Investment",
+    "summary": "Venture capital firms poured unprecedented amounts into artificial intelligence startups, with funding reaching $12 billion this quarter.",
+    "category": "technology",
+    "author": "David Kim",
+    "date": "2025-11-15"
+  },
+  {
+    "id": 5,
+    "title": "Oil Prices Surge on Supply Concerns",
+    "summary": "Crude oil prices jumped 8% following reports of production cuts and geopolitical tensions affecting major oil-producing regions.",
+    "category": "markets",
+    "author": "James Wilson",
+    "date": "2025-11-14"
+  },
+  {
+    "id": 6,
+    "title": "Green Energy Investment Reaches Milestone",
+    "summary": "Renewable energy projects attracted more investment than fossil fuels for the first time in history, marking a significant shift in the energy sector.",
+    "category": "environment",
+    "author": "Lisa Anderson",
+    "date": "2025-11-13"
+  },
+  {
+    "id": 7,
+    "title": "Emerging Markets Show Strong Growth",
+    "summary": "Developing economies posted impressive GDP figures, outpacing developed markets and attracting increased foreign investment.",
+    "category": "economics",
+    "author": "Ahmed Hassan",
+    "date": "2025-11-12"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Threats Evolve Rapidly",
+    "summary": "Security experts warn of sophisticated new attack vectors as companies struggle to keep pace with evolving cyber threats.",
+    "category": "technology",
+    "author": "Rachel Martinez",
+    "date": "2025-11-11"
+  }
+]
