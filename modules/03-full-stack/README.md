@@ -32,20 +32,55 @@ Requirements:
 - Gracefully handles API failures
 ```
 
-## Structure/Activities
+## The Challenge
 
-- **Phase 1: Planning**
-- **Phase 2: Backend**
-- **Phase 3: Frontend**
-- **Phase 4: Integration & Polish**
-- **Phase 5: Demo Prep**
+📋 **[Read the full challenge →](./CHALLENGE.md)**
+
+This module contains a comprehensive build-from-scratch challenge where you'll:
+
+1. **Plan** your architecture (API contract, component tree, risks)
+2. **Build** a backend API with real-time data
+3. **Create** a React frontend with filtering and updates
+4. **Integrate** everything and handle errors gracefully
+5. **Ship** a demo-ready application in 90-120 minutes
+
+**Time Budget**: 90-120 minutes
+**Difficulty**: Intermediate
+**Focus**: Planning, architectural decisions, working with AI
+
+## Structure
+
+The challenge is broken into phases:
+
+- **Phase 1: Planning** (20-30 min) - Make architectural decisions
+- **Phase 2: Backend** (20-30 min) - Build API endpoints
+- **Phase 3: Frontend** (30-40 min) - Create React components
+- **Phase 4: Integration & Testing** (15-20 min) - Connect and verify
+- **Phase 5: Reflection** - Learn from the experience
 
 ## Getting Started
 
 ```bash
 cd modules/03-full-stack/dashboard-starter
+
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies (in another terminal)
+cd frontend
 npm install
 ```
+
+### Before You Start Coding
+
+**Read [CHALLENGE.md](./CHALLENGE.md) first!** It contains:
+- Full product requirements
+- Planning exercises (do these BEFORE coding)
+- Best practices for working with AI
+- Common pitfalls to avoid
+- Success criteria
+- Reflection questions
 
 ### Starting This Module
 
@@ -53,16 +88,23 @@ Tell your AI agent which module you're working on:
 
 ```
 I'm working on Module 3: Full-Stack Features
+Read the full challenge at modules/03-full-stack/CHALLENGE.md
+
+I need to build a real-time analytics dashboard from scratch.
 The starter code is in modules/03-full-stack/dashboard-starter/
 
-I need to build a real-time analytics dashboard with frontend and backend.
+Let me start by planning my architecture before writing any code.
 ```
 
 ## Key Concepts
 
-- **API Contract:** Define your API contract before writing any code.
-- **Component Tree:** Sketch the component tree.
-- **Identify Risky Parts:** Identify risky parts of the feature.
+**Architecture is Human Work, Implementation is AI-Assisted**
+
+- **API Contract:** Define your API endpoints and data shapes BEFORE coding
+- **Component Tree:** Sketch your React component structure BEFORE coding
+- **Risk Assessment:** Identify what could go wrong BEFORE it does
+- **Time Boxing:** Ship something that works, not something perfect
+- **Incremental Testing:** Test each piece as you build it
 
 ## Success Criteria
 
