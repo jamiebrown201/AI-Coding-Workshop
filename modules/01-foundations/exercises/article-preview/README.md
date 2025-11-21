@@ -216,6 +216,7 @@ After completing the exercise, consider:
 
 - Discuss the trade-offs between speed and quality. How much time did you save, but how much time did you spend fixing or verifying the AI's output?
 - In a real project, would it have been faster to write this component from scratch or to use the AI and then fix its mistakes?
+- **Working with design:** If a designer gave you a Figma file with specific styling (fonts, colors, spacing, hover states), how would you use AI to implement it? What would you ask AI to do vs. what would you need to specify yourself? What information from the design would AI need to implement it accurately?
 
 ## Next Steps
 
