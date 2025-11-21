@@ -11,6 +11,7 @@ Now that you've mapped out the subscription management system, it's time to plan
 ## The Challenge
 
 You've just completed your architecture analysis and discovered several issues:
+
 - JSON file storage instead of a real database
 - No authentication middleware applied
 - Legacy jQuery admin interface (`public/admin.html`)
@@ -68,11 +69,13 @@ Create a **refactoring plan** that:
 ### ⚠️ Critical: AI Loves "Rewrite Everything"
 
 AI tools will often suggest:
+
 - "Let's rewrite this from scratch!"
 - "Replace all jQuery with React"
 - "Modernize the entire stack"
 
 **These are usually bad ideas.** Big-bang rewrites:
+
 - Take longer than expected
 - Break subtle behaviors users depend on
 - Are hard to test comprehensively
@@ -82,7 +85,7 @@ AI tools will often suggest:
 
 ### How to Use AI Effectively
 
-**Phase 1: Understand Current State (5 min)**
+**Phase 1: Understand Current State**
 
 ```
 Prompt: "I'm working on the Refactoring Planning exercise in
@@ -96,7 +99,7 @@ management patterns is it using?
 [Paste the admin.html file or relevant sections]"
 ```
 
-**Phase 2: Explore Refactoring Approaches (10 min)**
+**Phase 2: Explore Refactoring Approaches**
 
 ```
 Prompt: "I'm working on the Refactoring Planning exercise in
@@ -113,7 +116,7 @@ For each approach:
 Focus on INCREMENTAL migration strategies."
 ```
 
-**Phase 3: Risk Assessment (10 min)**
+**Phase 3: Risk Assessment**
 
 ```
 Prompt: "I'm working on the Refactoring Planning exercise in
@@ -131,7 +134,7 @@ Consider:
 What should we test most carefully?"
 ```
 
-**Phase 4: Testing Strategy (10 min)**
+**Phase 4: Testing Strategy**
 
 ```
 Prompt: "I'm working on the Refactoring Planning exercise in
@@ -162,27 +165,10 @@ Create a **Refactoring Plan** document that includes:
 ### 2. Refactoring Strategy
 
 Choose ONE approach and document:
+
 - **Phase 1:** What gets refactored first? Why?
 - **Phase 2:** What's next? How does it build on Phase 1?
 - **Phase 3:** Final steps to complete migration
-- **Timeline:** Rough estimate for each phase
-
-**Example Incremental Approaches:**
-
-**Option A: Strangler Fig Pattern**
-- Build new React components alongside jQuery
-- Gradually replace jQuery features one at a time
-- Old and new coexist during transition
-
-**Option B: Component-by-Component**
-- Extract one feature (e.g., filters) into React
-- Leave rest as jQuery initially
-- Repeat for each component
-
-**Option C: Parallel Implementation**
-- Build complete React version behind feature flag
-- Test thoroughly with subset of users
-- Switch traffic over gradually
 
 ### 3. Testing Strategy
 
@@ -190,26 +176,6 @@ Choose ONE approach and document:
 - **During refactoring:** How do we verify each step?
 - **After refactoring:** Final validation approach
 - **Regression tests:** How do we catch breaking changes?
-
-### 4. Risk Assessment
-
-| Risk | Likelihood | Impact | Mitigation Strategy |
-|------|-----------|--------|---------------------|
-| Example: User workflows break | Medium | High | Write E2E tests before starting |
-| | | | |
-
-### 5. Rollback Plan
-
-- How do we detect problems in production?
-- What's the rollback mechanism?
-- How quickly can we revert?
-
-### 6. AI Accuracy Report
-
-- What did AI suggest?
-- What suggestions were good?
-- What suggestions were dangerous? (Big-bang rewrites?)
-- Where did you need to push back on AI recommendations?
 
 ---
 
@@ -221,7 +187,7 @@ Choose ONE approach and document:
 
 **Why it's risky:** No incremental steps, hard to test, long to complete, no rollback.
 
-**What to do:** Ask AI for *incremental* strategies instead.
+**What to do:** Ask AI for _incremental_ strategies instead.
 
 ### 🚩 AI Ignores Testing
 
@@ -270,23 +236,27 @@ Choose ONE approach and document:
 ### Strategy 1: Strangler Fig (Recommended)
 
 **Phase 1: Setup (1-2 days)**
+
 - Add React to the page alongside jQuery
 - Set up build process for React components
 - Write E2E tests for current jQuery behavior
 - No user-facing changes yet
 
 **Phase 2: Extract Filters Component (3-4 days)**
+
 - Build React filters component
 - Feature flag to switch between jQuery and React filters
 - Test with small percentage of users
 - Rollback if issues found
 
 **Phase 3: Extract Table Component (4-5 days)**
+
 - Build React table with sorting/pagination
 - Gradually migrate users to React table
 - Monitor performance and errors
 
 **Phase 4: Final Migration (2-3 days)**
+
 - Remove jQuery code
 - Clean up feature flags
 - Optimize React implementation
@@ -296,16 +266,19 @@ Choose ONE approach and document:
 ### Strategy 2: Complete Parallel Build
 
 **Phase 1: Build Complete React Version (2 weeks)**
+
 - Build full admin interface in React
 - Deploy behind feature flag
 - Zero users see it initially
 
 **Phase 2: Testing (1 week)**
+
 - Internal testing with team
 - Beta testing with 5% of users
 - Compare behavior with jQuery version
 
 **Phase 3: Migration (1 week)**
+
 - Gradually increase React traffic: 10%, 25%, 50%, 100%
 - Monitor metrics at each step
 - Easy rollback to jQuery if needed
@@ -317,21 +290,25 @@ Choose ONE approach and document:
 ## Common Pitfalls
 
 **"It works on my machine"**
+
 - Test with production data (large datasets, edge cases)
 - Test with real user workflows
 - Test in different browsers
 
 **"Let's change the UI while we're at it"**
+
 - Refactoring !== redesign
 - Change behavior later, after migration complete
 - Users have muscle memory
 
 **"We don't need tests, it's just a refactor"**
+
 - Famous last words
 - Tests are your safety net
 - Write tests BEFORE refactoring
 
 **"Big-bang rewrite will be faster"**
+
 - It never is
 - Hidden complexity always appears
 - No way to incrementally validate
@@ -365,6 +342,7 @@ If you finish early:
 ### 1. Write a Test Plan
 
 Document specific test cases:
+
 - User filters by status = "active" → sees only active subscriptions
 - User sorts by date → data is sorted correctly
 - User exports CSV → file contains correct data
@@ -373,6 +351,7 @@ Document specific test cases:
 ### 2. Identify Other Refactoring Opportunities
 
 From your Activity 2A analysis, what else needs refactoring?
+
 - JSON file storage → real database?
 - Missing authentication → add auth middleware?
 - Payment retry logic → extract to service?
@@ -382,6 +361,7 @@ Create a prioritized list with effort/impact estimates.
 ### 3. Create a Feature Flag Plan
 
 How would you implement feature flags for this refactoring?
+
 - What's the flag structure?
 - How do you test both code paths?
 - How do you gradually roll out?
