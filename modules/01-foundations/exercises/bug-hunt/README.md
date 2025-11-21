@@ -189,7 +189,7 @@ npm run build
 After fixing the bug:
 
 1. **What was the first clue that led you to the bug?**
-2. **Did you use AI? How did it help or mislead you?**
+2. **How did AI help or mislead you?**
 3. **Could you have done this quicker without AI? Why or why not?**
 4. **How long did it take to find vs. fix?**
 5. **What debugging technique was most useful?**
@@ -198,7 +198,6 @@ After fixing the bug:
 ## Group Discussion
 
 - What different approaches did people take to find the bug?
-- Did anyone find it without AI? How?
 - **Do you think you could have solved this faster without using AI? Why or why not?**
 - What "obvious in hindsight" mistakes did we all miss initially?
 - How do you balance traditional debugging (console.log, debugger) with AI assistance?
