@@ -149,11 +149,13 @@ Show me how to prevent the default form submission behavior."
 
 ## Success Criteria
 
-- [ ] Search filters articles by title/summary
-- [ ] Typing "technology" shows only tech articles
-- [ ] Typing "markets" shows only market articles
-- [ ] Empty search shows all articles
-- [ ] "No results" shows when no matches
+- [ ] Search filters articles as you type (title, summary, and category)
+- [ ] Typing "technology" shows 3 tech articles
+- [ ] Typing "markets" shows 2 market articles
+- [ ] Typing "environment" shows 1 green energy article
+- [ ] Typing "zzz" shows "No results found"
+- [ ] Empty search shows all 8 articles
+- [ ] Pressing Enter or clicking Search button does NOT reload the page
 - [ ] No console errors
 - [ ] Build completes without errors (`npm run build`)
 - [ ] You understand WHY it was broken
@@ -176,12 +178,17 @@ When debugging search functionality:
 # Run the dev server
 npm run dev
 
-# Test searches:
-# - "technology" should show 3 tech articles
-# - "markets" should show 2 market articles
-# - "environment" should show 1 article about green energy
-# - "zzz" should show "No results found"
-# - Empty search should show all 8 articles
+# Test the search as you type:
+# 1. Type "technology" - should show 3 tech articles as you type
+# 2. Type "markets" - should show 2 market articles as you type
+# 3. Type "environment" - should show 1 green energy article as you type
+# 4. Type "zzz" - should show "No results found" as you type
+# 5. Clear the search - should show all 8 articles
+
+# Test the form submission (the bug you just fixed!):
+# 6. Type "technology" then press Enter - should NOT reload page
+# 7. Type "markets" then click Search button - should NOT reload page
+# 8. The search results should remain stable
 
 # Run build to check for errors
 npm run build
@@ -191,15 +198,17 @@ npm run build
 
 ```bash
 git add .
-git commit -m "fix: search functionality not filtering articles
+git commit -m "fix: prevent page reload on search form submission
 
 Root cause: [explain what was broken]
 Solution: [explain what you changed]
 
-The search feature wasn't working because [your explanation].
+The search feature was causing a page reload when pressing Enter or clicking
+the Search button because [your explanation].
 Fixed by [your solution].
 
-Tested with various search terms to verify filtering works correctly."
+Tested with various search terms to verify filtering works as you type and
+form submission no longer causes page reload."
 
 git push origin workshop/your-name/search-bug-fix
 ```
