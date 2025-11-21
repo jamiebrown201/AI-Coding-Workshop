@@ -54,6 +54,7 @@ The search bar is there, you can type in it, but clicking search does nothing.
 This exercise is about learning **how to use AI effectively for debugging**, not just finding the bug.
 
 **The Goal:**
+
 - Use AI to help you identify and fix the bug faster
 - Learn what information AI needs to be helpful
 - Understand when to trust AI vs. verify yourself
@@ -62,6 +63,7 @@ This exercise is about learning **how to use AI effectively for debugging**, not
 ## Debugging Strategy with AI
 
 ### Step 1: Reproduce the Bug First
+
 **Before asking AI anything, gather evidence:**
 
 1. Run `npm run dev` and open http://localhost:3000
@@ -77,7 +79,9 @@ This exercise is about learning **how to use AI effectively for debugging**, not
 **Prompt the AI to examine the search component:**
 
 ```
-"I'm working on a search feature in src/components/SearchableArticleList.jsx.
+"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+
+I'm working on a search feature in src/components/SearchableArticleList.jsx.
 
 When I type a keyword and click the Search button, the page appears to
 reload and the articles don't filter. There are no console errors.
@@ -86,6 +90,7 @@ Can you analyze the handleSearch function and identify potential issues?"
 ```
 
 **What AI might suggest:**
+
 - Missing event.preventDefault()
 - State not updating
 - Form submission behavior
@@ -98,7 +103,9 @@ Can you analyze the handleSearch function and identify potential issues?"
 **Don't accept the first answer - ask for alternatives:**
 
 ```
-"You suggested [AI's answer]. What are 2-3 other possible causes
+"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+
+You suggested [AI's answer]. What are 2-3 other possible causes
 for a search button that doesn't filter results? I want to check
 each possibility systematically."
 ```
@@ -110,12 +117,15 @@ each possibility systematically."
 **Ask AI to help you verify your hypothesis:**
 
 ```
-"I think the issue might be [your hypothesis]. Can you show me
+"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+
+I think the issue might be [your hypothesis]. Can you show me
 how to add console.logs to verify if the handleSearch function
 is being called and if state is updating?"
 ```
 
 **AI can generate:**
+
 - Console.log statements
 - Debugger breakpoints
 - Quick test code
@@ -125,29 +135,13 @@ is being called and if state is updating?"
 **Once you've identified the bug, ask AI for the fix:**
 
 ```
-"The bug is that the form submits and causes a page reload.
+"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+
+The bug is that the form submits and causes a page reload.
 Show me how to prevent the default form submission behavior."
 ```
 
 **But verify the fix yourself!** Don't just copy-paste. Understand WHY it works.
-
-## Example AI Prompts
-
-**❌ Vague:**
-
-> "My search isn't working"
-
-**✅ Better:**
-
-> "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
->
-> I have a search bar component that should filter a list of articles. When I click the search button, nothing happens - the list doesn't filter. There are no console errors. What are common issues with search/filter functionality in React?"
-
-**✅ Even better (with specifics):**
-
-> "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
->
-> In SearchableArticleList.jsx, I have a form with an input and button. The handleSearch function should update state, but when I add console.logs, I see [what you see]. The state is [describe state]. What could prevent the search handler from working correctly?"
 
 ## Success Criteria
 
