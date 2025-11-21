@@ -220,7 +220,7 @@ After completing the exercise, consider:
 
 ## Next Steps
 
-Move on to [Exercise 1B: Safari Bug Hunt](../bug-hunt/README.md)
+Move on to [Exercise 1B: Bug Hunt](../bug-hunt/README.md)
 
 ---
 

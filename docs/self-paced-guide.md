@@ -49,7 +49,7 @@ Everything listed in [GETTING_STARTED.md](../GETTING_STARTED.md), plus:
 
 **Time allocation:**
 - Exercise 1A (Article Preview): 30-40 minutes
-- Exercise 1B (Safari Bug): 30-40 minutes
+- Exercise 1B (Bug Hunt): 30-40 minutes
 - Reading and reflection: 20 minutes
 
 ### Module 2: Codebase Understanding
@@ -291,7 +291,7 @@ Track your progress through the workshop:
 
 **Module 1:**
 - [ ] Article Preview component built
-- [ ] Safari bug fixed
+- [ ] Search bug fixed
 - [ ] Solutions reviewed
 - [ ] Reflection completed
 

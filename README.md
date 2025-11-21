@@ -61,9 +61,9 @@ Each challenge is a real coding task. You'll use AI to help, but you're in contr
 
 ---
 
-### Challenge 2: Debug a Safari Bug
+### Challenge 2: Bug Hunt
 
-**What you'll do:** Fix a paywall that works in Chrome but not Safari
+**What you'll do:** Fix a broken search feature in a React component
 **What you'll learn:** When AI helps vs when it confidently misleads
 **The catch:** AI will make confident guesses about browser bugs without real knowledge
 

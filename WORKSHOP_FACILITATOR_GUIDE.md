@@ -179,7 +179,7 @@ This exercise works best individually so everyone experiences AI assistance firs
 
 Quick write prompt: "One thing I learned, one question I have"
 
-#### Exercise 1B: Safari Bug
+#### Exercise 1B: Bug Hunt
 
 **Working format: Solo work**
 

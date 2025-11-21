@@ -24,17 +24,17 @@ Build a React component with AI assistance, focusing on accessibility and requir
 
 **What you're building:** An FT article preview component that's accessible, responsive, and follows design standards.
 
-### Exercise 1B: Safari Bug Hunt
-Debug a browser-specific issue with AI assistance.
+### Exercise 1B: Bug Hunt
+Debug a broken search feature with AI assistance.
 
 **Location:** `exercises/bug-hunt/`
 
-**What you're fixing:** A paywall that mysteriously doesn't work in Safari (but works everywhere else, naturally).
+**What you're fixing:** A search feature that filters as you type but breaks when you press Enter.
 
 ## Structure/Activities
 
 - **Exercise 1A: Article Preview Component**
-- **Exercise 1B: Safari Bug Hunt**
+- **Exercise 1B: Bug Hunt**
 
 ## Getting Started
 
