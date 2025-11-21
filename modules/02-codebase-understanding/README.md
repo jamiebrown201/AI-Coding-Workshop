@@ -106,7 +106,3 @@ After completing this module:
 2. Compare your understanding with the reference docs
 3. Reflect on how context quality affected AI's usefulness
 4. Move on to [Module 3: Full-Stack Features](../03-full-stack/README.md)
-
----
-
-**Remember: Understanding messy code is a superpower. AI helps, but you're the archaeologist.**
