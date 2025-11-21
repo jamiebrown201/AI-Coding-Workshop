@@ -25,11 +25,11 @@ Explore a complex legacy backend system and document its architecture.
 **What you're exploring:** A subscription management system that's been through 5 years and 3 teams. It works, but nobody remembers exactly how.
 
 ### Activity 2B: Refactoring Planning
-Plan a safe migration strategy for modernizing legacy code.
+Plan a safe migration strategy for modernizing the legacy jQuery admin interface.
 
-**Location:** `refactoring-challenge/`
+**Location:** `legacy-code/ACTIVITY_2B_REFACTORING.md`
 
-**What you're planning:** Migrating a jQuery-based search feature to React without breaking production.
+**What you're planning:** Migrating the jQuery-based admin interface (public/admin.html) to React without breaking production. Build on your understanding from Activity 2A.
 
 ## Structure/Activities
 

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Admin - Legacy System</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      border-bottom: 2px solid #990f3d;
+      padding-bottom: 10px;
+    }
+    .filters {
+      margin: 20px 0;
+      padding: 15px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+    .filter-group {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+    .filter-group label {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    input, select, button {
+      padding: 8px;
+      font-size: 14px;
+    }
+    button {
+      background: #990f3d;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 8px 16px;
+    }
+    button:hover {
+      background: #7a0c30;
+    }
+    .stats {
+      margin: 20px 0;
+      padding: 10px;
+      background: #e8f4f8;
+      border-left: 4px solid #2196F3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #f5f5f5;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+    }
+    th:hover {
+      background: #e8e8e8;
+    }
+    .status-active { color: green; font-weight: bold; }
+    .status-past_due { color: orange; font-weight: bold; }
+    .status-canceled { color: red; font-weight: bold; }
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+    }
+    .no-results {
+      text-align: center;
+      padding: 40px;
+      color: #999;
+    }
+    .pagination {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .pagination button {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Subscription Admin Panel</h1>
+    <p style="color: #666;">Legacy jQuery-based interface (circa 2019)</p>
+
+    <div class="stats" id="stats">
+      <strong>Loading statistics...</strong>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label>Status:</label>
+        <select id="statusFilter">
+          <option value="">All</option>
+          <option value="active">Active</option>
+          <option value="past_due">Past Due</option>
+          <option value="canceled">Canceled</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Plan:</label>
+        <select id="planFilter">
+          <option value="">All</option>
+          <option value="basic">Basic</option>
+          <option value="premium">Premium</option>
+          <option value="family">Family</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Search:</label>
+        <input type="text" id="searchBox" placeholder="Search by user ID...">
+      </div>
+
+      <button id="applyFilters">Apply Filters</button>
+      <button id="resetFilters" style="background: #666;">Reset</button>
+      <button id="exportCSV" style="background: #2196F3;">Export CSV</button>
+    </div>
+
+    <div id="resultsContainer">
+      <div class="loading">Loading subscriptions...</div>
+    </div>
+
+    <div class="pagination" id="pagination" style="display: none;">
+      <button id="prevPage">Previous</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage">Next</button>
+    </div>
+  </div>
+
+  <script>
+    // Legacy jQuery Code - Built in 2019, last touched 2022
+    // TODO: Refactor to React (ticket SUB-891)
+
+    var allSubscriptions = [];
+    var filteredSubscriptions = [];
+    var currentPage = 1;
+    var pageSize = 10;
+    var sortColumn = 'startedAt';
+    var sortDirection = 'desc';
+
+    $(document).ready(function() {
+      // Load subscriptions on page load
+      loadSubscriptions();
+
+      // Event handlers - the jQuery way!
+      $('#applyFilters').click(function() {
+        applyFilters();
+      });
+
+      $('#resetFilters').click(function() {
+        $('#statusFilter').val('');
+        $('#planFilter').val('');
+        $('#searchBox').val('');
+        applyFilters();
+      });
+
+      $('#exportCSV').click(function() {
+        exportToCSV();
+      });
+
+      // Search on Enter key
+      $('#searchBox').keypress(function(e) {
+        if (e.which == 13) {
+          applyFilters();
+        }
+      });
+
+      // Pagination
+      $('#prevPage').click(function() {
+        if (currentPage > 1) {
+          currentPage--;
+          renderTable();
+        }
+      });
+
+      $('#nextPage').click(function() {
+        var maxPage = Math.ceil(filteredSubscriptions.length / pageSize);
+        if (currentPage < maxPage) {
+          currentPage++;
+          renderTable();
+        }
+      });
+    });
+
+    function loadSubscriptions() {
+      $.ajax({
+        url: 'http://localhost:3001/api/subscriptions',
+        method: 'GET',
+        success: function(response) {
+          allSubscriptions = response.data;
+          filteredSubscriptions = allSubscriptions;
+          updateStats();
+          renderTable();
+        },
+        error: function(xhr, status, error) {
+          $('#resultsContainer').html('<div class="no-results">Error loading subscriptions: ' + error + '</div>');
+        }
+      });
+    }
+
+    function applyFilters() {
+      var statusFilter = $('#statusFilter').val();
+      var planFilter = $('#planFilter').val();
+      var searchTerm = $('#searchBox').val().toLowerCase();
+
+      filteredSubscriptions = allSubscriptions.filter(function(sub) {
+        // Status filter
+        if (statusFilter && sub.status !== statusFilter) {
+          return false;
+        }
+
+        // Plan filter
+        if (planFilter && sub.plan !== planFilter) {
+          return false;
+        }
+
+        // Search filter - search in user ID and subscription ID
+        if (searchTerm) {
+          if (sub.userId.toLowerCase().indexOf(searchTerm) === -1 &&
+              sub.id.toLowerCase().indexOf(searchTerm) === -1) {
+            return false;
+          }
+        }
+
+        return true;
+      });
+
+      currentPage = 1;
+      updateStats();
+      renderTable();
+    }
+
+    function updateStats() {
+      var activeCount = 0;
+      var pastDueCount = 0;
+      var canceledCount = 0;
+
+      // Loop through all subscriptions and count by status
+      for (var i = 0; i < filteredSubscriptions.length; i++) {
+        var sub = filteredSubscriptions[i];
+        if (sub.status === 'active') activeCount++;
+        else if (sub.status === 'past_due') pastDueCount++;
+        else if (sub.status === 'canceled') canceledCount++;
+      }
+
+      var statsHtml = '<strong>Showing ' + filteredSubscriptions.length + ' of ' + allSubscriptions.length + ' subscriptions</strong> | ';
+      statsHtml += 'Active: ' + activeCount + ' | ';
+      statsHtml += 'Past Due: ' + pastDueCount + ' | ';
+      statsHtml += 'Canceled: ' + canceledCount;
+
+      $('#stats').html(statsHtml);
+    }
+
+    function renderTable() {
+      if (filteredSubscriptions.length === 0) {
+        $('#resultsContainer').html('<div class="no-results">No subscriptions found matching your filters.</div>');
+        $('#pagination').hide();
+        return;
+      }
+
+      // Sort subscriptions
+      var sorted = filteredSubscriptions.slice();
+      sorted.sort(function(a, b) {
+        var aVal = a[sortColumn];
+        var bVal = b[sortColumn];
+
+        if (sortDirection === 'asc') {
+          return aVal > bVal ? 1 : -1;
+        } else {
+          return aVal < bVal ? 1 : -1;
+        }
+      });
+
+      // Pagination
+      var startIndex = (currentPage - 1) * pageSize;
+      var endIndex = startIndex + pageSize;
+      var pageData = sorted.slice(startIndex, endIndex);
+
+      // Build table HTML
+      var html = '<table>';
+      html += '<thead><tr>';
+      html += '<th onclick="sortBy(\'id\')">Subscription ID</th>';
+      html += '<th onclick="sortBy(\'userId\')">User ID</th>';
+      html += '<th onclick="sortBy(\'plan\')">Plan</th>';
+      html += '<th onclick="sortBy(\'status\')">Status</th>';
+      html += '<th onclick="sortBy(\'startedAt\')">Started</th>';
+      html += '<th onclick="sortBy(\'expiresAt\')">Expires</th>';
+      html += '<th onclick="sortBy(\'paymentProvider\')">Provider</th>';
+      html += '</tr></thead><tbody>';
+
+      for (var i = 0; i < pageData.length; i++) {
+        var sub = pageData[i];
+        html += '<tr>';
+        html += '<td>' + sub.id + '</td>';
+        html += '<td>' + sub.userId + '</td>';
+        html += '<td>' + sub.plan + '</td>';
+        html += '<td class="status-' + sub.status + '">' + sub.status + '</td>';
+        html += '<td>' + formatDate(sub.startedAt) + '</td>';
+        html += '<td>' + formatDate(sub.expiresAt) + '</td>';
+        html += '<td>' + sub.paymentProvider + '</td>';
+        html += '</tr>';
+      }
+
+      html += '</tbody></table>';
+      $('#resultsContainer').html(html);
+
+      // Update pagination
+      var maxPage = Math.ceil(filteredSubscriptions.length / pageSize);
+      $('#pageInfo').text('Page ' + currentPage + ' of ' + maxPage);
+      $('#prevPage').prop('disabled', currentPage === 1);
+      $('#nextPage').prop('disabled', currentPage === maxPage);
+      $('#pagination').show();
+    }
+
+    function sortBy(column) {
+      if (sortColumn === column) {
+        // Toggle direction
+        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+      } else {
+        sortColumn = column;
+        sortDirection = 'asc';
+      }
+      renderTable();
+    }
+
+    function formatDate(isoDate) {
+      var date = new Date(isoDate);
+      return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+    }
+
+    function exportToCSV() {
+      var csv = 'Subscription ID,User ID,Plan,Status,Started,Expires,Provider\n';
+
+      for (var i = 0; i < filteredSubscriptions.length; i++) {
+        var sub = filteredSubscriptions[i];
+        csv += sub.id + ',';
+        csv += sub.userId + ',';
+        csv += sub.plan + ',';
+        csv += sub.status + ',';
+        csv += sub.startedAt + ',';
+        csv += sub.expiresAt + ',';
+        csv += sub.paymentProvider + '\n';
+      }
+
+      // Create download link
+      var blob = new Blob([csv], { type: 'text/csv' });
+      var url = window.URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'subscriptions_' + new Date().getTime() + '.csv';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

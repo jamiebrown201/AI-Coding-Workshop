@@ -1,8 +1,19 @@
+# Legacy Subscription Management System
+
+## Overview
+
+This is a 5-year-old subscription management system that's changed hands between three teams. It has... "historical decisions."
+
+**There are two activities in this module:**
+
+1. **[Activity 2A: Architecture Analysis](#activity-2a-architecture-analysis)** - Understand the system
+2. **[Activity 2B: Refactoring Planning](./ACTIVITY_2B_REFACTORING.md)** - Plan improvements (do this after 2A)
+
+---
+
 # Activity 2A: Architecture Analysis
 
 ## The Archaeological Dig
-
-Welcome to the subscription management system. It's been around for 5 years, changed hands between three teams, and includes some... "historical decisions."
 
 Your task: **Understand the architecture well enough to explain it to others.**
 
@@ -351,7 +362,9 @@ After 20 minutes of exploration:
 
 ## Next Steps
 
-Move on to [Activity 2B: Refactoring Planning](../refactoring-challenge/README.md)
+After completing your architecture analysis, move on to:
+
+**[Activity 2B: Refactoring Planning](./ACTIVITY_2B_REFACTORING.md)** - Use your understanding to plan improvements
 
 ---
 
