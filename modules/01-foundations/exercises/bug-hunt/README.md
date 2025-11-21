@@ -12,15 +12,17 @@ I want to search for articles by keyword
 So that I can find relevant content quickly
 
 Bug Report from Users:
-"The search bar isn't working properly. I type in a keyword
-and hit search, but nothing happens. The articles just stay
-the same - no filtering is happening. I've tried different
-keywords but it never filters the results."
+"The search feature is weird. When I type keywords, the results
+filter correctly - that works fine. But when I press Enter or click
+the 'Search' button, the page refreshes and I lose my search!
+
+It's really annoying because I naturally press Enter after typing,
+and boom - page reloads and my filtered results disappear."
 
 Priority: HIGH (search is a core feature)
 Reproducible: Yes, every time
-Expected: Typing and searching should filter the article list
-Actual: Articles remain unchanged, search appears to do nothing
+Expected: Search should filter as you type AND allow pressing Enter/clicking button
+Actual: Typing works, but pressing Enter or clicking button causes page reload
 ```
 
 ## Your Mission
@@ -43,11 +45,11 @@ npm run dev  # Should start local server at http://localhost:3000
 You've been given a search feature that should:
 
 1. Display a list of articles
-2. Let users type a search keyword
-3. Filter articles by title/summary when user clicks "Search"
+2. Let users type a search keyword and see results filter live
+3. Allow pressing Enter or clicking "Search" button without breaking
 4. Show "No results found" if no matches
 
-The search bar is there, you can type in it, but clicking search does nothing.
+The search works as you type, but pressing Enter or clicking the button causes the page to reload!
 
 ## Using AI to Debug: Your Approach
 
@@ -67,12 +69,14 @@ This exercise is about learning **how to use AI effectively for debugging**, not
 **Before asking AI anything, gather evidence:**
 
 1. Run `npm run dev` and open http://localhost:3000
-2. Try searching for "technology" or "markets"
-3. Observe what happens - does the page reload? Do results change?
+2. Try typing "technology" in the search box
+   - Notice: Results filter as you type! This works.
+3. Now press Enter or click the "Search" button
+   - Notice: The page reloads! Your search is lost.
 4. Open browser Console - any errors?
-5. Check Network tab - is the page refreshing?
+5. Check Network tab - what happens when you press Enter?
 
-**Why this matters:** AI needs context. "It's broken" is useless. "When I click search, the page reloads and nothing filters" is actionable.
+**Why this matters:** AI needs context. "It's broken" is useless. "Typing works but pressing Enter reloads the page" is actionable.
 
 ### Step 2: Ask AI to Analyze the Component
 
@@ -83,10 +87,10 @@ This exercise is about learning **how to use AI effectively for debugging**, not
 
 I'm working on a search feature in src/components/SearchableArticleList.jsx.
 
-When I type a keyword and click the Search button, the page appears to
-reload and the articles don't filter. There are no console errors.
+The search filters correctly as I type, but when I press Enter or click the
+Search button, the page reloads and I lose my search. There are no console errors.
 
-Can you analyze the handleSearch function and identify potential issues?"
+Can you analyze the handleSearch function and the form submission behavior?"
 ```
 
 **What AI might suggest:**
@@ -225,11 +229,13 @@ After fixing the bug:
 **If you finish early:** This component has NO tests. Think about how testing could have prevented this bug!
 
 **Your challenge:**
+
 1. What tests would have caught this bug before it went to production?
 2. Use AI to help you add unit tests for this component
 3. Make sure your tests would FAIL with the bug, and PASS after your fix
 
 **Example prompt:**
+
 ```
 "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 
@@ -246,7 +252,7 @@ caught this bug? The tests should verify:
 ```
 
 **Key questions:**
-- How would you test that the form DOESN'T reload the page?
+
 - What test would have caught the missing `event.preventDefault()`?
 - Did AI suggest the right assertions to catch this bug?
 - How can AI help prevent bugs through test generation?
@@ -258,7 +264,3 @@ After completing this exercise:
 
 1. Review your debugging process
 2. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/README.md)
-
----
-
-**Remember: Good debugging is methodical. Check the simple things first, then get creative.**
