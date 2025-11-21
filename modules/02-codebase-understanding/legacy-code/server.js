@@ -22,14 +22,18 @@ const userRoutes = require('./routes/users');
 const cron = require('node-cron');
 const renewalReminderJob = require('./jobs/renewalReminder');
 const expiredSubscriptionsJob = require('./jobs/expiredSubscriptions');
+const paymentRetryJob = require('./jobs/paymentRetry');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Serve static frontend
+app.use(express.static('public'));
 
 // Request logging
 app.use((req, res, next) => {
@@ -89,6 +93,10 @@ async function startServer() {
     // Run expired subscriptions cleanup every day at midnight
     cron.schedule('0 0 * * *', expiredSubscriptionsJob);
     logger.info('Scheduled: Expired subscriptions job (midnight daily)');
+
+    // Run payment retries every 6 hours
+    cron.schedule('0 */6 * * *', paymentRetryJob);
+    logger.info('Scheduled: Payment retry job (every 6 hours)');
 
     // Start the server
     app.listen(PORT, () => {
