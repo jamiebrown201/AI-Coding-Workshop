@@ -202,8 +202,8 @@
       </ul>
 
       <div style="margin-top: 30px;">
-        <button class="btn">Update Payment Method</button>
-        <button class="btn btn-secondary" style="margin-left: 10px;">Cancel Subscription</button>
+        <button class="btn" id="updatePaymentBtn">Update Payment Method</button>
+        <button class="btn btn-secondary" id="cancelSubBtn" style="margin-left: 10px;">Cancel Subscription</button>
       </div>
     </div>
 
@@ -233,5 +233,21 @@
   <div class="footer">
     <p>&copy; 2024 Financial Times. Demonstration interface for educational purposes.</p>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Basic jQuery interactions - added by intern in 2020
+    $(document).ready(function() {
+      $('#updatePaymentBtn').click(function() {
+        alert('Payment method update functionality coming soon!\n\nThis is a demo interface. The real admin panel is at /admin.html');
+      });
+
+      $('#cancelSubBtn').click(function() {
+        if (confirm('Are you sure you want to cancel your subscription?\n\nYou will lose access to all premium features.')) {
+          alert('Cancellation request submitted.\n\n(This is a demo - no actual changes made)');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
