@@ -4,6 +4,8 @@ const logger = require('../utils/logger');
 
 const router = express.Router();
 
+// NOTE: No signature validation yet - see ticket SUB-442
+// TODO: Add rate limiting
 router.post('/stripe', (req, res) => {
   const { subscriptionId, status } = req.body;
   const subscription = SubscriptionService.getById(subscriptionId);
@@ -34,6 +36,9 @@ router.post('/paypal', (req, res) => {
 });
 
 router.post('/apple', (req, res) => {
+  // HACK: Apple IAP integration was never finished
+  // Just log and acknowledge for now
+  // TODO: Implement proper Apple server-to-server notifications
   logger.info('Apple webhook received', req.body);
   res.json({ received: true });
 });

@@ -1,10 +1,6 @@
-/**
- * Authentication Middleware
- *
- * Simple API key based authentication
- * TODO: Replace with proper OAuth/JWT in production
- */
-
+// Auth middleware - Created by Mike in 2021 but never integrated
+// TODO: Wire this up in server.js
+// TODO: Move to proper JWT tokens instead of API keys
 const logger = require('../utils/logger');
 
 function authenticateRequest(req, res, next) {
@@ -15,8 +11,7 @@ function authenticateRequest(req, res, next) {
     return res.status(401).json({ error: 'API key required' });
   }
 
-  // In a real system, this would validate against a database
-  // For this legacy system, we just check if it exists
+  // HACK: Just checking length for now lol
   if (apiKey.length < 10) {
     logger.warn('Invalid API key', { path: req.path });
     return res.status(401).json({ error: 'Invalid API key' });

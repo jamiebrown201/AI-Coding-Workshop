@@ -1,10 +1,5 @@
-/**
- * Payment Retry Service
- *
- * Handles retry logic for failed payments
- * Uses exponential backoff strategy
- */
-
+// TODO: Extract retry delays to config file
+// TODO: Add metrics for retry success rate
 const PaymentService = require('./PaymentService');
 const NotificationService = require('./NotificationService');
 const { state, persist } = require('./dataStore');
@@ -30,9 +25,10 @@ class PaymentRetryService {
       subscription.cancellationReason = 'payment_failure';
       persist();
 
-      // Notify user
+      // Notify user - Sarah added this Nov 2023
       const user = state.users.find(u => u.id === subscription.userId);
       if (user) {
+        // FIXME: Should we also send SMS? Marketing wants this.
         await NotificationService.sendEmail(user.email, 'subscriptionCanceled', {
           reason: 'Payment failed after multiple attempts'
         });

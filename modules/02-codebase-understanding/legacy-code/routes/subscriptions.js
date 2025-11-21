@@ -54,6 +54,7 @@ router.post('/:id/payments', async (req, res, next) => {
     if (!subscription) {
       return res.status(404).json({ error: 'Subscription not found' });
     }
+    // Why is default 20? Plan prices are different. Need to investigate.
     const payment = await PaymentService.processPayment(subscription, req.body.amount || 20);
     res.status(201).json({ data: payment });
   } catch (error) {
