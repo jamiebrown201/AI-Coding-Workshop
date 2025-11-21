@@ -1,152 +1,95 @@
 # Module 3: Full-Stack Features
 
-In this module, we move beyond isolated components and bug fixes to building complete, end-to-end features with AI assistance. You'll tackle the exciting challenge of shipping a full-stack application, integrating frontend and backend, handling real-time data, and making critical architectural decisions that AI can't make for you. It's time to truly "Ship It!" with your AI co-pilot.
+Build a complete feature from scratch with AI assistance. You'll make architectural decisions, implement frontend and backend, and ship something working under time pressure.
 
-## Learning Objectives
+## The Challenge
 
-By the end of this module, you'll be able to:
-- ✓ Build full-stack features from scratch with AI assistance
-- ✓ Make architectural decisions AI can't make for you
-- ✓ Integrate frontend and backend components
-- ✓ Implement real-time data updates
-- ✓ Handle errors and edge cases AI commonly forgets
-- ✓ Write documentation as you build (not after)
-- ✓ Balance speed with quality under time pressure
+**User Stories:**
 
-## Introduction/Scenario
-
-**The Challenge: "Ship It!"**
-
-**Product Context:**
 ```
 As an editorial team member
 I want to see real-time engagement metrics for our content
 So that I can make data-driven decisions about what to promote
 
-Requirements:
-- Real-time updates (via WebSocket or polling)
-- Shows recent activity
-- Filters by content type (news, opinion, analysis)
+Acceptance Criteria:
+- Real-time updates (you choose: WebSocket or polling)
+- Filter by content type (news, opinion, analysis)
+- Show top performing content
+- Handle errors gracefully
 - Works on desktop and tablet
-- Fast page loads
-- Gracefully handles API failures
 ```
 
-## The Challenge
+**Your Mission:** Build this in 90-120 minutes.
 
-📋 **[Read the full challenge →](./CHALLENGE.md)**
+📋 **[Full Challenge Details →](./CHALLENGE.md)**
 
-This module contains a comprehensive build-from-scratch challenge where you'll:
+## How to Approach This
 
-1. **Plan** your architecture (API contract, component tree, risks)
-2. **Build** a backend API with real-time data
-3. **Create** a React frontend with filtering and updates
-4. **Integrate** everything and handle errors gracefully
-5. **Ship** a demo-ready application in 90-120 minutes
+This challenge teaches you to **break down problems and use AI at each step**:
 
-**Time Budget**: 90-120 minutes
-**Difficulty**: Intermediate
-**Focus**: Planning, architectural decisions, working with AI
+### 1. Planning Phase (20-30 min)
+**Before writing any code**, make these decisions:
 
-## Structure
+- **Real-time strategy**: WebSocket or polling?
+- **API contract**: What endpoints? What data shape?
+- **Component tree**: What components do you need?
 
-The challenge is broken into phases:
+**Using AI for planning:**
+```
+Prompt: "I'm building a real-time dashboard. Should I use WebSocket or polling?
 
-- **Phase 1: Planning** (20-30 min) - Make architectural decisions
-- **Phase 2: Backend** (20-30 min) - Build API endpoints
-- **Phase 3: Frontend** (30-40 min) - Create React components
-- **Phase 4: Integration & Testing** (15-20 min) - Connect and verify
-- **Phase 5: Reflection** - Learn from the experience
+Context:
+- 90 minute time budget
+- 5-10 concurrent users
+- Data updates every few seconds
+
+Give me pros/cons for THIS specific context."
+```
+
+### 2. Backend Phase (20-30 min)
+**Build your API** from the contract you designed:
+
+**Using AI for implementation:**
+```
+Prompt: "Create a GET /metrics/snapshot endpoint in Express.
+
+It should return:
+- generatedAt: current timestamp
+- totalViews: random number 1000-5000
+- topArticles: array of 5 articles
+
+Use mock data (no database needed)."
+```
+
+### 3. Frontend Phase (30-40 min)
+**Build React components** from your component tree:
+
+**Using AI for components:**
+```
+Prompt: "Create a React hook called useMetrics that:
+- Fetches from http://localhost:4000/metrics/snapshot
+- Polls every 3 seconds
+- Returns { data, loading, error }
+- Handles network errors gracefully"
+```
+
+### 4. Integration & Testing (15-20 min)
+**Connect everything and verify it works**
 
 ## Getting Started
 
 ```bash
 cd modules/03-full-stack/dashboard-starter
 
-# Install backend dependencies
-cd backend
-npm install
+# Backend
+cd backend && npm install && npm start
 
-# Install frontend dependencies (in another terminal)
-cd frontend
-npm install
+# Frontend (in another terminal)
+cd frontend && npm install && npm run dev
 ```
 
-### Before You Start Coding
-
-**Read [CHALLENGE.md](./CHALLENGE.md) first!** It contains:
-- Full product requirements
-- Planning exercises (do these BEFORE coding)
-- Best practices for working with AI
-- Common pitfalls to avoid
-- Success criteria
-- Reflection questions
-
-### Starting This Module
-
-Tell your AI agent which module you're working on:
-
-```
-I'm working on Module 3: Full-Stack Features
-Read the full challenge at modules/03-full-stack/CHALLENGE.md
-
-I need to build a real-time analytics dashboard from scratch.
-The starter code is in modules/03-full-stack/dashboard-starter/
-
-Let me start by planning my architecture before writing any code.
-```
-
-## Key Concepts
-
-**Architecture is Human Work, Implementation is AI-Assisted**
-
-- **API Contract:** Define your API endpoints and data shapes BEFORE coding
-- **Component Tree:** Sketch your React component structure BEFORE coding
-- **Risk Assessment:** Identify what could go wrong BEFORE it does
-- **Time Boxing:** Ship something that works, not something perfect
-- **Incremental Testing:** Test each piece as you build it
-
-## Success Criteria
-
-- [ ] Backend API returns metrics data
-- [ ] Frontend displays metrics correctly
-- [ ] Real-time updates work
-- [ ] Loading states shown
-- [ ] Error states handled
-- [ ] Basic tests pass
-- [ ] README explains how to run
-- [ ] You can demo it
-- [ ] Code is readable
-- [ ] You understand every line
-
-## Common Pitfalls
-
-**"I'll design as I code"**
-- Leads to messy architecture
-
-**"AI will figure out the architecture"**
-- AI can't make these decisions
-
-**"Error handling later"**
-- "Later" never comes
-
-**"Tests at the end"**
-- You'll run out of time
-
-## Resources
-
-- [Architecture Decisions Guide](../../docs/architecture-decisions.md)
-- [Error Handling Patterns](../../docs/error-handling-patterns.md)
-- [Real-Time Data Guide](../../docs/real-time-data-guide.md)
-- [Testing Strategies](../../docs/testing-strategies.md)
-
-## Next Steps
-
-After completing this module:
-1. Review your architecture decisions
-2. Compare with reference implementation
-3. Move on to [Module 4: Code Review & Security](../04-code-review/README.md)
+**Before coding:** Read [CHALLENGE.md](./CHALLENGE.md) for full requirements and planning exercises.
 
 ---
 
-**Remember: Architecture is human work. Implementation can be AI-assisted.**
+**Remember: Plan first, code second. Architecture is human work.**
