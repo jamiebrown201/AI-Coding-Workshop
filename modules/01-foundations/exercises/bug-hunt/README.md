@@ -220,6 +220,36 @@ After fixing the bug:
 - How do you balance traditional debugging (console.log, debugger) with AI assistance?
 - For those who used AI: Did it speed you up or slow you down? Did it find the bug or lead you astray?
 
+## Stretch Goal (Optional)
+
+**If you finish early:** Try adding tests for the SearchableArticleList component using AI!
+
+```
+"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
+
+I've fixed the search bug. Now I want to add tests for the SearchableArticleList
+component to prevent this bug from happening again.
+
+Can you help me write Jest/React Testing Library tests that cover:
+- Searching for articles by title
+- Searching by summary text
+- Empty search showing all articles
+- No results state when search doesn't match anything
+- The form submission behavior (making sure it doesn't reload the page!)
+"
+```
+
+**Learning goals:**
+- Use AI to generate test cases
+- Understand what makes a good test
+- Learn how to test form submission behavior
+- Practice verifying AI-generated tests actually work
+
+**Questions to consider:**
+- Did AI write good tests or just tests that pass?
+- What edge cases did AI miss?
+- How would these tests have caught the bug you just fixed?
+
 ## Next Steps
 
 After completing this exercise:
