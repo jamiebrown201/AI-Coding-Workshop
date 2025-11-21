@@ -5,6 +5,7 @@ After getting your feet wet with basic AI interactions, this module takes you in
 ## Learning Objectives
 
 By the end of this module, you'll be able to:
+
 - ✓ Use AI to explore and document unfamiliar codebases
 - ✓ Create architectural diagrams from code
 - ✓ Identify key components and their relationships
@@ -18,6 +19,7 @@ By the end of this module, you'll be able to:
 This module has two hands-on exercises:
 
 ### Activity 2A: Architecture Analysis
+
 Explore a complex legacy backend system and document its architecture.
 
 **Location:** `legacy-code/`
@@ -25,6 +27,7 @@ Explore a complex legacy backend system and document its architecture.
 **What you're exploring:** A subscription management system that's been through 5 years and 3 teams. It works, but nobody remembers exactly how.
 
 ### Activity 2B: Refactoring Planning
+
 Plan a safe migration strategy for modernizing the legacy jQuery admin interface.
 
 **Location:** `legacy-code/ACTIVITY_2B_REFACTORING.md`
@@ -44,20 +47,10 @@ cd modules/02-codebase-understanding
 
 Start with **Activity 2A** (Architecture Analysis), then move to **Activity 2B** (Refactoring Planning).
 
-### Starting This Module
-
-Tell your AI agent which module you're working on:
-
-```
-I'm working on Module 2: Codebase Understanding
-The module is in modules/02-codebase-understanding/
-
-I need to analyze the legacy subscription system in the legacy-code/ directory.
-```
-
 ## Key Concepts
 
 ### What AI Does Well for Codebase Understanding
+
 - Explaining individual functions and modules
 - Identifying patterns and conventions
 - Generating documentation from code
@@ -65,6 +58,7 @@ I need to analyze the legacy subscription system in the legacy-code/ directory.
 - Suggesting how components might relate
 
 ### What AI Gets Wrong
+
 - **Business logic assumptions** - AI doesn't know your business rules
 - **Historical decisions** - AI doesn't know why code is "weird"
 - **Dependencies** - AI might miss subtle coupling
@@ -74,6 +68,7 @@ I need to analyze the legacy subscription system in the legacy-code/ directory.
 ## Success Criteria
 
 You'll know you've succeeded when:
+
 - [ ] You can explain the system architecture to someone else
 - [ ] You've identified the key components and their relationships
 - [ ] You understand where AI made wrong assumptions
@@ -83,12 +78,15 @@ You'll know you've succeeded when:
 ## Common Pitfalls
 
 **"AI said this is how it works"**
+
 - AI makes educated guesses based on patterns
 
 **"This code is bad, let's rewrite it"**
+
 - That "ugly" code might handle critical edge cases
 
 **"I'll skip the documentation"**
+
 - Future you will curse past you
 
 ## Resources
@@ -103,6 +101,7 @@ You'll know you've succeeded when:
 ## Next Steps
 
 After completing this module:
+
 1. Review your architecture diagrams
 2. Compare your understanding with the reference docs
 3. Reflect on how context quality affected AI's usefulness
