@@ -93,15 +93,6 @@ Search button, the page reloads and I lose my search. There are no console error
 Can you analyze the handleSearch function and the form submission behavior?"
 ```
 
-**What AI might suggest:**
-
-- Missing event.preventDefault()
-- State not updating
-- Form submission behavior
-- Event handler not attached
-
-**Your job:** Verify AI's suggestions by testing them
-
 ### Step 3: Ask AI for Multiple Hypotheses
 
 **Don't accept the first answer - ask for alternatives:**
@@ -124,8 +115,7 @@ each possibility systematically."
 "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 
 I think the issue might be [your hypothesis]. Can you show me
-how to add console.logs to verify if the handleSearch function
-is being called and if state is updating?"
+how to add console.logs to verify [what you want to verify]"
 ```
 
 **AI can generate:**
@@ -192,25 +182,6 @@ npm run dev
 
 # Run build to check for errors
 npm run build
-```
-
-## Commit Your Fix
-
-```bash
-git add .
-git commit -m "fix: prevent page reload on search form submission
-
-Root cause: [explain what was broken]
-Solution: [explain what you changed]
-
-The search feature was causing a page reload when pressing Enter or clicking
-the Search button because [your explanation].
-Fixed by [your solution].
-
-Tested with various search terms to verify filtering works as you type and
-form submission no longer causes page reload."
-
-git push origin workshop/your-name/search-bug-fix
 ```
 
 ## Reflection Questions
