@@ -6,11 +6,6 @@ import './SearchableArticleList.css';
  * Searchable Article List Component
  *
  * Displays a list of articles with search functionality.
- *
- * 🐛 BUG: The search functionality isn't working!
- * Users report that typing and clicking search does nothing.
- *
- * Your mission: Find the bug and fix it.
  */
 
 const SearchableArticleList = () => {
@@ -20,9 +15,6 @@ const SearchableArticleList = () => {
 
   // Handle search form submission
   const handleSearch = (event) => {
-    // 🐛 BUG: Missing event.preventDefault()!
-    // The form submits and causes a page reload before state can update
-
     const term = searchTerm.toLowerCase().trim();
 
     if (!term) {
