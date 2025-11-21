@@ -222,33 +222,35 @@ After fixing the bug:
 
 ## Stretch Goal (Optional)
 
-**If you finish early:** Try adding tests for the SearchableArticleList component using AI!
+**If you finish early:** This component has NO tests. Think about how testing could have prevented this bug!
 
+**Your challenge:**
+1. What tests would have caught this bug before it went to production?
+2. Use AI to help you add unit tests for this component
+3. Make sure your tests would FAIL with the bug, and PASS after your fix
+
+**Example prompt:**
 ```
 "I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
 
-I've fixed the search bug. Now I want to add tests for the SearchableArticleList
-component to prevent this bug from happening again.
+This SearchableArticleList component had a bug where the form submission
+caused a page reload. I've fixed it, but there are NO tests.
 
-Can you help me write Jest/React Testing Library tests that cover:
-- Searching for articles by title
-- Searching by summary text
-- Empty search showing all articles
-- No results state when search doesn't match anything
-- The form submission behavior (making sure it doesn't reload the page!)
+Can you help me write Jest/React Testing Library tests that would have
+caught this bug? The tests should verify:
+- The form doesn't cause a page reload when submitted
+- Search filters articles correctly
+- Empty search shows all articles
+- No results state appears when nothing matches
 "
 ```
 
-**Learning goals:**
-- Use AI to generate test cases
-- Understand what makes a good test
-- Learn how to test form submission behavior
-- Practice verifying AI-generated tests actually work
-
-**Questions to consider:**
-- Did AI write good tests or just tests that pass?
-- What edge cases did AI miss?
-- How would these tests have caught the bug you just fixed?
+**Key questions:**
+- How would you test that the form DOESN'T reload the page?
+- What test would have caught the missing `event.preventDefault()`?
+- Did AI suggest the right assertions to catch this bug?
+- How can AI help prevent bugs through test generation?
+- Could these tests have saved you debugging time?
 
 ## Next Steps
 
