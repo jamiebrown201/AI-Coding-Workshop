@@ -17,14 +17,16 @@ By the end of this module, you'll be able to:
 
 **The Reality Check:** AI-generated code has a 45% chance of containing security vulnerabilities.
 
+**The New Reality:** As AI coding assistants become standard tools, we need to rethink code review. This module teaches you how to review AI-assisted code and emphasizes that **if you write AI code, you're still responsible for it.**
+
 This module has two activities focused on code review:
 
-### Activity 4A: Security Review Challenge
-Hunt for vulnerabilities in AI-generated code.
+### Activity 4A: Reviewing AI-Generated Code
+Review a realistic PR where a developer used AI to build a comment system and documented their process.
 
 **Location:** `vulnerable-prs/`
 
-**What you're reviewing:** A comment system PR that "works great" but has at least 5 security issues.
+**What you're reviewing:** A transparent PR with AI usage documentation, but the code has at least 5 security issues. Learn about AI transparency, developer responsibility, and the ethics of offloading review work.
 
 ### Activity 4B: AI-Assisted Code Review
 Learn to use AI effectively during code reviews.
@@ -61,22 +63,48 @@ I need to review AI-generated code for security vulnerabilities in the vulnerabl
 
 ## Key Concepts
 
-### The Security Mindset
-When reviewing AI-generated code, ask:
-1. **"What could go wrong?"**
-2. **"What did AI forget?"**
-3. **"What assumptions did AI make?"**
+### Reviewing AI-Generated Code
 
-### Common Vulnerability Patterns
-- SQL Injection
-- XSS - Cross-Site Scripting
-- Missing Authentication
-- Insecure Direct Object References
-- Hardcoded Secrets
+**AI code is different from human code:**
+- AI doesn't understand security, only patterns
+- AI confidently makes dangerous mistakes
+- AI doesn't know your business context
+- AI generates "working" code that's often insecure
+
+### The Security Mindset for AI Code
+
+When reviewing AI-generated code, ask:
+1. **"What could go wrong?"** - AI doesn't think about edge cases
+2. **"What did AI forget?"** - Security, validation, auth, error handling
+3. **"What assumptions did AI make?"** - About your system, data, users
+4. **"Did the developer review this properly?"** - Or did they offload work to you?
+
+### Developer Responsibility Principle
+
+**If you write AI-generated code, you own it:**
+- ❌ You can't blame the AI for bugs or vulnerabilities
+- ❌ You can't expect reviewers to catch everything
+- ❌ "AI wrote it" is never an excuse for poor quality
+- ✅ You must review and understand AI output before committing
+- ✅ You must test for security, not just functionality
+- ✅ You must document AI usage transparently
+
+### Common Vulnerability Patterns in AI Code
+
+AI frequently generates these vulnerabilities:
+- **SQL Injection** - String interpolation instead of parameterized queries
+- **XSS** - No input sanitization or output encoding
+- **Missing Authentication** - Endpoints with no auth checks
+- **Missing Authorization** - No ownership/permission verification
+- **Information Leakage** - Detailed error messages exposing internals
+- **Hardcoded Secrets** - API keys, passwords in code
+- **No Input Validation** - Trusting user input blindly
 
 ## Success Criteria
 
 You'll know you've succeeded when:
+
+### Technical Skills:
 - [ ] You've identified at least 5 security vulnerabilities in Activity 4A
 - [ ] You've found at least 8 code review issues in Activity 4B
 - [ ] You found hidden issues like console.log and commented code
@@ -85,6 +113,14 @@ You'll know you've succeeded when:
 - [ ] You've verified AI suggestions before using them
 - [ ] You understand when AI helps vs. when manual review is better
 - [ ] You've tested the code in the browser to see issues firsthand
+
+### Critical Thinking About AI:
+- [ ] You can evaluate whether a developer properly reviewed AI output
+- [ ] You understand the ethics of AI transparency in PRs
+- [ ] You can articulate who's responsible for AI-generated bugs
+- [ ] You recognize when AI offloads work unfairly to reviewers
+- [ ] You know how to review AI code differently than human code
+- [ ] You've formed opinions on AI usage documentation standards
 
 ## Common Pitfalls
 
