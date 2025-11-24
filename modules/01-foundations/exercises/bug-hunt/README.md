@@ -31,6 +31,12 @@ Find the bug, fix it, don't break anything else.
 
 Use AI to help investigate, but remember: **AI might confidently suggest the wrong thing. Use your debugging skills to verify.**
 
+## About the Data
+
+**The article data is fake** - it's hardcoded in `fixtures/articles.json` for this exercise. You're working with 8 mock articles covering different categories (markets, technology, economics, environment).
+
+This is the first exercise, so we're keeping it simple with mock data rather than real APIs.
+
 ## Setup
 
 ```bash
@@ -44,7 +50,7 @@ npm run dev  # Should start local server at http://localhost:3000
 
 You've been given a search feature that should:
 
-1. Display a list of articles
+1. Display a list of articles (loaded from `fixtures/articles.json`)
 2. Let users type a search keyword and see results filter live
 3. Allow pressing Enter or clicking "Search" button without breaking
 4. Show "No results found" if no matches

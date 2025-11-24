@@ -22,6 +22,14 @@ Build a React component that displays FT article previews. Sounds simple? The de
 
 Use your AI coding tool to help, but **you must be able to explain every line of code you commit.**
 
+## About the Data & Images
+
+**The data and images are fake** - this is a practice exercise using mock content:
+- **Images**: Placeholder SVGs in `public/images/` (article-1.svg, article-2.svg, article-3.svg, fallback.svg)
+- **Article data**: You'll create this as part of the exercise based on the sample data below
+
+The SVG images are simple placeholders with text indicating what they represent (e.g., "Global Markets Breaking News"). Your job is to write proper alt text that describes the image content appropriately.
+
 ## Setup
 
 ```bash
