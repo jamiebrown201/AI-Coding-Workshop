@@ -9,8 +9,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src --ext .ts,.tsx,.js,.jsx",
-    "lint:fix": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
-    "a11y-check": "node scripts/check-accessibility.js"
+    "lint:fix": "eslint src --ext .ts,.tsx,.js,.jsx --fix"
   },
   "keywords": ["react", "accessibility", "workshop"],
   "author": "FT Labs",
