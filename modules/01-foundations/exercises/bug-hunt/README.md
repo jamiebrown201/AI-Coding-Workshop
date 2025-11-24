@@ -84,53 +84,18 @@ This exercise is about learning **how to use AI effectively for debugging**, not
 
 **Why this matters:** AI needs context. "It's broken" is useless. "Typing works but pressing Enter reloads the page" is actionable.
 
-### Step 2: Ask AI to Analyze the Component
+### Step 2: Write Your Own Prompts
 
-...
+**Now it's your turn!** Try writing prompts to help you debug:
 
-### Step 3: Ask AI for Multiple Hypotheses
+1. **Ask AI to analyze the component** - What context does AI need? What specific question should you ask?
+2. **Ask AI for multiple hypotheses** - Don't accept the first answer. How do you request alternatives?
+3. **Use AI to generate debugging code** - What information helps AI suggest useful debugging approaches?
+4. **Implement the fix** - Once you identify the bug, how do you ask AI for a solution?
 
-**Don't accept the first answer - ask for alternatives:**
-
-```
-"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
-
-You suggested [AI's answer]. What are 2-3 other possible causes
-for a search button that doesn't filter results? I want to check
-each possibility systematically."
-```
-
-**Why this works:** AI might miss the obvious. Getting multiple theories helps you debug methodically.
-
-### Step 4: Use AI to Generate Debugging Code
-
-**Ask AI to help you verify your hypothesis:**
-
-```
-"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
-
-I think the issue might be [your hypothesis]. Can you show me
-how to add console.logs to verify [what you want to verify]"
-```
-
-**AI can generate:**
-
-- Console.log statements
-- Debugger breakpoints
-- Quick test code
-
-### Step 5: Implement the Fix with AI
-
-**Once you've identified the bug, ask AI for the fix:**
-
-```
-"I'm working on the Bug Hunt exercise in modules/01-foundations/exercises/bug-hunt/
-
-The bug is that the form submits and causes a page reload.
-Show me how to prevent the default form submission behavior."
-```
-
-**But verify the fix yourself!** Don't just copy-paste. Understand WHY it works.
+**If you get stuck:**
+- Refer to the [Writing Good Prompts Guide](../../../docs/writing-good-prompts.md) for help on how to structure prompts
+- Check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to see example approaches
 
 ## Success Criteria
 
@@ -208,9 +173,12 @@ After fixing the bug:
 2. Use AI to help you add unit tests for this component
 3. Make sure your tests would FAIL with the bug, and PASS after your fix
 
+
 ## Next Steps
 
 After completing this exercise:
 
-1. Review your debugging process
-2. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/README.md)
+1. Review your debugging process - what worked well?
+2. **If you haven't already, check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md)** - compare your prompts to see what you did well and what could improve
+3. Reflect: Which prompts got the best AI responses? Why?
+4. Move on to [Module 2: Understanding Codebases](../../02-codebase-understanding/README.md)

@@ -97,41 +97,18 @@ By the end of this exercise, you'll be able to:
 
 ### Step 2: Use AI for Targeted Scans
 
-**Don't ask AI to do a full review. Instead, ask it to check specific things:**
+**Try writing your own review prompts first!** Think about what you want to check and how to ask for it.
 
-#### Example: Performance Check
+**Don't ask AI to do a full review.** Instead, ask it to check specific things like:
+- Performance issues
+- Accessibility problems
+- Error handling
+- Security concerns
+- Code quality
 
-```
-"I'm working on the AI-Assisted Code Review exercise in modules/04-code-review/ai-code-review/
-
-I'm reviewing ArticleRecommendations.jsx. Can you identify any performance
-issues, especially:
-- Unnecessary re-renders
-- Expensive calculations in render methods
-- Missing memoization opportunities"
-```
-
-#### Example: Accessibility Check
-
-```
-"I'm working on the AI-Assisted Code Review exercise in modules/04-code-review/ai-code-review/
-
-Can you review ArticleRecommendations.jsx for accessibility issues?
-Focus on:
-- Semantic HTML
-- ARIA labels
-- Keyboard navigation
-- Screen reader compatibility"
-```
-
-#### Example: Error Handling Check
-
-```
-"I'm working on the AI-Assisted Code Review exercise in modules/04-code-review/ai-code-review/
-
-Review the error handling in ArticleRecommendations.jsx.
-Are errors handled properly? What edge cases might be missing?"
-```
+**If you get stuck on how to ask:**
+- Refer to the [Writing Good Prompts Guide](../../../docs/writing-good-prompts.md) for help on structuring prompts
+- Check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to see example approaches for code review
 
 ### Step 3: Verify AI's Findings
 
@@ -200,43 +177,18 @@ Use AI to help with these specific checks:
 - [ ] Are there magic numbers that should be constants?
 - [ ] Is the code readable and maintainable?
 
-## Example Prompts for Different Review Areas
+## Writing Effective Review Prompts
 
-### For Performance Issues:
-```
-"I'm working on the AI-Assisted Code Review exercise in modules/04-code-review/ai-code-review/
+**Try different types of targeted checks** - Don't just ask AI to "review the code"
 
-In ArticleRecommendations.jsx, I'm concerned about performance with large
-lists. What optimizations would you suggest? Consider:
-- React rendering optimization
-- Expensive computations
-- List virtualization"
-```
+Think about what specific concerns matter for this code:
+- What could cause performance problems?
+- What accessibility issues might exist?
+- How is error handling?
+- Are there security concerns?
+- What about code quality?
 
-### For Accessibility:
-```
-"I'm working on the AI-Assisted Code Review exercise in modules/04-code-review/ai-code-review/
-
-Review ArticleRecommendations.jsx for WCAG 2.1 AA accessibility compliance.
-What issues do you find?"
-```
-
-### For Race Conditions:
-```
-"I'm working on the AI-Assisted Code Review exercise in modules/04-code-review/ai-code-review/
-
-In ArticleRecommendations.jsx, could there be race conditions with the
-fetchRecommendations function? What happens if userId or currentArticleId
-changes during a fetch?"
-```
-
-### For User Experience:
-```
-"I'm working on the AI-Assisted Code Review exercise in modules/04-code-review/ai-code-review/
-
-What UX improvements would you suggest for ArticleRecommendations.jsx?
-Consider loading states, empty states, and error handling."
-```
+**If you get stuck:** Check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) for examples of effective prompts for different review areas.
 
 ## Your Task
 
@@ -366,8 +318,9 @@ After completing your review:
 
 After completing this exercise:
 1. Compare your findings with others
-2. Discuss which issues were hardest to spot
-3. Move on to **Activity 4C: AI-Powered Test Generation**
+2. **If you haven't already, review [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md)** to see effective code review prompts and compare with your approach
+3. Discuss which issues were hardest to spot
+4. Move on to **Activity 4C: AI-Powered Test Generation**
 
 ---
 

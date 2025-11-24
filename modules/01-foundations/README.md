@@ -75,30 +75,15 @@ The AI tool can:
 
 **Key point:** AI can search, but it's faster and more accurate when you point it to the right files.
 
-### Starting a Module
+### Writing Good Prompts
 
-Since you'll open your AI agent from the repository root, tell it which module you're working on:
+**Try writing your own prompts first!** The goal is to develop your own prompting skills through practice.
 
-```
-I'm working on Module 1, Exercise 1A: Article Preview Component
-The exercise is in modules/01-foundations/exercises/article-preview/
+**If you get stuck:**
+- Refer to the [Writing Good Prompts Guide](../../docs/writing-good-prompts.md) for help with how to structure prompts
+- Check the exercise's example prompts (e.g., `PROMPT_EXAMPLES.md`) to see effective approaches
 
-Build a React article preview component that:
-- Displays title, author, publish date
-- Shows a thumbnail image
-- Is keyboard accessible
-- Supports screen readers
-
-Use the article data from data/articles.json
-```
-
-**What makes this work:**
-- Tells AI which module/exercise you're in
-- Provides the file path
-- Clear requirements
-- Specific details
-- References relevant files
-- Mentions accessibility
+**After you finish each exercise:** If you haven't already, compare your prompts with the example prompts to see what worked well and what you can improve.
 
 ## Key Concepts
 

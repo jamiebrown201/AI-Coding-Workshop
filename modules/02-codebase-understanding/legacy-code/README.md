@@ -181,43 +181,15 @@ After getting AI's explanation, verify systematically:
    - What features did AI assume existed?
    - Where did AI fill gaps with "standard" patterns?
 
-## Example AI Conversation
+## Writing Effective Prompts for Exploration
 
-**Step 1: Entry Point**
+**Try exploring the codebase yourself first!** Use AI to help, but develop your own exploration strategy.
 
-```
-Prompt: "I'm working on the Legacy Code Architecture Analysis in modules/02-codebase-understanding/legacy-code/
+**If you get stuck:**
+- Refer to the [Writing Good Prompts Guide](../../../docs/writing-good-prompts.md) for help on how to structure prompts
+- Check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to see example approaches for architecture analysis
 
-Looking at this server.js file, what can you tell me about:
-1. The main routes being registered
-2. External services being integrated
-3. Middleware being used
-4. Background jobs being initialized
-
-[Include just server.js code]"
-```
-
-**Step 2: Trace a Feature**
-
-```
-Prompt: "I'm working on the Legacy Code Architecture Analysis in modules/02-codebase-understanding/legacy-code/
-
-I want to understand the 'create subscription' flow.
-Here's the route handler [paste route code].
-Here's the service [paste service code].
-Can you explain the flow from HTTP request to database?"
-```
-
-**Step 3: Understand Integrations**
-
-```
-Prompt: "I'm working on the Legacy Code Architecture Analysis in modules/02-codebase-understanding/legacy-code/
-
-This service integrates with Stripe and PayPal.
-[Paste relevant service methods]
-What's the abstraction strategy here?
-What could go wrong?"
-```
+**After you finish:** If you haven't already, review [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to compare your approach and see effective exploration patterns.
 
 ## What to Map
 

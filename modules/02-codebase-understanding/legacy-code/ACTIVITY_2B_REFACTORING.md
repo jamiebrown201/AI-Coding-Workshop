@@ -82,68 +82,13 @@ AI tools will often suggest:
 
 ### How to Use AI Effectively
 
-**Phase 1: Understand Current State**
+**Try creating your refactoring plan yourself first!** Think through the risks and strategies before relying on AI.
 
-```
-Prompt: "I'm working on the Refactoring Planning exercise in
-modules/02-codebase-understanding/legacy-code/
+**If you get stuck:**
+- Refer to the [Writing Good Prompts Guide](../../../docs/writing-good-prompts.md) for help on structuring prompts
+- Check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to see example approaches for refactoring planning
 
-I need to refactor this jQuery-based admin interface at public/admin.html.
-
-Looking at this code, what are the current features and what state
-management patterns is it using?"
-```
-
-**Phase 2: Explore Refactoring Approaches**
-
-```
-Prompt: "I'm working on the Refactoring Planning exercise in
-modules/02-codebase-understanding/legacy-code/
-
-What are 3 different approaches for migrating this jQuery interface
-to React incrementally (not a big-bang rewrite)?
-
-For each approach:
-- What gets refactored first?
-- How do we ensure nothing breaks?
-- What are the risks?
-
-Focus on INCREMENTAL migration strategies."
-```
-
-**Phase 3: Risk Assessment**
-
-```
-Prompt: "I'm working on the Refactoring Planning exercise in
-modules/02-codebase-understanding/legacy-code/
-
-For this jQuery to React migration, what are the highest-risk areas?
-
-Consider:
-- User behaviors we might break
-- State management edge cases
-- API integration points
-- Browser compatibility
-- Performance implications
-
-What should we test most carefully?"
-```
-
-**Phase 4: Testing Strategy**
-
-```
-Prompt: "I'm working on the Refactoring Planning exercise in
-modules/02-codebase-understanding/legacy-code/
-
-Before we start refactoring this admin interface, what tests should
-we write to ensure we don't break anything?
-
-Consider:
-- What behaviors should be captured in tests first?
-- What's the minimum test coverage needed?
-- How do we test jQuery behavior?
-- What integration tests do we need?"
-```
+**After you finish:** If you haven't already, review [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to compare your approach and see effective planning patterns.
 
 ---
 

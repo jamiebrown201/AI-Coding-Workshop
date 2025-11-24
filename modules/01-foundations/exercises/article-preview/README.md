@@ -149,28 +149,15 @@ import sampleArticle from './fixtures/sample-article.json';
 3. Think about maintainability
 4. Focus question: "Is this maintainable by the rest of the team?"
 
-## Example Prompts
+## Writing Effective Prompts
 
-**❌ Vague prompt:**
-> "Create a React component for article previews"
+**Try writing your own prompts first!** This is your opportunity to practice prompt engineering.
 
-**✅ Better prompt:**
-> "I'm working on the Article Preview exercise in modules/01-foundations/exercises/article-preview/
->
-> Create a React TypeScript component called ArticlePreview that displays article metadata (headline, summary, author, date) with an optional image. Must be keyboard accessible, have proper ARIA labels, and be responsive from 320px to 1920px. Use semantic HTML."
+**If you get stuck:**
+- Refer to the [Writing Good Prompts Guide](../../../docs/writing-good-prompts.md) for help on how to structure prompts
+- Check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to see example approaches
 
-**✅ Even better (with context):**
-> "I'm working on the Article Preview exercise in modules/01-foundations/exercises/article-preview/
->
-> Here's the interface:
-> ```typescript
-> interface ArticlePreviewProps {
->   headline: string;
->   // ... rest of interface
-> }
-> ```
->
-> Create an accessible, responsive ArticlePreview component that meets WCAG 2.1 AA standards. Include proper focus states and alt text handling."
+**After you finish:** If you haven't already, review [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to compare your prompts and see what worked well.
 
 ## Testing Your Component
 
