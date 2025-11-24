@@ -26,7 +26,18 @@ Review this **AI-generated code** with a focus on:
 
 ## Setup
 
-### Option 1: Review from Branch (Realistic)
+### Option 1: Review on GitHub (Most Realistic)
+
+**View the actual PR on GitHub:**
+https://github.com/jamiebrown201/AI-Coding-Workshop/pull/[NUMBER]
+
+This gives you the full GitHub PR experience:
+- See the PR description and AI disclosure
+- View file changes with GitHub's diff view
+- Add review comments inline
+- See the conversation flow
+
+### Option 2: Review from Branch (Command Line)
 
 ```bash
 # Checkout the feature branch like you would in a real PR review
@@ -42,12 +53,12 @@ cat AI_USAGE.md
 cat CommentSystem.js
 ```
 
-### Option 2: Review from Main Branch
+### Option 3: Review from Main Branch
 
 ```bash
 cd modules/04-code-review/vulnerable-prs
 
-# All files are available here too
+# All files are available here too (merged from feature branch)
 ls -la
 ```
 
