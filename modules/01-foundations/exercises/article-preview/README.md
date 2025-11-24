@@ -25,6 +25,7 @@ Use your AI coding tool to help, but **you must be able to explain every line of
 ## About the Data & Images
 
 **The data and images are fake** - this is a practice exercise using mock content:
+
 - **Images**: Placeholder SVGs in `public/images/` (article-1.svg, article-2.svg, article-3.svg, fallback.svg)
 - **Article data**: You'll create this as part of the exercise based on the sample data below
 
@@ -40,6 +41,7 @@ npm install
 ## Requirements
 
 ### Functional Requirements
+
 1. **Display article data:**
    - Headline (required)
    - Summary/excerpt (required)
@@ -58,6 +60,7 @@ npm install
    - Opens article in same window
 
 ### Accessibility Requirements (AI often misses these!)
+
 - [ ] Proper heading hierarchy (h2 for headline)
 - [ ] Alt text for images (descriptive, not just "article image")
 - [ ] Keyboard navigation (Tab, Enter to activate)
@@ -67,6 +70,7 @@ npm install
 - [ ] Touch targets ≥44x44 pixels
 
 ### Technical Requirements
+
 - [ ] React functional component with TypeScript
 - [ ] Styled using CSS modules or styled-components
 - [ ] Props interface clearly defined
@@ -92,7 +96,7 @@ interface ArticlePreviewProps {
 }
 
 // Import and use the fixture data:
-import sampleArticle from './fixtures/sample-article.json';
+import sampleArticle from "./fixtures/sample-article.json";
 
 // The fixture contains:
 // - Realistic headline and summary
@@ -108,16 +112,6 @@ import sampleArticle from './fixtures/sample-article.json';
 // - fallback.svg (No image placeholder)
 ```
 
-## ⚠️ Common Pitfalls (that AI might not catch)
-
-- **Missing alt text** - AI loves to forget this
-- **Color contrast fails** - AI doesn't have eyes
-- **Mobile responsive... ish** - AI's definition of "mobile-friendly" is suspect
-- **Focus states** - AI thinks mice are the only input device
-- **Div soup** - AI loves nested divs instead of semantic HTML
-- **Magic numbers** - Hard-coded values instead of CSS variables
-- **No error handling** - What if the image fails to load?
-
 ## 🎯 Success Criteria
 
 - [ ] Passes `npm run lint`
@@ -131,18 +125,21 @@ import sampleArticle from './fixtures/sample-article.json';
 ## Working Approach
 
 ### For Junior Developers
+
 1. Try building the component yourself first (5 min)
 2. Then use AI to compare/improve
-3. Ask AI to explain *why* it chose certain patterns
+3. Ask AI to explain _why_ it chose certain patterns
 4. Focus question: "Can you explain this code to someone else?"
 
 ### For Mid-Level Developers
+
 1. Write detailed requirements first
 2. Give requirements to AI
 3. Compare AI output to how you would have done it
 4. Focus question: "What would break in edge cases?"
 
 ### For Senior Developers
+
 1. Consider reusable patterns the team can use
 2. Evaluate AI output against team conventions
 3. Think about maintainability
@@ -153,6 +150,7 @@ import sampleArticle from './fixtures/sample-article.json';
 **Try writing your own prompts first!** This is your opportunity to practice prompt engineering.
 
 **If you get stuck:**
+
 - Refer to the [Writing Good Prompts Guide](../../../docs/writing-good-prompts.md) for help on how to structure prompts
 - Check [PROMPT_EXAMPLES.md](./PROMPT_EXAMPLES.md) to see example approaches
 
