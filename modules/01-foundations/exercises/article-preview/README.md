@@ -34,7 +34,6 @@ The SVG images are simple placeholders with text indicating what they represent 
 
 ```bash
 cd modules/01-foundations/exercises/article-preview
-git checkout -b workshop/your-name/article-preview
 npm install
 ```
 
@@ -169,32 +168,6 @@ npm test
 # Start dev server to see it in action
 npm run dev
 # Visit http://localhost:3000
-```
-
-## Commit Your Work
-
-Create a branch for this exercise and push your work:
-
-```bash
-# Create branch for this exercise
-git checkout -b workshop/your-name/article-preview
-
-# For example:
-# git checkout -b workshop/jamie/article-preview
-
-git add .
-git commit -m "feat: article preview component (with AI assistance)
-
-- Implements responsive article preview
-- Meets WCAG 2.1 AA accessibility standards
-- Includes keyboard navigation
-- Handles missing images gracefully
-
-AI-assisted: boilerplate and styling
-Human-verified: accessibility, edge cases, semantics"
-
-# Push to your exercise branch
-git push -u origin workshop/your-name/article-preview
 ```
 
 ## Reflection Questions

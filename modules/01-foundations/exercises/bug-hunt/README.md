@@ -41,7 +41,6 @@ This is the first exercise, so we're keeping it simple with mock data rather tha
 
 ```bash
 cd modules/01-foundations/exercises/bug-hunt
-git checkout -b workshop/your-name/search-bug-fix
 npm install
 npm run dev  # Should start local server at http://localhost:3000
 ```
