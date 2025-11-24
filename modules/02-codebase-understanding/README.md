@@ -75,20 +75,6 @@ You'll know you've succeeded when:
 - [ ] You've documented enough for the next person
 - [ ] You can plan changes without breaking things
 
-## Common Pitfalls
-
-**"AI said this is how it works"**
-
-- AI makes educated guesses based on patterns
-
-**"This code is bad, let's rewrite it"**
-
-- That "ugly" code might handle critical edge cases
-
-**"I'll skip the documentation"**
-
-- Future you will curse past you
-
 ## Resources
 
 - [Exploration Strategies](../../docs/exploration-strategies.md)
